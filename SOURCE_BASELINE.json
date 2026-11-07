@@ -635,8 +635,10 @@
     },
     {
       "path": "tools/oem_addons.py",
-      "sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
-      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+      "sha256": "cb7243e72a6edc2eb0100ab87ce5ec3149ebf7979b6ffe895c4d648af64ba6cd",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
+      "imported_sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
+      "project_change": "Explicit API37 formats profiles can select the hash-bound exact-installed space extension. Shared API36 template and prior API37 recipes remain byte-identical."
     },
     {
       "path": "tools/oem_addons/map_logical.cpp",
@@ -650,10 +652,8 @@
     },
     {
       "path": "tools/oem_addons/update-binary.sh",
-      "sha256": "f7e97a9a9dd4eb37c01f2d7086fce0bd78ffc2540b4cbfb898cbfdf346e3fc33",
-      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
-      "imported_sha256": "36b39339a663fc09ed7e48410c4204455ffdc71d0d10fe34b8d67feebb0099cf",
-      "project_change": "After complete installed-file/tree identity validation, use margin-only disk budgets for read-only recognition and proven idempotent installs. Fresh/incomplete/modified states and full RAM staging retain their original budgets."
+      "sha256": "36b39339a663fc09ed7e48410c4204455ffdc71d0d10fe34b8d67feebb0099cf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
     },
     {
       "path": "tools/oem_base_comparison.py",

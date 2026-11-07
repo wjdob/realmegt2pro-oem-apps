@@ -495,17 +495,6 @@ select_upgrade() {
         owned_tree_matches "$WORK/manifest.sha256" || die 'Unknown Camera files; no cleanup guessed'
     fi
 }
-select_space_budget() {
-    # Recognition and idempotent installs do not need another full APK copy.
-    # Keep full fresh-install budgets unless the complete installed state matches.
-    # FULL_PAYLOAD_KIB remains unchanged for recovery RAM/rollback staging.
-    if [ "$ALREADY_INSTALLED" = 1 ] || {
-        [ "$ACTION" = check ] && known_install_matches "$WORK/manifest.sha256"
-    }; then
-        SYSTEM_KIB=4096
-        PRODUCT_KIB=16384
-    fi
-}
 stage_upgrade_rollback() {
     [ "$UPGRADING" = 1 ] || return 0
     while read -r ur_hash ur_rel; do
@@ -829,7 +818,6 @@ verify_legacy_sdk_state
 verify_existing_files
 verify_owned_tree
 verify_policy_inputs
-select_space_budget
 if [ "$ACTION" != remove ]; then
     free_product=$(free_kib "$PRODUCT") || die 'Cannot measure product capacity'
     free_system=$(free_kib "$SYSTEM_MOUNT") || die 'Cannot measure system capacity'

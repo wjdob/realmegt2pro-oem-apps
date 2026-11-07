@@ -617,7 +617,8 @@
         "source": "configs/oem-camera-upgrades-formats17-24.0.json",
         "sha256": "17d73ce185394d40b9398fc83dd0697de3c4a2b4995759cf6c0eddac7416ffd2"
       },
-      "formats_sdk_sha256": "b55e7dd63bcc00ac4a37f9119686f2729f446da51de9850e719b2618166d55fb"
+      "formats_sdk_sha256": "b55e7dd63bcc00ac4a37f9119686f2729f446da51de9850e719b2618166d55fb",
+      "installed_space_budget": true
     },
     "photos": {
       "title": "Realme Photos and editors",
@@ -1081,7 +1082,8 @@
         "sha256": "712e9b0d0e5e07ffbb4dd6bb09bf905cbf4d29101a529c638122a8a52409c03a"
       },
       "formats_sdk_sha256": "b55e7dd63bcc00ac4a37f9119686f2729f446da51de9850e719b2618166d55fb",
-      "legacy_gallery_apk_sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e"
+      "legacy_gallery_apk_sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e",
+      "installed_space_budget": true
     }
   },
   "formats_patch": {

@@ -138,7 +138,8 @@ def main():
                 old,files,helper=read_release(args.source_dir/binding['archive'],binding,name,Path(directory))
             item=lens.profile(old,name);parts[name]=(old,files,helper)
             max_payload=max(max_payload,sum(map(len,files.values())))
-            children[f'old{index}-{name}-check']=addons.archive_bytes(item,files,'check',cert,None,helper)
+            check_item=dict(item,installed_space_budget=True)
+            children[f'old{index}-{name}-check']=addons.archive_bytes(check_item,files,'check',cert,None,helper)
             if name=='photos':
                 for action in ('remove','install'):
                     children[f'old{index}-photos-{action}']=addons.archive_bytes(item,files,action,cert,None,helper)

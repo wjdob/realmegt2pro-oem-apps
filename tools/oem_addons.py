@@ -18,6 +18,7 @@ import oem_coinstall
 import oem_runtime_policy
 import oem_retention
 import oem_platform
+import oem_installed_space
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / 'configs/oem-addons-23.2.json'
@@ -41,7 +42,8 @@ CAMERA_PRIVILEGED_REQUESTS = CAMERA_PRIVILEGED_GRANTS | CAMERA_PRIVILEGED_DENIAL
 
 
 def installer_template(profile):
-    return oem_platform.template(TEMPLATE.read_bytes(), profile, 'installer')
+    source=oem_installed_space.prepare(TEMPLATE.read_bytes(),profile)
+    return oem_platform.template(source, profile, 'installer')
 
 
 def config_platform(config):

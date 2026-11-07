@@ -6,13 +6,17 @@ import shlex
 import subprocess
 import tempfile
 import unittest
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+import oem_installed_space
 
 SOURCE=Path(__file__).resolve().parents[1]/'oem_addons/update-binary.sh'
+PROFILE={'id':'camera','platform':{'sdk':37,'lineage':'24.0'},'installed_space_budget':True}
 
 
 class InstalledSpaceTests(unittest.TestCase):
     def scenario(self,action='check',present='exact',already=0,system=240000,product=300000,owned=True):
-        text=SOURCE.read_text()
+        text=oem_installed_space.prepare(SOURCE.read_bytes(),PROFILE).decode()
         functions='\n'.join(re.search(r'(?m)^'+name+r'\(\) \{\n.*?^\}',text,re.S).group() for name in ['known_install_matches','select_space_budget'])
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'system').mkdir();(root/'system/base.apk').write_bytes(b'exact apk')
@@ -59,10 +63,18 @@ printf '%s %s %s\n' "$SYSTEM_KIB" "$PRODUCT_KIB" "$FULL_PAYLOAD_KIB"
         self.assertEqual(self.scenario(present='unknown',system=8192,product=20480),(8192,20480,540000))
 
     def test_budget_selection_precedes_capacity_checks_after_identity_validation(self):
-        main=SOURCE.read_text().split('ui "$TITLE:')[1]
+        main=oem_installed_space.prepare(SOURCE.read_bytes(),PROFILE).decode().split('ui "$TITLE:')[1]
         self.assertLess(main.index('verify_owned_tree\n'),main.index('select_space_budget\n'))
         self.assertLess(main.index('verify_policy_inputs\n'),main.index('select_space_budget\n'))
         self.assertLess(main.index('select_space_budget\n'),main.index('free_product=$(free_kib'))
+
+    def test_prior_recipes_are_byte_exact_and_other_platforms_refuse_extension(self):
+        original=SOURCE.read_bytes()
+        for profile in [{'id':'camera'},{'id':'photos','platform':{'sdk':37,'lineage':'24.0'}}]:
+            self.assertEqual(oem_installed_space.prepare(original,profile),original)
+        for profile in [dict(PROFILE,platform={'sdk':36,'lineage':'23.2'}),dict(PROFILE,installed_space_budget=False),dict(PROFILE,id='clock')]:
+            with self.assertRaises(ValueError):oem_installed_space.prepare(original,profile)
+        with self.assertRaises(ValueError):oem_installed_space.prepare(original+b'\n',PROFILE)
 
 
 if __name__=='__main__':unittest.main()

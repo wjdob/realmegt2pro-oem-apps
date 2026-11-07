@@ -650,8 +650,10 @@
     },
     {
       "path": "tools/oem_addons/update-binary.sh",
-      "sha256": "36b39339a663fc09ed7e48410c4204455ffdc71d0d10fe34b8d67feebb0099cf",
-      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+      "sha256": "f7e97a9a9dd4eb37c01f2d7086fce0bd78ffc2540b4cbfb898cbfdf346e3fc33",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
+      "imported_sha256": "36b39339a663fc09ed7e48410c4204455ffdc71d0d10fe34b8d67feebb0099cf",
+      "project_change": "After complete installed-file/tree identity validation, use margin-only disk budgets for read-only recognition and proven idempotent installs. Fresh/incomplete/modified states and full RAM staging retain their original budgets."
     },
     {
       "path": "tools/oem_base_comparison.py",

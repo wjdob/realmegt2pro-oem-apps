@@ -56,6 +56,10 @@ Each child has rollback checks; the full sequence is not power-loss atomic.
 If Photos installation fails after Camera updates, keep recovery open and install
 the matching Photos ZIP before rebooting. Existing media and app data are retained.
 
+Recognition of a complete installed version uses a small disk-space allowance.
+Fresh, incomplete or changed files retain the full installation checks. Recovery
+RAM staging keeps its full budget in both cases.
+
 ## Combined test
 
 Check these in one session after independent installation readback:

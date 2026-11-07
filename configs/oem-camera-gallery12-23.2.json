@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "abc3a6d5546296d310d0fd9c0b033e798085b70eb542e432eec8838b19d97e50",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+    "tools/oem_camera_compat/realme/camera/compat/GalleryShortcut.java": "6e9ec618ace7cff871e888ac4f1caabf7d014092fab9428692a816b9e9d2b5c1",
+    "tools/oem_camera_compat/realme/camera/compat/CaptureThumbnail.java": "3db43b1f46671cb6f8c2a9a9c6ab3f29a1302380908d0d752d877f329963929c"
+  },
+  "adapter_dex_sha256": "331ea4147ac158a7891e3a4ef5fa4a09129d50828d5a26a4b4707bbe37b98d83",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "thumbnail_id": "0x7f09062f",
+  "scope": "Optional Camera12 bridge: explicit descending latest-own-completed MediaStore query for viewer and bounded thumbnail decode. Standard default/chooser with read grant; observed resume/capture changes refresh thumbnail. No OEM Gallery dependency or APK resign. Locked/paused/detached views reject async results; lock clears bridge-owned displayed bitmap.",
+  "limits": "Source/lifecycle boundary tests are separate from installed Camera UI rendering, real viewer/default changes, JPEG/video/HEIC8/10bit thumbnail and lock-screen acceptance.",
+  "output_sdk_sha256": "8aa6fb669a592050f32f78f25e3cbc78397a682d9980d8b58077a6215678e7fe",
+  "base_adapter_types": [
+    "Lek/v0$WindowWatcher;",
+    "Lek/v0;",
+    "Lrealme/camera/compat/GalleryShortcut$Cancel;",
+    "Lrealme/camera/compat/GalleryShortcut$Lookup;",
+    "Lrealme/camera/compat/GalleryShortcut;"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "engine_marker": "Backuptool failure stops OTA activation",
+  "engine_scope_marker": "Failed to read source superblock for backuptool",
+  "files": [
+    {
+      "path": "vendor/lineage/prebuilt/common/bin/backuptool_ab.sh",
+      "before_sha256": "f427c540571f3940cc2624b61cfce462bde6a9ace2a94a9405ed63c6380ce55c",
+      "after_sha256": "b55a13c6d8fa120d6bfa642335cd4f2a410ed76968d6174e1afd269ce95fff7b"
+    },
+    {
+      "path": "vendor/lineage/prebuilt/common/bin/backuptool_postinstall.sh",
+      "before_sha256": "a4e71eab3b45878bcf4d384262d79bb8cb6bc67ee61fcf6706996b736c3d0e8d",
+      "after_sha256": "159cf8a046f730f8158b98fff8078b39d53ae8345157d4ed72a8f5d0c464a4dc"
+    },
+    {
+      "path": "system/update_engine/payload_consumer/postinstall_runner_action.cc",
+      "before_sha256": "6bb58c10a3ba62220e07cc542bed0abdfed71d4256dadc5b8f1a6a62b7fc249d",
+      "after_sha256": "2efa9b511ce5c7070289f70bfbc07b6031171beb54085b1a8b07bf0d73ce6f51"
+    }
+  ],
+  "mount_function_sha256": "d037d4bf64977788ccd0a650dcf657760e17df6ba1072ce01826ec6e28acbef8",
+  "limits": "Exact reviewed source and packaged helper/compiled marker prerequisites only; host and real native/OTA behavior remain separate evidence."
+}

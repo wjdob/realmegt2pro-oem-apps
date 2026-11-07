@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "package": "com.coloros.gallery3d",
+  "source_app": {
+    "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+    "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "prepared_app": {
+    "sha256": "4433dda072631a1f58b6407dd99be3cc83c867e86ba02c3cc7658047506b24f0",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "flavor": "lineage",
+  "signer_role": "dedicated-optional-gallery-app",
+  "predecessors": {
+    "alpha11": {
+      "sha256": "34f07b3226b0cf01c3a2c101a608dc35cfd11e16ff9fa5f5dd030735fa25532a",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    },
+    "alpha12": {
+      "sha256": "2dc4a37111a17513343ab235e0d9cd55ec2159782843a09441a6773584d91868",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    },
+    "alpha13": {
+      "sha256": "2dc4a37111a17513343ab235e0d9cd55ec2159782843a09441a6773584d91868",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    }
+  },
+  "receiver_policy": "Only the existing ActionReceiverProperties constructor changes, API34+ when no explicit state or instant-app visibility is supplied. Unpermissioned receivers private; sender-permission receivers exported with that permission still enforced. API31-33/explicit flags unchanged.",
+  "predecode_gate": "Only OplusPreTileDecodeService uses standard signature/privileged android.permission.SYSTEM_CAMERA, already granted to current Camera13. Portable prepared APK retains OEM service gate. No new permission definition or grant.",
+  "source_recipe": {
+    "predecessor_apk_sha256": "2dc4a37111a17513343ab235e0d9cd55ec2159782843a09441a6773584d91868",
+    "unsigned_sha256": "fa7301f13cfb5c65647d425628de0c1987c8eb53d49a6e3008739287fe0d0f44",
+    "sources": {
+      "tools/oem_gallery_media.py": "a4b3e81ff8e20e168237a0224ac1e80452105aa531c8c39fcec7628551e08415",
+      "tools/oem_gallery_compat/MediaConsentFlow.java": "97f1d103a983e97014d451ac24cbb36ed8e69c3c7df18a7062ba847f6214db28",
+      "tools/oem_gallery_compat/MediaSaveScope.java": "cf45845e41fdb0feea50bc484811211d0ae871c064244ea75bd2a21054c48101",
+      "tools/oem_gallery_compat/MediaWriteConsent.java": "8080926821fdb8311763fefd309995c80ab6258ed03aab25b621fc9cb17f4169",
+      "tools/oem_gallery_compat/ReplaceMediaItem.java": "5b755fe2bb0ed86b6d72a04753be7e4cfbc0b7aab18868614e638d0da880afb4",
+      "tools/oem_gallery_compat/ReplaceOriginalAccess.java": "525f12de0748b29b8fa47b6e621a51024d5d6d5e1a8868d4967902a4b8852a54",
+      "tools/oem_gallery_compat/GalleryDexMediaAssembly.java": "835db95a78f77f8847f5d5637a30030e621d36d2ac8bd2e47cd376c5c8cb8c31"
+    },
+    "independent_unsigned_preparations_identical": true,
+    "independent_static_inspection_sha256": "23247196c288bd4d18c793f4eeb431a7c2bddfedfca70c2ae23ccee5b51d7a38",
+    "host_full_oem_tests": {
+      "count": 248,
+      "report_sha256": "af6ed1a611ad2eafc9d751fc1d097a770355880dba0327524bc144a628019f50"
+    },
+    "scope_abi_probe_sha256": "f9d887a0276120dab3ddcd87e5ab053137d08563bb5b356db09a61e7ceb50f69"
+  },
+  "limits": "Optional Gallery14 candidate uses standard MANAGE_MEDIA plus MediaStore requests for Move and pre-save Replace original. Preserve accepted UAH/haptic/Remover/sharing/review fixes, signer/min31/target34 and all native/SDK/shared policy bytes. Existing authorized OEM access is queried, never assigned; no all-files permission or base role/policy change. Host/ART synthetic acceptance is not actual management, cancellation, media-output or app-data acceptance. Save copy NONE export stays independent of original-media access; private-photo locking remains parked.",
+  "policyless_predecessors": [],
+  "predecessor_profiles": {
+    "alpha11": {
+      "source": "configs/oem-addons-gallery-alpha11-23.2.json",
+      "sha256": "5effa29b4eac37ceb1c476b654d545927458b0cc8dd0c0bb4a01d9e879707e81"
+    },
+    "alpha12": {
+      "source": "configs/oem-addons-gallery-alpha12-23.2.json",
+      "sha256": "8666e0485fd27ed385602ac6eede231952deed2b145d0df6d1c209937166f38a"
+    },
+    "alpha13": {
+      "source": "configs/oem-addons-gallery-alpha13-23.2.json",
+      "sha256": "b844e7379c5822b097bc6de0299928247d1f9b7d546a17b51c25a2ad41bb0932"
+    }
+  }
+}

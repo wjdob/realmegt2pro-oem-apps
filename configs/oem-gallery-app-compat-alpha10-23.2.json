@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "package": "com.coloros.gallery3d",
+  "source_app": {
+    "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+    "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "prepared_app": {
+    "sha256": "ed00cdb70cc98563e4f69c60b72d59234c19aee33860aa306cb45bf863a60b04",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "flavor": "lineage",
+  "signer_role": "dedicated-optional-gallery-app",
+  "predecessors": {
+    "alpha7": {
+      "sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    }
+  },
+  "receiver_policy": "Only the existing ActionReceiverProperties constructor changes, API34+ when no explicit state or instant-app visibility is supplied. Unpermissioned receivers private; sender-permission receivers exported with that permission still enforced. API31-33/explicit flags unchanged.",
+  "predecode_gate": "Only OplusPreTileDecodeService uses standard signature/privileged android.permission.SYSTEM_CAMERA, already granted to current Camera13. Portable prepared APK retains OEM service gate. No new permission definition or grant.",
+  "source_recipe": {
+    "inherited_compatibility": {
+      "source": "configs/oem-gallery-app-compat-alpha9-23.2.json",
+      "sha256": "f27d7f988b58415d2fb0cd75411494dd52cc43310f71a363f5b85c4d1f365fc0"
+    },
+    "request_predecessor_apk_sha256": "1ee40466a2350897c8d502b64d1ccb210684b62cae46c180f69b49bafd5c8ef8",
+    "request_unsigned_sha256": "cf70c3f732c95b694c72d3fea064381bcb742838a0ccfba374ea2197cbdb3b39",
+    "sources": {
+      "tools/oem_gallery_remover.py": "6179dcca1f9db18d214bc83e08a63cff04dbf9f71f707c702b5cdee7e5566c0e",
+      "tools/oem_gallery_compat/ModelRequestCompat.java": "1ee187b7009a68ab5252698a403f6c0e69d6c5b13d0d57c40828f2bed5a56c6c",
+      "tools/oem_gallery_compat/GalleryDexRelocate.java": "000ebecc5d56b9d29ed87a0cfd3fd90dd7d0a420de166c2488f9c330925a713f",
+      "tools/tests/test_oem_gallery_remover.py": "c42a7736bffd18173a05ee94032dcda1f0a7033136d14b13d4630a5b4421c09f"
+    },
+    "independent_unsigned_preparations_identical": true,
+    "preparation_evidence": {
+      "scope": "Offline/API/native-provider validation only; no Remover execution.",
+      "first_preparation_report_sha256": "1d455cac2bbaa62ac18f21b37d9ca4066b02f0deefff08b1b2feba1f0b427322",
+      "repeat_preparation_report_sha256": "1d455cac2bbaa62ac18f21b37d9ca4066b02f0deefff08b1b2feba1f0b427322",
+      "controlled_api_report_sha256": "92b3a9b80cf44a221051da3ded0358ce361c3418266a702205582e6cbd98c27d",
+      "decoded_component_report_sha256": "9e56c8dabf7fb13d93d2209431fdf88253e5e26e68e9704566e52fd611d65d86",
+      "live_ndk_binding_report_sha256": "2045815155539c8bf8deb6c67366e610e80e85aed627250fccba9dab6ac02b82"
+    }
+  },
+  "limits": "Galleryalpha10 trial combines the pending alpha9 five-surface corrections with missing-only RMX3301 oplusOSVersion request compatibility for the .1410-derived runtime. Controlled API metadata/download/decoder and205 live NDK import bindings pass; genuine Remover execution/edit/save acceptance remains pending. Photo locking is parked as a port limitation, not an acceptance blocker. Preserve SDK/JNI/LUT/policy, app signer/version/min31/target34, Android version, request IDs/signing inputs and user data. All pending Markup/viewer/share/wallpaper/move acceptance remains required; no ROM/firmware or policy bypass.",
+  "policyless_predecessors": [],
+  "predecessor_profiles": {
+    "alpha7": {
+      "source": "configs/oem-addons-gallery-alpha7-23.2.json",
+      "sha256": "f9588db054e3ba69e5062c7f80b09413f96d35ab7d5a11b18661c7a057e4151d"
+    }
+  }
+}

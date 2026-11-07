@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "sdk": 36,
+  "lineage": "23.2",
+  "model": "RMX3301",
+  "release": "alpha1",
+  "profiles": {
+    "photos": {
+      "title": "Realme Photos and editors",
+      "package": "com.coloros.gallery3d",
+      "version": "15.80.16_sp1",
+      "source": "Photos-Gallery/OppoGallery2.apk",
+      "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+      "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+      "directory": "RealmeStockPhotos",
+      "other_directory": "RealmeStockCamera",
+      "hook": "81-realme-photos.sh",
+      "isolated_photos_alpha": true,
+      "recovery_helper": {
+        "source": "shared/recovery12c/realme-prepare-logical",
+        "sha256": "c561a35bf1d2c378b9da90775e4d7e13f3b692c1828a46645fc4218064e4b4d7",
+        "libraries": {
+          "libfs_mgr.so": "646446261e6488da8059fd1590a3b5e21cd7bd786e505665f38471670661d56e",
+          "liblp.so": "0de7043f0c8f9db6300c37a14e5d32ad540fe9d18c08eecfc5a09a0057f67e29",
+          "libbase.so": "bfa6ea139d96dacb571125140d0e57e8c78d1ea5bb793c4d5e35001d4c917a94",
+          "libc++.so": "dd327fb7c8d4abcb0fbb5bb839a946d365102af120466b956637e3559f4353e8",
+          "libc.so": "322677b18b03e3d2107c6196ca6b3fb15b4fc854086f4677dd366516c348964b",
+          "libdl.so": "4506dab6b4a197d4f38b8a7270eb15f31f6e729b345b32e07269593fb5f68195"
+        }
+      }
+    }
+  }
+}

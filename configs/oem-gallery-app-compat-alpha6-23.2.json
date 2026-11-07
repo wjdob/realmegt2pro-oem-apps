@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "package": "com.coloros.gallery3d",
+  "source_app": {
+    "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+    "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "prepared_app": {
+    "sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "flavor": "lineage",
+  "signer_role": "dedicated-optional-gallery-app",
+  "predecessors": {
+    "alpha5": {
+      "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+      "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+      "min_sdk": 31,
+      "target_sdk": 34
+    }
+  },
+  "receiver_policy": "Only the existing ActionReceiverProperties constructor changes, API34+ when no explicit state or instant-app visibility is supplied. Unpermissioned receivers private; sender-permission receivers exported with that permission still enforced. API31-33/explicit flags unchanged.",
+  "predecode_gate": "Only OplusPreTileDecodeService uses standard signature/privileged android.permission.SYSTEM_CAMERA, already granted to current Camera13. Portable prepared APK retains OEM service gate. No new permission definition or grant.",
+  "source_recipe": {
+    "tool_sha256": "0b9494c539d052e261470c3b6aaee369118c6306785ad894f2d286604a67311e",
+    "policy_model_sha256": "46ea40500b9ef8be6a9ab0c88a8430b502a6fd6589d14d6672338a5f82efc59f",
+    "smali_patch_sha256": "84356ff6d00eec8355062ec92f9fdbf9bb1a3965746d5301821b68fa4b93bcf2",
+    "manifest_sha256": "c6884991bc037db52c27b69b9349539b46d0fe9916d23c66dcd1ff5e38cede28",
+    "dex_sha256": "0bdf83a737b978c8c0c0fdf632636e441ecf61b322dffd93a3687a273113c3e0"
+  },
+  "portable_app": {
+    "file": ".local/mvp/gallery6-preparation01/sign03-portable/Gallery.apk",
+    "bytes": 303716452,
+    "sha256": "8f0099c88355b301efa868b54f53d45e4c00480fcf57ba91942c21fa90c1db01",
+    "changed_payload_members": [
+      "classes5.dex"
+    ],
+    "original_badging_exact": true,
+    "zipalign16k": true,
+    "app_certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "build_report_sha256": "78363eef517727719eccac66a8264065ec7d7086194addb814f382a7f6f47227"
+  },
+  "limits": "Original min31/target34 and version retained, APK app signer intentionally changes. Standalone product app/no shared UID: reviewed standard system-image reconciliation retains data; actual post-update UID/settings/signature and services still require verification. No data reset authorized. Runtime tests are on Android36; older API policy is host-model tested, not live older-ROM acceptance. External OEM-only broadcasts/cloud features/editors remain unvalidated."
+}

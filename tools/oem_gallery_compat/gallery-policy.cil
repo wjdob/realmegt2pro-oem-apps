@@ -1,0 +1,37 @@
+; PROPOSAL ONLY: exact Gallery package/dedicated signer mapping still required.
+; Optional RMX3301 Camera client. Matched only by pinned APK certificate and package.
+; Normal app data isolation is retained; no trusted MLS subject or permissive domain.
+(type realme_gallery_app)
+(typeattributeset domain (realme_gallery_app))
+(typeattributeset appdomain (realme_gallery_app))
+; This is a vendor client app domain, not a platform coredomain.
+(typeattributeset halclientdomain (realme_gallery_app))
+(typeattributeset hal_camera_client (realme_gallery_app))
+(typeattributeset netdomain (realme_gallery_app))
+(typetransition realme_gallery_app tmpfs file appdomain_tmpfs)
+(allow realme_gallery_app appdomain_tmpfs (file (execute getattr map read write ioctl relabelfrom)))
+(type realme_gallery_app_userfaultfd)
+(typeattributeset fs_type (realme_gallery_app_userfaultfd))
+(typetransition realme_gallery_app realme_gallery_app anon_inode "[userfaultfd]" realme_gallery_app_userfaultfd)
+(allow realme_gallery_app realme_gallery_app_userfaultfd (anon_inode (create ioctl read)))
+; APS JNI uses the sphal loader for the existing vendor algorithm implementation.
+(allow realme_gallery_app vendor_file (file (read open getattr execute map)))
+; The backend communicates with the existing QTI camera postprocessing HAL.
+(allow realme_gallery_app vendor_hal_camera_postproc_hwservice (hwservice_manager (find)))
+(allow realme_gallery_app hwservicemanager (binder (call transfer)))
+(allow hwservicemanager realme_gallery_app (binder (transfer)))
+(allow hwservicemanager realme_gallery_app (dir (search)))
+(allow hwservicemanager realme_gallery_app (file (read open)))
+(allow hwservicemanager realme_gallery_app (process (getattr)))
+(allow realme_gallery_app hal_camera_default (binder (call transfer)))
+(allow hal_camera_default realme_gallery_app (binder (transfer)))
+(allow realme_gallery_app hal_camera_default (fd (use)))
+
+
+(allow realme_gallery_app app_api_service (service_manager (find)))
+(allow realme_gallery_app audioserver_service (service_manager (find)))
+(allow realme_gallery_app cameraserver_service (service_manager (find)))
+(allow realme_gallery_app mediaserver_service (service_manager (find)))
+(allow realme_gallery_app mediaextractor_service (service_manager (find)))
+(allow realme_gallery_app mediametrics_service (service_manager (find)))
+(allow realme_gallery_app mediadrmserver_service (service_manager (find)))

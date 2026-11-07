@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "app": {
+    "package": "com.coloros.gallery3d",
+    "version": "15.80.16_sp1",
+    "sha256": "34f07b3226b0cf01c3a2c101a608dc35cfd11e16ff9fa5f5dd030735fa25532a",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada"
+  },
+  "sdk": {
+    "library": "com.oplus.camera.unit.sdk",
+    "jar_path": "product/framework/realme-camera-unit-sdk.jar",
+    "xml_path": "product/etc/permissions/realme-camera-unit-sdk.xml",
+    "sha256": "e5aa1abd194be1d85634a9c4dc06ce9dd771f3d74a13e6efa715d0632ea26a2e"
+  },
+  "extra_native": {
+    "libMsEffectSdk.so": "b0d2822ca40c75eedb371a8dcd291f6c5517a6d2e561b3878bd0d41226048934",
+    "libOplusSecurity.so": "24fb1c5834368757ae372699dc701ff00d0c75a7b18b2f5e802b0b2143bd4ddf",
+    "libOplusStringJNI.so": "79316d7d22ab945013f87ec5d4984f0506699a9692963f35a60f855a27a9787a",
+    "libAPSClient-jni.so": "f108594528f2c191d2ce59165d20335415d87233fd1d681625897058e7414047",
+    "libAPSClient-cmd-jni.so": "3364553daf4036afbae46e94fc9bca7733c6e7a9f08f2cebfde9c6d4e2656134",
+    "libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "librealme_cv_inpainting_v10.so": "183618cce6537e99dfee91136a998a1f0da6c89584b8142ea6047cde4305d1dd"
+  },
+  "native_requirements": {
+    "system/lib64/libnativewindow.so": "e5989af1cbe1527132c28d57109f1b559b7aa48f9aea36f2bfaefe4190d00e55",
+    "odm/lib64/libAlgoInterface.so": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+    "odm/lib64/libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "odm/lib64/libAlgoProcess.so": "726183ac2d9073ca66497cfae074e421887d81298c0fb01532b7201d01647d30"
+  },
+  "platform_framework_sha256": "cc9ddaf69aa1d9079e48b70d787252e5cc49c2356d04f9120a1c66029365dda6",
+  "filter_asset_contract_sha256": "02de7735f5b98cca402041cd225375df291be4406d4fce5f0c52b7f2d2d1053c",
+  "namespace": "normal product classloader LLNDK links; no namespace/export override",
+  "evidence": {
+    "predecessor_runtime": {
+      "source": "configs/oem-gallery-runtime-alpha10-23.2.json",
+      "sha256": "f00fb8f56f53a00b92cc292fd492caae45ba02179a1db4b1bd393f31b0831bfd"
+    },
+    "candidate_apk_sha256": "34f07b3226b0cf01c3a2c101a608dc35cfd11e16ff9fa5f5dd030735fa25532a",
+    "manifest_resources_other_dex_jni_exact": true,
+    "candidate_review_sha256": "e246bde46f3dd1dd230fc59b473bfb7f788507b33bcaf0f1fbbac16a8b526aa1",
+    "new_native_provider": {
+      "name": "librealme_cv_inpainting_v10.so",
+      "sha256": "183618cce6537e99dfee91136a998a1f0da6c89584b8142ea6047cde4305d1dd",
+      "decoded_component_report_sha256": "9e56c8dabf7fb13d93d2209431fdf88253e5e26e68e9704566e52fd611d65d86",
+      "live_ndk_binding_report_sha256": "2045815155539c8bf8deb6c67366e610e80e85aed627250fccba9dab6ac02b82",
+      "placement": "read-only app nativeLibraryDir; no app-data relabel or execute grant"
+    },
+    "selected_sdk_type_refs": "preserved original APK members and direct adapter checks; final full reference-set check required before trial"
+  },
+  "limits": "Galleryalpha11 trial retains alpha10 corrections and targets two live-proven blockers: missing optional OEM haptic classes prevent Markup inflation; writable downloaded native-code mapping is denied in the dedicated Gallery domain. Guard the complete optional haptic API and retain the original standard Android vibrator fallback. Only RMX3301/Android36+ exact EliminatePenSourceV2 paths use the reviewed v10 native engine packaged in the read-only app library directory. Other devices, older Android and other paths keep original System.load. Preserve model download/consent/checksum gates, app signer/min31/target34, shared SDK/LUT/SELinux policy, Camera14 and data. Alpha10 Share handoff passed owner test; Markup and Remover editing did not. Photo locking parked. Actual engine initialization/erase/Undo/Save copy and Markup UI acceptance remain pending.",
+  "shared_policy_manifest_sha256": "a37e7bad3a4cf3e06f07cae686d74b26652b9a4fd68cecfcde6b17aba13cc6a2"
+}

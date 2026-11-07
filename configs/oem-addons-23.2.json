@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "release": "beta8",
+  "sdk": 36,
+  "lineage": "23.2",
+  "model": "RMX3301",
+  "shared_sdk": {
+    "compatible_profiles": [
+      "camera"
+    ],
+    "source": "shared/camera-unit-sdk-window-v6b.jar",
+    "sha256": "80a714f36adb26087f3616ea19d3948fd7d4171f5ace8428c1404b7dc38e5d54",
+    "jar_path": "product/framework/realme-camera-unit-sdk.jar",
+    "xml_path": "product/etc/permissions/realme-camera-unit-sdk.xml",
+    "library": "com.oplus.camera.unit.sdk"
+  },
+  "profiles": {
+    "camera": {
+      "title": "Realme Camera",
+      "package": "com.oplus.camera",
+      "version": "5.020.849",
+      "source": "Camera/OplusCamera.apk",
+      "sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+      "certificate_sha256": "b0a9bbfc05eee5e7d0a2c97c030586e15bb3301152078f54473bb82df6d8c818",
+      "directory": "RealmeStockCamera",
+      "other_directory": "RealmeStockPhotos",
+      "hook": "80-realme-camera.sh",
+      "extra_native": [
+        {
+          "name": "libAncFilter_jni.so",
+          "source": "shared/sdk-native-beta5/libAncFilter_jni.so",
+          "sha256": "6a7c9150300ef9daec97ca7eae1917d119ef89710fa5c9f40687db05f17b99a0"
+        },
+        {
+          "name": "libAncHumBokeh-jni.so",
+          "source": "shared/sdk-native-beta5/libAncHumBokeh-jni.so",
+          "sha256": "6c8593cc045e59fa38cbe7e2a09984f63779dfc58cb3521a68cd356d3ed9a7df"
+        },
+        {
+          "name": "libAncHumanDoubleExposure-jni.so",
+          "source": "shared/sdk-native-beta5/libAncHumanDoubleExposure-jni.so",
+          "sha256": "a85f011191b93e589db6b89c7f686f1fc4dcbe2a54d3040b3588bef8002d1878"
+        },
+        {
+          "name": "libAncHumanRetain-jni_v2.so",
+          "source": "shared/sdk-native-beta5/libAncHumanRetain-jni_v2.so",
+          "sha256": "a215ec369939e920325aa1109a16df5d510136dc338c906e24fe809acf9aa851"
+        },
+        {
+          "name": "libAncHumanSegFigureFusion-jni.so",
+          "source": "shared/sdk-native-beta5/libAncHumanSegFigureFusion-jni.so",
+          "sha256": "73e0c8354201ebeb95f61275e1cce64724e4f3817e70b58d1a3b6882b53df50f"
+        },
+        {
+          "name": "libAncHumanVideo-jni.so",
+          "source": "shared/sdk-native-beta5/libAncHumanVideo-jni.so",
+          "sha256": "369e7f0db2b1b57c574cbdced5b2188a8362fb7aa9116ee0c178730e71821de1"
+        },
+        {
+          "name": "libApsFaceBeautyPreviewProductJni.so",
+          "source": "shared/sdk-native-beta5/libApsFaceBeautyPreviewProductJni.so",
+          "sha256": "c9a1a86d13c2fb853b301eabf17cc862a11134601dc1866ee603ea3edfba8f94"
+        },
+        {
+          "name": "libApsSuperEISPreviewJni.so",
+          "source": "shared/sdk-native-beta5/libApsSuperEISPreviewJni.so",
+          "sha256": "8618727a9d35ec22a00cce6ec02afc995691aeb71f79c2aab442d6e99b7cdb91"
+        },
+        {
+          "name": "libAvatarEngineRender.so",
+          "source": "shared/sdk-native-beta5/libAvatarEngineRender.so",
+          "sha256": "8c3484834fe71fc5e5b288dac64b98b916a678d5eebee60e843560eb04608c88"
+        },
+        {
+          "name": "libAvatarEngineRenderNative.so",
+          "source": "shared/sdk-native-beta5/libAvatarEngineRenderNative.so",
+          "sha256": "744fdcf12260b43a7198292831bb11e8ef7c96deda0d460f4357c64e8e01e29c"
+        },
+        {
+          "name": "libCombineLut.so",
+          "source": "shared/sdk-native-beta5/libCombineLut.so",
+          "sha256": "91dc02a119b6536861755e17d8f152720e20c28e0afd71183ca1e724ee4d249a"
+        },
+        {
+          "name": "libCombineLutJni.so",
+          "source": "shared/sdk-native-beta5/libCombineLutJni.so",
+          "sha256": "fb614762b45f7b8d3e7b0c57d2915ebc1815373246c5f77cea640f8c85476836"
+        },
+        {
+          "name": "libMsEffectSdk.so",
+          "source": "shared/sdk-native-beta5/libMsEffectSdk.so",
+          "sha256": "cf75bc8daad44c3c09a5a17604c81af346795456e926205ad4ac439a17533302"
+        },
+        {
+          "name": "libOplusSecurity.so",
+          "source": "shared/camera-native-v1/libOplusSecurity.so",
+          "sha256": "24fb1c5834368757ae372699dc701ff00d0c75a7b18b2f5e802b0b2143bd4ddf"
+        },
+        {
+          "name": "libOplusStringJNI.so",
+          "source": "shared/camera-native-v1/libOplusStringJNI.so",
+          "sha256": "79316d7d22ab945013f87ec5d4984f0506699a9692963f35a60f855a27a9787a"
+        },
+        {
+          "name": "libarcsoft_panorama_burstcapture.so",
+          "source": "shared/sdk-native-beta5/libarcsoft_panorama_burstcapture.so",
+          "sha256": "e9cc89270dba9e0a1f148e3dc820d8067738bf1e60839825799ba96fb2969547"
+        },
+        {
+          "name": "libarcsoft_wideselfie.so",
+          "source": "shared/sdk-native-beta5/libarcsoft_wideselfie.so",
+          "sha256": "74c839698f8095386b016f3b9e6762ae42d51417cbf03262489dac2d463d807c"
+        },
+        {
+          "name": "libjni_burstpmk.so",
+          "source": "shared/sdk-native-beta5/libjni_burstpmk.so",
+          "sha256": "b69b2a7eebb2df0a90822ce0bf38716e78fd2ee20c4b392f3f80f37e4fab4aae"
+        },
+        {
+          "name": "libjni_wideselfie.so",
+          "source": "shared/sdk-native-beta5/libjni_wideselfie.so",
+          "sha256": "94b9b0a416e5816df2310309f7deeff7af159703ac05d9d2c331102cc97e7fb1"
+        },
+        {
+          "name": "liblivephoto.frc.jni.so",
+          "source": "shared/sdk-native-beta5/liblivephoto.frc.jni.so",
+          "sha256": "e85f5f3e053d9ba3abdffd79654bed4e77163eeea240d2562b3b4972f5d79e69"
+        },
+        {
+          "name": "libsingle_camera_bokeh_native.so",
+          "source": "shared/sdk-native-beta5/libsingle_camera_bokeh_native.so",
+          "sha256": "efd573cef3aab020855a3ecf7a5d559b80183889fdb14e937a593b4c0c7065bf"
+        },
+        {
+          "name": "libst_mobile.so",
+          "source": "shared/sdk-native-beta5/libst_mobile.so",
+          "sha256": "a3455d5a2f35f467acd7d183d23a60b52d79d002e029b61b2079385ba60806cd"
+        },
+        {
+          "name": "libst_sticker_jni.so",
+          "source": "shared/sdk-native-beta5/libst_sticker_jni.so",
+          "sha256": "d52d919045b98d25b89b7ae56b967f73df98022344a232af58266f7db8988115"
+        },
+        {
+          "name": "libstblur_capture_api.so",
+          "source": "shared/sdk-native-beta5/libstblur_capture_api.so",
+          "sha256": "ce34b21773ada48ea2e839978c4067fd240e7fd6fc7b57ce559045e4c4bf339f"
+        },
+        {
+          "name": "libAPSClient-jni.so",
+          "source": "shared/sdk-native-beta6/libAPSClient-jni.so",
+          "sha256": "f108594528f2c191d2ce59165d20335415d87233fd1d681625897058e7414047"
+        },
+        {
+          "name": "libAPSClient-cmd-jni.so",
+          "source": "shared/sdk-native-beta6/libAPSClient-cmd-jni.so",
+          "sha256": "835daa291407302b781add895a6873fc7f367ebc76c0d46e6bb441b91ba04c70"
+        }
+      ],
+      "policy": {
+        "source": "shared/camera-policy-beta7",
+        "sha256": "ec40474c115130a06eaf75f457806357770405bc94ecfa00279d089d4d694ccc"
+      },
+      "upgrade_history": {
+        "source": "configs/oem-camera-upgrades-23.2.json",
+        "sha256": "cafa319c0e4f24be3a71ffecc7a207502a46efec9967cf9a29c9764ef36998de"
+      }
+    },
+    "photos": {
+      "title": "Realme Photos and editors",
+      "package": "com.coloros.gallery3d",
+      "version": "15.80.16_sp1",
+      "source": "Photos-Gallery/OppoGallery2.apk",
+      "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+      "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+      "directory": "RealmeStockPhotos",
+      "other_directory": "RealmeStockCamera",
+      "hook": "81-realme-photos.sh"
+    }
+  }
+}

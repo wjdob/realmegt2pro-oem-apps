@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "status": "offline dependency profile; not installable by the current product Camera profile",
+  "base_sdk_sha256": "64df5857d5ff18b8b0beca29010609194df629e485ad2dcb5df538109d7c282b",
+  "stock_framework_sha256": "02b521ee95042df4a7076763db904235f05c5d0c0bd8549d5c39884f1b788517",
+  "authentic_writer_dex_sha256": "ced1d7beb7e96dc0c24371475d7e0d7f4e15327a93a3eb6ac1aa5e9248d8262b",
+  "native_sha256": {
+    "libHeifEncoderWrapper.so": "42cde873cbda2968dc1ea16fd94d426fd24928368d0a30290dc84741a7fa179a",
+    "libNativeWinBuffExchange.so": "08830734d4d8baeac59664f94db5ce2c5b78c0d008c9ea5d504db5ddbef61b11",
+    "libHeifWinBufExchg-jni.so": "7d44d1eff2c19ff4082b743b4381ebfbb2fa8c3892eec0782ca98fc77a830e84",
+    "liboplusheifwriter.so": "30f511e39a27cdddfa5ed13e0ee7196f76081d9bdfd90ef90bd76c9b086c8a37"
+  },
+  "compatible_profiles": ["camera"],
+  "placement_requirement": "Proper bundled-system app semantics and reviewed native-library placement. Current product app namespace cannot load private platform media dependencies; do not force loader flags or relax global linker policy.",
+  "limits": "Authentic Java/JNI dependency staging only. Encoding, actual Camera namespace/UID, preview, gallery handoff and the missing APS lifecycle API remain unvalidated or unresolved. This tool does not sign an installer."
+}

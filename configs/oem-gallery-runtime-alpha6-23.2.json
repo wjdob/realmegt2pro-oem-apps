@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "app": {
+    "package": "com.coloros.gallery3d",
+    "version": "15.80.16_sp1",
+    "sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada"
+  },
+  "sdk": {
+    "library": "com.oplus.camera.unit.sdk",
+    "jar_path": "product/framework/realme-camera-unit-sdk.jar",
+    "xml_path": "product/etc/permissions/realme-camera-unit-sdk.xml",
+    "sha256": "e5aa1abd194be1d85634a9c4dc06ce9dd771f3d74a13e6efa715d0632ea26a2e"
+  },
+  "extra_native": {
+    "libMsEffectSdk.so": "b0d2822ca40c75eedb371a8dcd291f6c5517a6d2e561b3878bd0d41226048934",
+    "libOplusSecurity.so": "24fb1c5834368757ae372699dc701ff00d0c75a7b18b2f5e802b0b2143bd4ddf",
+    "libOplusStringJNI.so": "79316d7d22ab945013f87ec5d4984f0506699a9692963f35a60f855a27a9787a",
+    "libAPSClient-jni.so": "f108594528f2c191d2ce59165d20335415d87233fd1d681625897058e7414047",
+    "libAPSClient-cmd-jni.so": "3364553daf4036afbae46e94fc9bca7733c6e7a9f08f2cebfde9c6d4e2656134",
+    "libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56"
+  },
+  "native_requirements": {
+    "system/lib64/libnativewindow.so": "e5989af1cbe1527132c28d57109f1b559b7aa48f9aea36f2bfaefe4190d00e55",
+    "odm/lib64/libAlgoInterface.so": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+    "odm/lib64/libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56"
+  },
+  "platform_framework_sha256": "cc9ddaf69aa1d9079e48b70d787252e5cc49c2356d04f9120a1c66029365dda6",
+  "filter_asset_contract_sha256": "02de7735f5b98cca402041cd225375df291be4406d4fce5f0c52b7f2d2d1053c",
+  "namespace": "normal product classloader LLNDK links; no namespace/export override",
+  "evidence": {
+    "direct_gallery_method_references": 571,
+    "direct_gallery_field_references": 4,
+    "unresolved": 0,
+    "linkage_report_sha256": "98c0450b760d6a3f659d283563392f0a01758f90a492bcf5e32ecdc3f3693c35"
+  },
+  "limits": "Prepared app-only Galleryalpha6 with original min31/target34/version/JNI/LUT/sharedSDK13. Constructor/API guard and one standard-permission service gate only; dedicated app signer, no platform identity. Actual startup/editors/predecode binding and generic Camera handoff require fresh acceptance."
+}

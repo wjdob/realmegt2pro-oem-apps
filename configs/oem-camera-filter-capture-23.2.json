@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "native_path": "vendor/realme/ferrari/proprietary/odm/lib64/libAlgoInterface.so",
+  "input_sha256": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+  "output_sha256": "359f28812fa2b3d0c93f7d4de6c696913259eb6b379aa12bd29a5da24437f017",
+  "old_path": "/odm/lib64/libmsnativefilter.so",
+  "old_path_va": 1712343,
+  "new_soname": "libmsnativefilter.so",
+  "probe": {
+    "flags_va": 5403104,
+    "call_va": 5403108,
+    "branch_va": 5403120,
+    "success_va": 5403236,
+    "access_plt_va": 12858704,
+    "dlopen_plt_va": 12856480
+  },
+  "scope": "Normal optional-provider resolution shared by Camera and standalone Gallery. Replace absolute vendor path with existing app-local SONAME; use real dlopen capability probe/RTLD_LAZY and a64-bit nonnull handle success test. Original feature flag/fallback/cache remain; no forced backend, namespace relaxation, new dependency or ELF mapping change.",
+  "limits": "One probe reference is retained for the cached factory/process lifetime, alongside normal loader references. Source/ABI/linker checks are not actual app-namespace or filtered-capture acceptance; carry only through a reviewed full native ROM OTA, never optional ODM/raw writes."
+}

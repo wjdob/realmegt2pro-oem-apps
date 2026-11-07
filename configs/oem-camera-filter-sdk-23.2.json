@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "e85ff06404abd2a06b8faee07a41c9e220b33a761b6d92832e28799eb6edca60",
+  "input_dex_sha256": "05ad1ea07272eade2a9a85ca45783171864896e8e39d074108698c3f7a9f2239",
+  "old_path": "/odm/etc/camera/meishe_lut/",
+  "new_path": "/system/etc/realme-lut/",
+  "scope": "Pinned optional SDK MeisheFilterSdk.initMSContext LUT directory, preserving original APK/signature and other SDK members; D8 canonical rebuild mandatory.",
+  "limits": "Offline prepare; real Camera rendering and thumbnail behavior require bundled trial. Native library path in base15 remains separately pinned.",
+  "output_dex_sha256": "22325ae9e00a4a402363e40bb6ae91019f0b508d96ccb613170084419ac0d016",
+  "output_sdk_sha256": "abc3a6d5546296d310d0fd9c0b033e798085b70eb542e432eec8838b19d97e50"
+}

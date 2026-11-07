@@ -1147,6 +1147,21 @@
       "path": "tools/tests/test_oem_vendor_filter_binding.py",
       "sha256": "d75af8c2b48bbe219565e2e2c899e2b5d52ed14a72f772563e9abb85bff1605a",
       "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/native/BackuptoolMountPartition.cpp.inc",
+      "sha256": "c1f5c3e9005678d7ab5332f6020ab32a0c434c939197a5c7bb0554e37de43de4",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/native/BackuptoolMountHarness.cpp",
+      "sha256": "7249536af22624037e6088ccfbdcc6cbd0d3bdec8c9b8ef008796970def13dcb",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "817cd2dda5c59d2f29a9e616f3b34857589b62024d63f21b7a02fa30092d089b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
     }
   ]
 }

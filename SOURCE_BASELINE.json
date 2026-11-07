@@ -932,6 +932,221 @@
       "path": "tools/verify_signapk_ota.py",
       "sha256": "a816e37edfaa433c6356a2b92235d7b26a8d6dee218c5778f999ff5f69f578bd",
       "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/addon_failure_contract.py",
+      "sha256": "a7c53d7ec746145eef8aa9473dfcea8f2ed7bada94d53b2a3c4e8d1154902db8",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/java/SingleShareMimePolicyTest.java",
+      "sha256": "37ae2d435eac18c8cc2f04c0d6db9d25bbfb5c009f7b2a29637f6053aa6aadc8",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_addon_failure_contract.py",
+      "sha256": "9ec92f85c934a41f432b336b09e3d148042cf2448af79a8b51a93fdb6412eabe",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_addon_update_contract.py",
+      "sha256": "cd1f0f4268e2cf2168fa3abdcc9459b9243fb9d32e2e002ca377bf4c8d75e443",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_camera_vendor_filter.py",
+      "sha256": "228f765fb265b7bf86bf10f75089d2a4f1d3492152acab52df655c99794ae72b",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_addon_durability.py",
+      "sha256": "cd9812fe1ce652a3c20e04a47a95efd883d8b06f00ecce99ffc482f05c39f8fb",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_addons.py",
+      "sha256": "3f56f53c74171e46e21856f5e9a8995a7fe861414c3bb34c0b78fcf7d3f7d749",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_fileextender.py",
+      "sha256": "db1529324edd600627f040394a59501fde37745630ee7620df366fb2b0d74d67",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_filter_capture.py",
+      "sha256": "479d4d86bcdd715f1488421378600fc51dc49aab26fbc03f71f57b42a7f35eee",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_filter_sdk.py",
+      "sha256": "1c9675fabe99d872c8d34a23cdbb3005c0aa565b265a107e59df9889e395ed25",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_gallery.py",
+      "sha256": "f0d0915b4a43135da8d953275fb45ed91c9aa9619e9c1768cd78f32d88c98f42",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_gallery13.py",
+      "sha256": "8b54ab7dfcfc36cac927b428384c3807a5a738431bd0499fa4b497cc363d08e8",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_session.py",
+      "sha256": "6cdb971f2e7e840f5ea1897921d2218d64d9174472cd080a7d946a64ee871e46",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_window.py",
+      "sha256": "48ef2bd4003a6d364002443803bbce058434fcf19c6be632bc47af33727fbea6",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_coinstall.py",
+      "sha256": "b65d5853a8b830c7386a52bef3fd6d97e5923fc589512fc20fd421fbfbca8624",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_coinstall_transactions.py",
+      "sha256": "3a0a0ed7345d192fb48c43d534805154c3b152348a6d0e65d73792808c8d0fab",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_filter_assets.py",
+      "sha256": "5168658e96caf65d459a56c40a132b57665897befead08612405cb84a3fdcb31",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_app.py",
+      "sha256": "781b727baddcef98c2766c823bfeca01cdda54745767ae03ac8b5ad6008a6456",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_app_transition.py",
+      "sha256": "716438c10523f1e3c01e1cffef651960e2302b4c76e3297dddae35226f8a8263",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_chooser.py",
+      "sha256": "3120aafcf089e955d2ec5576e61e374fa706c5d09e9e62406dbd354f11a9a707",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_dex.py",
+      "sha256": "36acdcac5cc092009b521684394bf5cc36ed8e9de296be79b09842bee92d7fb1",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_engine.py",
+      "sha256": "c5cc91a6de514b72cc51a326291af201512888ae0e6cd564bb5ef194974146e3",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_followup.py",
+      "sha256": "9ec100bbee40eef4e795f3c61435a506627ef45071314cda1c404cf3b0d6832f",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_icons.py",
+      "sha256": "376ee8f16ac7c5a324c15ea984086dcba5427fd5f79ea513b305ff8134025cda",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_manifest.py",
+      "sha256": "619bb1087cc3cb512e1f92c8ef78961e3355d9cd5e0846f1962d57ba9e235dcb",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_media.py",
+      "sha256": "bd25eb7c8d4708fc930f1bb54dedfe17ba5a3b660c3a8e40848620421b8d6142",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_move.py",
+      "sha256": "2257f94675c2953b8cc0df32634e54233bb806045389269d9ea94d456cb301ee",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_paint.py",
+      "sha256": "79f207cabb98f9e02a271e5a45d304560af879c4d05bd3077bfd4d45f5b0dfe5",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_remover.py",
+      "sha256": "c42a7736bffd18173a05ee94032dcda1f0a7033136d14b13d4630a5b4421c09f",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_runtime.py",
+      "sha256": "37b66ad43d3210eef986173a5ab2e44193d2e7e5bc4222cc92a59ed5990cd9fd",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_share.py",
+      "sha256": "2fe92968e88339bc79c25e9e26760e3a7eb60abfb0638593df33fd4e30aa5401",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_heif_transport.py",
+      "sha256": "fca217ecc2d4262ef6a599773636fc02806445c30130e4e6f0ff92370b75cfe4",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_ota_compat.py",
+      "sha256": "7f586685da4568bbae243ff07c24cb227af4dc2627bfe31ba89f4f3fff578da3",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_policy.py",
+      "sha256": "47808e500cdf3b07d5b32833fee03bf494d28302c85f15c79f2e824555ce9adf",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_privileged_camera.py",
+      "sha256": "23f40504ff82697cc845cf63a1963a28bb03e1030e9c5d4368a598deac6ad85b",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_recovery_mapper.py",
+      "sha256": "4f6ab09e83b36d7c013aff198943310760d1d05208141b5180e92f6542f80196",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_retention.py",
+      "sha256": "8bec4a8677a880dfac67246e632de44218bc85b88beeb9e54d35f0c90b6c61f2",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_retention_integration.py",
+      "sha256": "49e396977df2be32e6df0db8ca30e4e89909c916a8532aab9f3c1af79429d206",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_runtime_policy.py",
+      "sha256": "12324e593ccc8d4b2298e188725830e108d804b1be664ef597624e71495d5843",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_shared_policy_transactions.py",
+      "sha256": "5b49f9296ddfd8cf7dae30a50b363845f31143a72576b347d027ca80140664af",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_system_placement.py",
+      "sha256": "ca206d4d8270ded9c9ba121da5517a50e576614986efca05161fcac3ec4a89b9",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_upgrade.py",
+      "sha256": "a6a43efc411c5271ab5e2aeded73e556fc718fe59003a9cc6941e258a2ddc3e0",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
+    },
+    {
+      "path": "tools/tests/test_oem_vendor_filter_binding.py",
+      "sha256": "d75af8c2b48bbe219565e2e2c899e2b5d52ed14a72f772563e9abb85bff1605a",
+      "origin_commit": "6dbf8f1e4c7ffb3b60acfdb218008242d9bce458"
     }
   ]
 }

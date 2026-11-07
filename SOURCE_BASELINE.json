@@ -1,0 +1,1372 @@
+{
+  "schema": 1,
+  "lineageos": "24.0",
+  "source": "https://github.com/wjdob/lineageos-realmegt2pro/tree/lineage-24.0/source/lineage-24.0",
+  "files": [
+    {
+      "path": "certs/rmx3301-releasekey.x509.pem",
+      "sha256": "56bb73dc5635505d44b52053e0f4ba82911fddb9ec9c9d3f9171800b9bcb855e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/camera-recording-23.2.json",
+      "sha256": "26e6e091b241e34f516a66fe087b5b07d6908c367297d7b932f4bc2772253823",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/camera-vendor-filter-23.2.json",
+      "sha256": "1b08bbe0348595644ed728a745ce238d82cc1464192084cba55e774cc5d7fc10",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/camera-vendor-filter-24.0.json",
+      "sha256": "386e3c47f58adc3e626318caa379247e554db5f34126b5312589dbc43f574dd0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-23.2.json",
+      "sha256": "c8b90c450707cde2aab3c2adb29514456c0f353e193fdc87d226a9c9a12c5668",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-alpha1-24.0.json",
+      "sha256": "a843a7245a434b12e290925d5803d64b734aaaf9846d330f5306e7e91aed31ee",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera-consolidated-23.2.json",
+      "sha256": "1d6a7401722f278b70bf454f59f98d1c6d3116c05dba3a63886593fe761b290e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera11-23.2.json",
+      "sha256": "ea1ef478e33d1377a4e3f454b282d23f3d172ec17ed7172ed604d8144e6cc0c6",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera11b-23.2.json",
+      "sha256": "d15992ca842abf04fb25a98ba00a8e48c769cebefc1a1ecc4ab7cbf5a1d11618",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12-23.2.json",
+      "sha256": "6affc78c57c493a9acd248d8e1049f8ba2b02e6da1c865141a034dc1ac70d95b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12b-23.2.json",
+      "sha256": "349ebbd2b253b20198283dd2c2a39dd45db1073e51e6ba86eaa7e0eb1c190169",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12c-23.2.json",
+      "sha256": "2027fbc871d664e333421fb03a7f6e2bd923b16ffa3ddb2214f193fb31a4d8e7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12d-23.2.json",
+      "sha256": "c32c5987e5bd3c7fe84ca2a75e73d6d498f1b6ec2bd3ebcc371959b7a0041a28",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12e-23.2.json",
+      "sha256": "5a35eb1f3d4ec8bb291b14d0d4baa57f68351a8aabde9fd90005ab312a06f680",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera12f-23.2.json",
+      "sha256": "ba829d138cd5cf5f2921a2d44e4b8d63674828dd854d4c93d5389e62f4acc558",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera13-23.2.json",
+      "sha256": "02f31ec693df731c39ad3ebe08e156d7611d6d84774ff3528ccfd7c749ee23d7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera14-23.2.json",
+      "sha256": "91ab408cac8b281d21a79e01209fd0d8d2f5ad2262e86346f4d962c8bc961d4a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera15-23.2.json",
+      "sha256": "348f9509421e4c61507c2df7e6b4b697de719ed1f948063eed780ba12f0c7791",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera15-gallery14-23.2.json",
+      "sha256": "8f1e39cb62c3f2f9e44f51822a11cf7a1729b80ce3db6890d5ea0051035a4f56",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-camera15-gallery15-23.2.json",
+      "sha256": "87fbe2eb168e176fcc3d37bed028b99489adca774ce28cc509c713bf16f3af3c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha1-23.2.json",
+      "sha256": "ade0d195705f17b5c862f2557b33969b2e4bbada01d9fe85eec8a543a12560f2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha10-23.2.json",
+      "sha256": "2ca0f7c4be78823f0494d109b9192351940b41bb12f0a716d7852b3853c238ff",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha11-23.2.json",
+      "sha256": "5effa29b4eac37ceb1c476b654d545927458b0cc8dd0c0bb4a01d9e879707e81",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha12-23.2.json",
+      "sha256": "8666e0485fd27ed385602ac6eede231952deed2b145d0df6d1c209937166f38a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha13-23.2.json",
+      "sha256": "b844e7379c5822b097bc6de0299928247d1f9b7d546a17b51c25a2ad41bb0932",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha14-23.2.json",
+      "sha256": "9ed662a62f6c4ccd2d06e485a806071d700fb26ea7376aac7a372323f39f67b4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha15-23.2.json",
+      "sha256": "193285f31f9f1cd368ca8e3ed8d5172379d54de04511d8aca169ba6ce3557ad3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha2-23.2.json",
+      "sha256": "acd536103c51e04882028f8030f6ea0019eaf6f8e3abdb7567a53fff2ab25249",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha3-23.2.json",
+      "sha256": "685bba9417f30b63f8440964696ff9fff9ecad19ef8de2e8eec633ef808a42dc",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha4-23.2.json",
+      "sha256": "b8eb890e99f6818c9b01b7be562475526a118845510a950dffa151f9cb7cada2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha5-23.2.json",
+      "sha256": "b95532cc75e76cbea65222e02f3a3f843d37ce8de62f7dc12100e0c297dbd26d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha6-23.2.json",
+      "sha256": "6ae64383d30f5529ee5ae89894c6d6b851d381e03f08941fb5693c2001eb5043",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha7-23.2.json",
+      "sha256": "f9588db054e3ba69e5062c7f80b09413f96d35ab7d5a11b18661c7a057e4151d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha8-23.2.json",
+      "sha256": "4c9aa4de8eb24e484baae0859183f92f8ae0f4c9cb26bba311d536f40569d253",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-gallery-alpha9-23.2.json",
+      "sha256": "bc2957abae4af85a4a536f2e317730660c6c28170d40191ea7bb8273fadf374e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-addons-system-23.2.json",
+      "sha256": "f6be922b564a449064b1a76f09e1ff928a20f2dc37f1c4f312a0422b67e01756",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-bridge37-review.json",
+      "sha256": "d5c5fbb3dde6eee1364c43fb19fddb724da4089fc9cde4964583028044ea5f80",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-fileextender-23.2.json",
+      "sha256": "6b00c8dd75b492e31a78c7506713b05127bd239d6ceedaf516eee1a43f5aec96",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-filter-assets-23.2.json",
+      "sha256": "02de7735f5b98cca402041cd225375df291be4406d4fce5f0c52b7f2d2d1053c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-filter-capture-23.2.json",
+      "sha256": "b679b3bd1c93c495579064d1e93fdb3457a09307d4468246793e2cb2cbc353a5",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-filter-sdk-23.2.json",
+      "sha256": "83ff0d6010f8adb056db93a3666708f03ffa596f086761f632e126c30717c8b3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-filters-23.2.json",
+      "sha256": "49018730e2e6c33ea12b155bf81cbe20fc27ed73778001b8224b6bd54f4f0fda",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-gallery-23.2.json",
+      "sha256": "0ac9ee38a0436a20aea4ff64c19e232d296d65b28a6d9e88dea86348cdf3e1f8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-gallery12-23.2.json",
+      "sha256": "5b5c71a6d3eaac181b799e20a536b147027d0f82921a5172e2fe56cdae01f4ee",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-gallery12e-23.2.json",
+      "sha256": "36876827fdf99807be27a2af7db91eb4bed2bc8c924a9f0daca9b26fad3620bc",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-gallery13-23.2.json",
+      "sha256": "8b287cb26e5a3ebcd4b88b46a936873a74cc9c9fefa621b766e815169c76f51d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-heif-23.2.json",
+      "sha256": "99c97c0f51e550c6dba87013b21d1ec63695a56d4782cff5093a39ba8a895402",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-heif-transport-23.2.json",
+      "sha256": "9e643b7abc21669cfc292743b279c389b128efc9ce6ab82f7c040a41633b3ebe",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-native37-review.json",
+      "sha256": "3a108b5bdf434262c5ec910e77fa3ba7b32bce69a5324b36f3bf43c8e630768a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-policy-23.2.json",
+      "sha256": "7b72221d2e0c46f387d0ac63b1c9b1dfbbf6a5ddf2e32582bc8358b9ad184e59",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-privileges-23.2.json",
+      "sha256": "65c642f4f5808c630419e9a42e0ffda6a619aad0c4fddf875f70ce3e966fb170",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-session-23.2.json",
+      "sha256": "1e4641c58d40c12a723df4614064a38c71e6edd3b9201805a5afdaa980ea7bac",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-system-upgrades-23.2.json",
+      "sha256": "0cb60a87c7211d5d611b98376e0cc76f2130bd271ef700e6aba77c42ef154e0c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-upgrades-23.2.json",
+      "sha256": "cafa319c0e4f24be3a71ffecc7a207502a46efec9967cf9a29c9764ef36998de",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera-window-23.2.json",
+      "sha256": "586e57057097f9a54ab46a80a06b00b2eb4a1ff20a5aa7fa29f2d8657ce8bdac",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera11-upgrades-23.2.json",
+      "sha256": "5cb72315b871e6280aa3a42bc3f0f22cb61d7f2cb3a40a7c328d7f0fe4472244",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera12-upgrades-23.2.json",
+      "sha256": "83d4e5d5bef45e8d002ade1d4f84dccca4fa4545eca022561c9493edf5e9e099",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera12d-upgrades-23.2.json",
+      "sha256": "a7b7c6e947fb4d3df287c6c2c89cb871bac07e4529083b165d4d8f8c220fe27d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera12e-upgrades-23.2.json",
+      "sha256": "1c972b46d0a3cf950399013ea049f381fad043beba24a545906eef09544cde6d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera12f-upgrades-23.2.json",
+      "sha256": "cdb8534b3fe06e23d585e1b25b97e2519472fc797b02490301fc0b4eaa7abc20",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera13-upgrades-23.2.json",
+      "sha256": "8e00c9d78b532931b0afa5a2defd4d78113e5404b9968fcd8cd5a6985e63e1b8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera14-upgrades-23.2.json",
+      "sha256": "78ccd7086176c576e6a87cad00fddc120a7a4296acc7fd39222bf41b030c6001",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-camera15-upgrades-23.2.json",
+      "sha256": "7f87e6deacb2273edf7b6454e5b72f8e51ed4b20708a97867254122d7e936531",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha10-upgrades-23.2.json",
+      "sha256": "d62afb97e1a3e3be0b406be8e26d5dc7811659fc63a26c0b5271792665d3dfa9",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha11-upgrades-23.2.json",
+      "sha256": "3a9d5e9cd8e4c4628a9e2d1d323c1a70fca50511578698266183ecf77db3f791",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha12-upgrades-23.2.json",
+      "sha256": "d2e3c45dbd9cdcda88f9f93ce759f2873d4f83fca04f444cb864bec77e709feb",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha13-upgrades-23.2.json",
+      "sha256": "8457176591d645eb1821c906a81400fec9dea5ae7e303279c9a1ef3a9536b06c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha14-upgrades-23.2.json",
+      "sha256": "87818143f64104df26b908162f24c387893edf24ea5fe62d6c45d1f65fe964c9",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha15-upgrades-23.2.json",
+      "sha256": "5d08143d25e8fc832f7b05f50b0b5045c0234ac483a1f2d1fc28e8ea3ac3f951",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha2-upgrades-23.2.json",
+      "sha256": "1499b456acd157accc2b64a629d0a380334974a9f56b6c0c8d868c5554e95ea0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha3-upgrades-23.2.json",
+      "sha256": "6341ff42be5eadbfc9f502c05eca2e61fed1c3f975a27656f54a5a7e12bf90bf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha4-upgrades-23.2.json",
+      "sha256": "4db1473d285b27401c3b91d03c607913ee2cefa0d4890efca215daaef5d63bd7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha5-upgrades-23.2.json",
+      "sha256": "0734c7377494b53fcf16756909dac490df2a6d9310ebe54f767b58e96c59e587",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha6-upgrades-23.2.json",
+      "sha256": "9f12eed7b5d136016d86eddc4b3ddd5a5a93ca90f230492ac10777f5ab64e0f6",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha7-upgrades-23.2.json",
+      "sha256": "b86130937f114af98872900b04724e43451a08e66c4141415d37091ce86dfd1f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha8-upgrades-23.2.json",
+      "sha256": "a38c7a7572bb6a4d33a23b1eb3216d1e96f091c15e8ab8feea337df6a0d6de0d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-alpha9-upgrades-23.2.json",
+      "sha256": "d33ba858c718f303b938243027b2ea07b6ddcd15e172ec27c4c57daabe7f4b60",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha1-24.0.json",
+      "sha256": "358d45230814fc38a2978a1253256eb7f0c0048f7e147f3dd1930e9d164b1a17",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha10-23.2.json",
+      "sha256": "79e8d1719e482a74c6e801c72a88b0318cb32217b7a86f1aed8ce15f16717161",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha11-23.2.json",
+      "sha256": "68ab7b76d3b231a4cd91efbddb847f9ae1194454c275182c91f3f82e6a43c1d3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha12-23.2.json",
+      "sha256": "59a6160436525cc543d930718516a2416961131211b902926ee04a07218bbacf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha14-23.2.json",
+      "sha256": "c6a8f24939888cbbb32ebe58ae4de371288712a360d60fa710e8df99605a9d48",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha15-23.2.json",
+      "sha256": "26a416e221b3b4fa9848ee43add33d2b3cf6f05fc30eebef794ac67c82e0c325",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha6-23.2.json",
+      "sha256": "47df8760e41f4d2cc13d6de6e1f58f86856b183abe6b40228e8458390ed5f27f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha7-23.2.json",
+      "sha256": "81c0287fe14bfb005b7de97e417a1f0f290404489d932bb0b5bcc49ca0868218",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha8-23.2.json",
+      "sha256": "690656e41927650c5b42ee53144a7d2ea4b16316e3c6d8946e6504131bf27b6c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-app-compat-alpha9-23.2.json",
+      "sha256": "f27d7f988b58415d2fb0cd75411494dd52cc43310f71a363f5b85c4d1f365fc0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-23.2.json",
+      "sha256": "7310c98a6e1620d41cf55f70ce80fe5783d7305f1ca79fcba88217bf70f2de1f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha1-24.0.json",
+      "sha256": "6f21e525a44abb1a8bdb8d26843833bd9fb21119d17aed162811891773e32465",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha10-23.2.json",
+      "sha256": "f00fb8f56f53a00b92cc292fd492caae45ba02179a1db4b1bd393f31b0831bfd",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha11-23.2.json",
+      "sha256": "a7da5cbf978684deb77540219e2af1f75729371754c4702414dd8fa57d65a46a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha12-23.2.json",
+      "sha256": "a4d5fd31dfd0a43c34d4a5eebcc187301f385b36d94d78530d0a35141c5d8573",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha14-23.2.json",
+      "sha256": "b2faf6b91b065848da0be7959b0e0c855720d4fcd3c37d18ed420c0fca8839b4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha15-23.2.json",
+      "sha256": "8fb945c1f4c2a07d7cbecfb62a5a99a7284cc611f2d6cdb7cb81c88f80b76145",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha3-23.2.json",
+      "sha256": "d6c76cd44f8293dc906cb20b2dfa0b2cd17f66c820f94a7b53ec04c1422f5655",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha4-23.2.json",
+      "sha256": "1d9a969a5ce23f89ff27ebc518390189ad94856cd25bd1e5e4de760f013d365a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha5-23.2.json",
+      "sha256": "3ad717daf5ecd8aafd5c000c2c25a55b93431cba3978cf5dbd6507c52290a4d3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha6-23.2.json",
+      "sha256": "12e0a3fbb10fbd21e71222b6dd02237f98ca47f4dc252c66da851842813c07b7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha7-23.2.json",
+      "sha256": "f5ee839beb129fee164268bb6c17411d3679953723dc406d9f0f9f6fa08f3df4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha8-23.2.json",
+      "sha256": "caff6ef7a911f6c68b69acdfcc75330baaea3bab0d665840ff474b752efa8cf1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-gallery-runtime-alpha9-23.2.json",
+      "sha256": "8cdb4cd22b5d2d2955878a0c5656b0ba847553cacff406ec03bd6123b0c3a727",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-policy-native22-24.0.json",
+      "sha256": "95c17241450c44c37e98b5d9a0d5d7f476659fd21e47ee3a1206e1c9ed1df6f1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers-23.2.json",
+      "sha256": "0cab86a8a1da8e4916f0e290349a1d94c9f9ee6c2766134f2879e6952f7ac282",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers-alpha1-24.0.json",
+      "sha256": "f0555d01993036de73631512392770fa755e468a4bf54ef660e8aa81e77d25ba",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers12e-23.2.json",
+      "sha256": "d67fec5b31ed084d7f9a840c87c06a137e6dbce579b35e141b16a4bb53882ff4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers12f-23.2.json",
+      "sha256": "2ff8826b09287d0ff28607dfea0389e427a680814c8812124e6cf6ba10ad7329",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers13-23.2.json",
+      "sha256": "a94656d27ca62adfb4b692cb7756f6392aa209829984218674a5479e7846461e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers14-23.2.json",
+      "sha256": "abd920e6807042794a3c53e349cc391cb415d8a3fd0a90ffae161dd4a81e82fb",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers15-23.2.json",
+      "sha256": "34a3ff888a9f95c92ee1db8631516e449496b9ff68bbfcf48d50f834f344ca01",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers16-23.2.json",
+      "sha256": "90674f8308ab060d14c375713032fc0759c3893023351a22c5dfd9f4eca42f50",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/oem-runtime-peers17-23.2.json",
+      "sha256": "63db97f143c47edd36952dc055bf9eafd7885e1eeb2e8f71da28ba090364e2db",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/optional-addons-23.2.json",
+      "sha256": "5ccde8775b699787a493d7c6eedc69fd7a5ca1758e224c27e3ae6f96125ea8b8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/package-requirements-23.2.json",
+      "sha256": "f0d476b2361189effb4b6ab508786f4c3f62aaeb027d0ea08d350f9d3742acff",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/package-requirements.json",
+      "sha256": "79176ff9e0d579b4d1de01596ad6ca5b5c1b55756b249802ead3072255f27d32",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "configs/stock-clock-port.json",
+      "sha256": "6c01479c771f1ec5b8bf6075b92f258e7b1b0a1ab1ab04b366b65c63feadbbf5",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "817cd2dda5c59d2f29a9e616f3b34857589b62024d63f21b7a02fa30092d089b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/addon_update_contract.py",
+      "sha256": "69b40c3aba846eac55efb67161ba176593df4d7f57c8dec2e9368c8720bf1e19",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/app_dependency_audit.py",
+      "sha256": "f79c894138c77ca2a419ce30d7d3fc290839021b09d281026f067d8270bc25c3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/app_native_visibility.py",
+      "sha256": "f670bbc7fd62ca417f1f97ed3d423d6c2727f1d9e97e9dc7cb8ec93202448f52",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/bootstrap_gallery_dex.py",
+      "sha256": "9382c9e84c69d930fa612769ae77d525cd503d01f9ab1f7674a14d1f8ca5066e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/build_camera_bridge37.py",
+      "sha256": "d3d4043138d82ff2aed118e7a41de8b2f90f26a20f718cf5ede042e91f0fee5b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/build_camera_native37.py",
+      "sha256": "1efc5d028e399f71ca1456d5a7b216a044370dc7d11d597f3bcf05435fc4201f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/build_recovery_mapper.py",
+      "sha256": "caec02a0dbea4de6495f2ad92404cc05ed7196a5d36037a2b5ded9247c0b3abf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/camera_vendor_filter.py",
+      "sha256": "0986fa7be632b0ac9dc9c1387ffd6d4929f0517a1d1970373c35fa808369e38c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/device/recovery_control.c",
+      "sha256": "04af837ebeb1b449978ecd323d0c97cb8fdfa7ee5f13125cad0016f75e581440",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/elf_symbols.py",
+      "sha256": "d895bf88a31dd309faaa9c76f07b47ea1f199b6be26d1c85aa47ee133ba76fc0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_addons.py",
+      "sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_addons/map_logical.cpp",
+      "sha256": "ae1998e78e990c162b7fedb70949f169395e7813f2e38da4ec430e4435abcbc2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_addons/retention-v3.sh",
+      "sha256": "e796f4a01aec78eb6fe4fd3d5ddaf72148d4c08f552c8b0aa0e472e294a3c813",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_addons/update-binary.sh",
+      "sha256": "36b39339a663fc09ed7e48410c4204455ffdc71d0d10fe34b8d67feebb0099cf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_base_comparison.py",
+      "sha256": "89b27ed6220190ba0475535f259436603313896bb49b1005faf5561ecb0137f2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat.py",
+      "sha256": "824639894bca1ea87f30838c1c28822fa1cac9cb0066ce0433c4186fefc60577",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/camera-policy.cil",
+      "sha256": "9b1be865b858ebe608e54c9452d4d50ac0724cc37129447cc728bc995d43d256",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/com/oplus/ocs/camera/metadata/parameter/CaptureRequestBuilderProxy.java",
+      "sha256": "f083e79891592d6964dea5a095663198822dd970122bbf52210aaeb5701d2e74",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java",
+      "sha256": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/com/oplus/ocs/camera/metadata/parameter/ICaptureRequestBuilderInternal.java",
+      "sha256": "ce5474a4336c4e2609dcee0942a5adfa85be4a3a86b3451fb62dc32a63ce4623",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/ek/v0$a.java",
+      "sha256": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/ek/v0$b.java",
+      "sha256": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/ek/v0$c.java",
+      "sha256": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/compile_stubs/og/d.java",
+      "sha256": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/ek/v0.java",
+      "sha256": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/f6/q0.java",
+      "sha256": "d0b4f50f703ce7ff2423405cdc0a628274e5a4cd667cb5181f0a330d13419bbb",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/gallery13/realme/camera/compat/CaptureThumbnail.java",
+      "sha256": "4d87d90a9d7ca6252e9c7fe69f83a20ed7b480f652af2da54d918f861165eb01",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/gallery13/realme/camera/compat/GalleryShortcut.java",
+      "sha256": "09943f7ccd3e927acddfe4188cad59960de9d639d83534a022988b1fe3e82238",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/native/CameraPlatformAbiProbe.cpp",
+      "sha256": "ee4a7fa5e53eb5893c9c514751a1b03f2df0e06272584fc821271ff769499c94",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/native/HeifWinBufferBridge.cpp",
+      "sha256": "e41db96ba1bf54b778fb663d2f461d69d9ea8761b611a0cc0035746118f2263c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/native/NativeWinBufferExchange37.cpp",
+      "sha256": "c7a3eef75db61bc678b677ab0a76ecd8265a78d81f78a1e31b45d8755640ac49",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/realme/camera/compat/CaptureThumbnail.java",
+      "sha256": "e1220ba8ed3ed360d98d93a645bd6823609ba167a5c3a6755e61292649fadda2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/realme/camera/compat/GalleryShortcut.java",
+      "sha256": "6e9ec618ace7cff871e888ac4f1caabf7d014092fab9428692a816b9e9d2b5c1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_compat/realme/camera/compat/SessionCaller.java",
+      "sha256": "6a5a32f730b84f03a5c071e3ab3b900e64f557a2335f9ac298936f975f712b09",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_fileextender.py",
+      "sha256": "daf37028db3feb8ec2abc56f8193963dad939c6a5ce1dc3f02a981aaedea4c85",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_filter_assets.py",
+      "sha256": "edbd66e876a4426ed5e6c4e52e8d33bc92508981fd1a1e1fa830967482ad135f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_filter_capture.py",
+      "sha256": "2ff7ffe7c3d7320f04be5a88a225c0dad48e0da6081c4fc897a3db0914c8bd27",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_filter_sdk.py",
+      "sha256": "6fa1cd2d466e6bd3bb7b455c30122834e0a9247cad5f42f24328ef56136ec636",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_filters.py",
+      "sha256": "7e345982d59f6a42f54c97f53b511c2c89d6dbf58baab161fcb6cc9b5a6d1467",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_gallery.py",
+      "sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_heif.py",
+      "sha256": "754c71d388d57788c19a416464dd32fd059c8896b16d0383084ab471989642d6",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_heif_transport.py",
+      "sha256": "c6cb98276ac88e9e1a4075f0655cd9460331dded053e9b9e9e932b41db5a19a1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_session.py",
+      "sha256": "b22ee0df7f5d758c704497adfd37ef999385383993872a367b2e777465aa67c7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_camera_window.py",
+      "sha256": "80be233d10f1697c57d3e8d6bb414c6e7ebb8ef95d7627ff32579bb7ec638d36",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/AlarmMedia.java",
+      "sha256": "3821be9e4396152bbb8ab931ba271f5cd54069c12aded0073c40c3124e2d8e05",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/ClockDexCompat.java",
+      "sha256": "4713c090d7cb98d09e98fb2dd2574159c6f27fbe4a36b3bbca9e05c6212985c3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/ClockInsetPolicy.java",
+      "sha256": "9714de3309f9df991b8c02a12c8b4ec2cbefa4d49f4d58f6ef2a4dc8fc1a4128",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/ClockInsets.java",
+      "sha256": "a9325261f3c7b610286ef2d4caf5bf5bf25cfe377326412a9c70fad035aac9d3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/FeatureConfig.java",
+      "sha256": "7e736ba7374ef8f510e4b15dcc6728d29951521e8e7228d07971b59fa243ce0d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/OemBuild.java",
+      "sha256": "c77cabe63a139c53e247bf7e99f3c6c7472e4c98b729bd4de13229785b7e4e54",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/OemNotifications.java",
+      "sha256": "39768dcea9672d92687d2397cae985e5069d7cfd651d010394e0c26f44d86762",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_clock_compat/OptionalKeyguard.java",
+      "sha256": "9ad643bdd8ba4123732b6368ea125fca775996cfdf0683303211449af66cb0c4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_coinstall.py",
+      "sha256": "a1825f4a2453fdc4425b4846cc38f2c8cbce514c0ff36ed640afa2adb96d1137",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_app.py",
+      "sha256": "0b9494c539d052e261470c3b6aaee369118c6306785ad894f2d286604a67311e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_chooser.py",
+      "sha256": "a6a578da095157688dbf618a0261aeef36a6544509b1731e26f7c3959469e50b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/AppDexInventory.java",
+      "sha256": "ea2a441476f158cb88b1e8f5140d379cba7460ed7f60bccfa7dd65ffa48efb79",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/DoodleTheme.java",
+      "sha256": "d49e440db856351be986cf598534bd51f89e4963547f404694175a5308b8c10d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/GalleryDexMediaAssembly.java",
+      "sha256": "835db95a78f77f8847f5d5637a30030e621d36d2ac8bd2e47cd376c5c8cb8c31",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/GalleryDexMerge.java",
+      "sha256": "0af4e1c05259b4d0120bfe63cb940d756170086feefdb5f5b6649e3971ea6b42",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/GalleryDexRelocate.java",
+      "sha256": "000ebecc5d56b9d29ed87a0cfd3fd90dd7d0a420de166c2488f9c330925a713f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/GalleryDexSemanticCheck.java",
+      "sha256": "cea77b2a44b3a90282f5f310c6a9c5b3622d3c90381f908d23754d05cf979ee0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MediaConsentFlow.java",
+      "sha256": "97f1d103a983e97014d451ac24cbb36ed8e69c3c7df18a7062ba847f6214db28",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MediaSaveScope.java",
+      "sha256": "cf45845e41fdb0feea50bc484811211d0ae871c064244ea75bd2a21054c48101",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MediaWriteConsent.java",
+      "sha256": "8080926821fdb8311763fefd309995c80ab6258ed03aab25b621fc9cb17f4169",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ModelRequestCompat.java",
+      "sha256": "1ee187b7009a68ab5252698a403f6c0e69d6c5b13d0d57c40828f2bed5a56c6c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MoveConsentState.java",
+      "sha256": "3303b239b9a467fa3b2cea3c1ad13a1ebf2b83ea000d106c3db5c601cc2c6304",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MoveMediaItem.java",
+      "sha256": "5d2d93e687ab4308d085c880725308bf27c169f44b4bc21b9c5e5183b9c5848e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/MoveWriteConsent.java",
+      "sha256": "74bd90ae9683e825f9bbb061bf3815db5f0e987cdc3f3c7b2bf94f1845d780bc",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/OptionalOemHaptics.java",
+      "sha256": "d8ebdd8eb20fcb6185f21b8df86872a7364eb033e5856b944abefcee33c3830c",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/OptionalOemPerformance.java",
+      "sha256": "99057413bfacde25b87e2a9125abd74475d71104a7fb19782108068e5c3282f7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/RemoverNativeCompat.java",
+      "sha256": "caaf02aa61559f79562d3670d3316b6e815dee27a91fd59c8e3c11195ed21898",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ReplaceMediaItem.java",
+      "sha256": "5b755fe2bb0ed86b6d72a04753be7e4cfbc0b7aab18868614e638d0da880afb4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ReplaceOriginalAccess.java",
+      "sha256": "525f12de0748b29b8fa47b6e621a51024d5d6d5e1a8868d4967902a4b8852a54",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ResolverFallback.java",
+      "sha256": "acd863bc5ff3465da382ecc9f832b9611e33280076b027ad6f2e06286ea67b81",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ReviewActivity.java",
+      "sha256": "aed9af78862733629a39d8725f95ebd4ee1467ef228b2443bd5869dc9fbcef76",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/ReviewRequest.java",
+      "sha256": "223773d68efd9b8766a05df0c540ea10b3df32c6b32f18060730f9a2311a6019",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/SingleShareMime.java",
+      "sha256": "79984aaca0802b7d09d6356dcb468f454593f3671748f600a07b579bebcfc972",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/SingleShareMimePolicy.java",
+      "sha256": "3c1ddc850d1687cee2bd8261fab873c7062aa7fc1b132e18689b4500e72b84ab",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/com/oplus/aiunit/vision/ft.java",
+      "sha256": "46ea40500b9ef8be6a9ab0c88a8430b502a6fd6589d14d6672338a5f82efc59f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_compat/gallery-policy.cil",
+      "sha256": "8e2ddcfb510d6adbec2cbcbb0c6c469bf4249ecf6c71c8704c5d3b5e1e6e92f0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_dex.py",
+      "sha256": "529fd7519dd8a0cdee0f3fad37d5b44d81b17e46a35493155befe6cef8e4a888",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_engine.py",
+      "sha256": "ed3be4bf77d8b2432fda697037a1d38473610fe15cc34d8526cc795dd25339ac",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_followup.py",
+      "sha256": "785269389c6602114633df34a607d754bd81801862c8a973601bcbb76a21fcb1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_icons.py",
+      "sha256": "943abf7a4c5fff646706a2242c070be8e9c7501225f86b298841d5f45b45be7d",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_manifest.py",
+      "sha256": "8f64ac7fb745ba96cc168ae0bf4f7c25fa6ce39cafdec54f6d5aa482a98c5b26",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_media.py",
+      "sha256": "a4b3e81ff8e20e168237a0224ac1e80452105aa531c8c39fcec7628551e08415",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_move.py",
+      "sha256": "ee23f92d94b7b3cca7fe9cab169ef86adb2ca9e22c493e257f4864e3a4c35b98",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_paint.py",
+      "sha256": "9c9c778415fb7afcccdc3bf4c8b24e2d413c2460091b95bbf66112fa0765fd7b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_remover.py",
+      "sha256": "6179dcca1f9db18d214bc83e08a63cff04dbf9f71f707c702b5cdee7e5566c0e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_gallery_share.py",
+      "sha256": "64086707df019c2df03130b753944137c8d12e311dd452d9462f6dba4553e701",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_native.py",
+      "sha256": "de5299de76079bde0470023c34963cd5f1b6abec477e00234b667e28a541d315",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_ota_compat.py",
+      "sha256": "b8d94e0d70761a7d5915b3ca4ec2f0019dd8e4899e26f9eb9c50bee6f9437142",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_platform.py",
+      "sha256": "87a7daeea048d5ed3a2112b94ec088c2f8011e9db68417b1475881755225e345",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_policy.py",
+      "sha256": "600d944bc1fe0e164866fffc51c98d0b8a1e656c2e98e8329a7beb7b19eb1948",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_policy37.py",
+      "sha256": "29a39449297fa0bc18118ed56097fb375329d7e821ad4c61f13695169caabb2f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_policy_context.py",
+      "sha256": "b5dadf9b92d809710b35a399253dfd5ee5d3b40d815481633e86176269e17401",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_retention.py",
+      "sha256": "d6648a5c4fc758e87605f278929ea673644a780d6a71c4c9836ea517b0c418ae",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_runtime_policy.py",
+      "sha256": "1809fa17091282d2b781c98a497c26c64cf72c790e90fb1792e178cbf65a24a0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/oem_sdk.py",
+      "sha256": "b45cb36921007f756c49e0fdb6693f69945709952a1718b62e8f0e8a887acaf7",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/port_stock_clock.py",
+      "sha256": "cb39bda6fbfd179dc54a0cb9eae6aa0a38b611c38c2dd1a2b59405ae18291b60",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/prepare_oem37_sources.py",
+      "sha256": "7c4f76e34d32a780074c36234ca1810b79ea47b3c9ac297b73ac03855b2da6ac",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/prepare_stock_clock.py",
+      "sha256": "aa6ea1da3de19eb591148b1004903f38f8cb9b914dab50f67efc67f48a261da0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/java/SingleShareMimePolicyTest.java",
+      "sha256": "37ae2d435eac18c8cc2f04c0d6db9d25bbfb5c009f7b2a29637f6053aa6aadc8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_addon_update_contract.py",
+      "sha256": "cd1f0f4268e2cf2168fa3abdcc9459b9243fb9d32e2e002ca377bf4c8d75e443",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_camera_bridge37.py",
+      "sha256": "bfdc9e6f6d234bef864b9d50b3b1f487d50bfda7d80827c46d53f5f287f03797",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_camera_native37.py",
+      "sha256": "617209baa8ea1682690f32be786f8734c071e471fe02eb34136adb83cc0b2995",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_camera_vendor_filter.py",
+      "sha256": "7687ef90b6d12e728fa46e802b936556d59aa355a7f193b03ddb7d9bdbf89069",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_addon_durability.py",
+      "sha256": "cd9812fe1ce652a3c20e04a47a95efd883d8b06f00ecce99ffc482f05c39f8fb",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_addons.py",
+      "sha256": "3f56f53c74171e46e21856f5e9a8995a7fe861414c3bb34c0b78fcf7d3f7d749",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_base_comparison.py",
+      "sha256": "77a85eff120babc65ddb46025c6106b078cc6f0a6154a1777e29fb84bca8616b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_fileextender.py",
+      "sha256": "db1529324edd600627f040394a59501fde37745630ee7620df366fb2b0d74d67",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_filter_capture.py",
+      "sha256": "479d4d86bcdd715f1488421378600fc51dc49aab26fbc03f71f57b42a7f35eee",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_filter_sdk.py",
+      "sha256": "1c9675fabe99d872c8d34a23cdbb3005c0aa565b265a107e59df9889e395ed25",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_gallery.py",
+      "sha256": "f0d0915b4a43135da8d953275fb45ed91c9aa9619e9c1768cd78f32d88c98f42",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_gallery13.py",
+      "sha256": "8b54ab7dfcfc36cac927b428384c3807a5a738431bd0499fa4b497cc363d08e8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_session.py",
+      "sha256": "6cdb971f2e7e840f5ea1897921d2218d64d9174472cd080a7d946a64ee871e46",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_camera_window.py",
+      "sha256": "48ef2bd4003a6d364002443803bbce058434fcf19c6be632bc47af33727fbea6",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_clock.py",
+      "sha256": "51199edc3c0af32c107d99a83aedb89fd0ac181bd34aece3ae2886fd9ee45729",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_coinstall.py",
+      "sha256": "b65d5853a8b830c7386a52bef3fd6d97e5923fc589512fc20fd421fbfbca8624",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_coinstall_transactions.py",
+      "sha256": "3a0a0ed7345d192fb48c43d534805154c3b152348a6d0e65d73792808c8d0fab",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_filter_assets.py",
+      "sha256": "5168658e96caf65d459a56c40a132b57665897befead08612405cb84a3fdcb31",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_app.py",
+      "sha256": "781b727baddcef98c2766c823bfeca01cdda54745767ae03ac8b5ad6008a6456",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_app_transition.py",
+      "sha256": "716438c10523f1e3c01e1cffef651960e2302b4c76e3297dddae35226f8a8263",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_chooser.py",
+      "sha256": "3120aafcf089e955d2ec5576e61e374fa706c5d09e9e62406dbd354f11a9a707",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_dex.py",
+      "sha256": "36acdcac5cc092009b521684394bf5cc36ed8e9de296be79b09842bee92d7fb1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_engine.py",
+      "sha256": "c5cc91a6de514b72cc51a326291af201512888ae0e6cd564bb5ef194974146e3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_followup.py",
+      "sha256": "9ec100bbee40eef4e795f3c61435a506627ef45071314cda1c404cf3b0d6832f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_icons.py",
+      "sha256": "376ee8f16ac7c5a324c15ea984086dcba5427fd5f79ea513b305ff8134025cda",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_manifest.py",
+      "sha256": "619bb1087cc3cb512e1f92c8ef78961e3355d9cd5e0846f1962d57ba9e235dcb",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_media.py",
+      "sha256": "bd25eb7c8d4708fc930f1bb54dedfe17ba5a3b660c3a8e40848620421b8d6142",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_move.py",
+      "sha256": "2257f94675c2953b8cc0df32634e54233bb806045389269d9ea94d456cb301ee",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_paint.py",
+      "sha256": "79f207cabb98f9e02a271e5a45d304560af879c4d05bd3077bfd4d45f5b0dfe5",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_remover.py",
+      "sha256": "c42a7736bffd18173a05ee94032dcda1f0a7033136d14b13d4630a5b4421c09f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_runtime.py",
+      "sha256": "37b66ad43d3210eef986173a5ab2e44193d2e7e5bc4222cc92a59ed5990cd9fd",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_gallery_share.py",
+      "sha256": "2fe92968e88339bc79c25e9e26760e3a7eb60abfb0638593df33fd4e30aa5401",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_genesis37.py",
+      "sha256": "eb6ff399369361b1e82700b40a0deac01bd319d550482b5195610ddce20e3f5f",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_heif_transport.py",
+      "sha256": "fca217ecc2d4262ef6a599773636fc02806445c30130e4e6f0ff92370b75cfe4",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_installer_platform.py",
+      "sha256": "6ae7a98ac6e5051c03e2d8e8b91aa7235b732652fec74b01274253dd130578cf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_ota_compat.py",
+      "sha256": "7f586685da4568bbae243ff07c24cb227af4dc2627bfe31ba89f4f3fff578da3",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_ota_platform37.py",
+      "sha256": "3a2c93c2f65bad8900a1d87710e9cfebf8b5c2b0985a0f1085f9ccbe1a929fc2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_platform.py",
+      "sha256": "a6c4eeaafd6dc17f44afdad1cfbde9e35ee504e82de869e240d8111012a5ac61",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_policy.py",
+      "sha256": "47808e500cdf3b07d5b32833fee03bf494d28302c85f15c79f2e824555ce9adf",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_policy37.py",
+      "sha256": "889de2ab26f2b39ce277d56c7fc90f396f9ad4856269484c07591013c34e178e",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_privileged_camera.py",
+      "sha256": "23f40504ff82697cc845cf63a1963a28bb03e1030e9c5d4368a598deac6ad85b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_recovery_mapper.py",
+      "sha256": "4f6ab09e83b36d7c013aff198943310760d1d05208141b5180e92f6542f80196",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_retention.py",
+      "sha256": "8bec4a8677a880dfac67246e632de44218bc85b88beeb9e54d35f0c90b6c61f2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_retention37.py",
+      "sha256": "3dcd5bd499d0598c2262126b2ba99815fa463f964a4628d54c7d9d3b465652ce",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_retention_integration.py",
+      "sha256": "49e396977df2be32e6df0db8ca30e4e89909c916a8532aab9f3c1af79429d206",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_runtime_policy.py",
+      "sha256": "12324e593ccc8d4b2298e188725830e108d804b1be664ef597624e71495d5843",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_shared_policy_transactions.py",
+      "sha256": "8b1e3399ebd67c12c40826a566051553493ac12a682bcbe5e16f102111269f89",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_sources37.py",
+      "sha256": "a2ce50c08bb29fa73b6b75257e1ff0596ba79cf731d9404326b9f0624a9deac8",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_system_placement.py",
+      "sha256": "ca206d4d8270ded9c9ba121da5517a50e576614986efca05161fcac3ec4a89b9",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_upgrade.py",
+      "sha256": "a6a43efc411c5271ab5e2aeded73e556fc718fe59003a9cc6941e258a2ddc3e0",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_vendor_cohort37.py",
+      "sha256": "f97fb36b6883ee0b8a13dca25e9468b58b8badf0fc5682715716ce2944de1ec1",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_oem_vendor_filter_binding.py",
+      "sha256": "d75af8c2b48bbe219565e2e2c899e2b5d52ed14a72f772563e9abb85bff1605a",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/tests/test_prepare_stock_clock.py",
+      "sha256": "45a9377d78de74472055f3849f063d3a17e5467995d9854fc1222ca1caebfe25",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    },
+    {
+      "path": "tools/verify_signapk_ota.py",
+      "sha256": "a816e37edfaa433c6356a2b92235d7b26a8d6dee218c5778f999ff5f69f578bd",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+    }
+  ]
+}

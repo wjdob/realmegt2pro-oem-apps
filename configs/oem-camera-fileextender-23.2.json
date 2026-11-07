@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "files": {
+    "libFileExtender-jni.qti.so": {
+      "source": "my_product_b/lib64/libFileExtender-jni.so",
+      "sha256": "df11656b6909a69dca97f14c05a9d5693e0785af7cf732460b4f2e3ffe1fe55f"
+    },
+    "libextendfile.so": {
+      "source": "my_product_b/lib64/libextendfile.so",
+      "sha256": "eb936ff84002ff6723c6e37f93d0fb32ff375150408440126c13a454799650e6"
+    }
+  },
+  "scope": "Authentic matching product JNI/provider pair, unchanged bytes. The SDK's com.common.Util selects the qti suffix on Qualcomm Android newer than S. App-local requested filename supplies the existing OplusFileExtender native API; no fake success, framework/service replacement or global library exposure.",
+  "limits": "Preparation alone is not a compatible native signature, synthetic metadata roundtrip, installed Camera namespace/UID or final HEIF-save pass. Validate all layers independently before a consolidated install. Proprietary binaries remain private."
+}

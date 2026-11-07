@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "model": "RMX3301",
+  "lineage": "23.2",
+  "frame_rate": 30,
+  "video_codec": "h264",
+  "video_mime": "video/avc",
+  "video_encoder": "c2.qti.avc.encoder",
+  "audio": {"codec": "aac", "mime": "audio/mp4a-latm", "bit_rate": 128000, "sample_rate": 48000, "channels": 2},
+  "formats": {
+    "qcif": {"quality": 2, "width": 176, "height": 144, "bit_rate": 192000},
+    "cif": {"quality": 3, "width": 352, "height": 288, "bit_rate": 1200000},
+    "480p": {"quality": 4, "width": 720, "height": 480, "bit_rate": 6000000},
+    "720p": {"quality": 5, "width": 1280, "height": 720, "bit_rate": 12000000},
+    "1080p": {"quality": 6, "width": 1920, "height": 1080, "bit_rate": 20000000},
+    "qvga": {"quality": 7, "width": 320, "height": 240, "bit_rate": 256000},
+    "2160p": {"quality": 8, "width": 3840, "height": 2160, "bit_rate": 42000000}
+  },
+  "cameras": {
+    "0": ["qcif", "qvga", "cif", "480p", "720p", "1080p", "2160p"],
+    "1": ["qcif", "qvga", "cif", "480p", "720p", "1080p"],
+    "2": ["qcif", "qvga", "cif", "480p", "720p", "1080p", "2160p"],
+    "3": ["qcif", "qvga", "cif", "480p", "720p"],
+    "4": ["qcif", "qvga", "cif", "480p", "720p", "1080p", "2160p"]
+  },
+  "scope": "Conservative normal and timelapse MediaProfiles metadata for measured sensor/AVC/AAC capabilities. Keep logical-camera permissions and current vendor/HAL intact.",
+  "limits": "These are current HAL/codec advertisements, not proven physical hardware ceilings or recording/quality tests. Higher modes may be constrained by software, driver or tuning. No high-speed, 60fps, 8K, HDR or Dolby support is asserted. Enhanced profiles require a working measured capture/encode path."
+}

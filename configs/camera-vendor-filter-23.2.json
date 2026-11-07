@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "provider": {
+    "stock_path": "odm/lib64/libmsnativefilter.so",
+    "source": ".local/build-inputs/ferrari-filter/libmsnativefilter.so",
+    "path": "vendor/realme/ferrari/proprietary/odm/lib64/libmsnativefilter.so",
+    "target_files": "ODM/lib64/libmsnativefilter.so",
+    "module": "libmsnativefilter",
+    "bytes": 6218904,
+    "sha256": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "shared_libs": ["libz", "liblog", "libEGL", "libGLESv2", "libm", "libdl", "libc"]
+  },
+  "aps": {
+    "path": "vendor/realme/ferrari/proprietary/odm/lib64/libAlgoInterface.so",
+    "target_files": "ODM/lib64/libAlgoInterface.so",
+    "sha256": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+    "provider_literal": "/odm/lib64/libmsnativefilter.so"
+  },
+  "provenance": "Original RMX3301 stock .1410 ODM provider, identical to the separately audited optional app-local provider. Preserve its bytes and standard vendor namespace; no OEM APK, Java SDK or LUT assets enter the base ROM.",
+  "scope": "Restore the omitted deferred native dependency at its original stock ODM location. Retain original access check, loader, feature gate and fallback; keep only the earlier optional LUT path correction in APS. Do not export app-private providers or weaken namespace/security policy.",
+  "limits": "Pinned source and packaged checks plus isolated native-loader success do not certify Camera UID rendering, actual filtered output or Gallery editors. Install through a reviewed full OS OTA; optional recovery ZIPs never write ODM."
+}

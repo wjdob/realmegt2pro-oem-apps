@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "abc3a6d5546296d310d0fd9c0b033e798085b70eb542e432eec8838b19d97e50",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+    "tools/oem_camera_compat/realme/camera/compat/GalleryShortcut.java": "6e9ec618ace7cff871e888ac4f1caabf7d014092fab9428692a816b9e9d2b5c1",
+    "tools/oem_camera_compat/realme/camera/compat/CaptureThumbnail.java": "e1220ba8ed3ed360d98d93a645bd6823609ba167a5c3a6755e61292649fadda2"
+  },
+  "adapter_dex_sha256": "4a3b7e02d1bb648f8c7608405543bd1deb13282df71b32fa4051af027dc1a752",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "thumbnail_id": "0x7f09062f",
+  "scope": "Optional Camera12e bridge: latest-owned media and bounded thumbnail refresh with explicit center-crop aspect preservation. Keep original APK/signer, helper ABI, keyguard/lifecycle gates, chooser/read-grant and other six SDK DEX members.",
+  "limits": "Host source/lifecycle/geometry fixture and deterministic compilation only. Actual OEM thumbnail widget shape and latest viewer behavior still require device acceptance; stock Gallery shares this exact SDK without Camera-specific privileges.",
+  "output_sdk_sha256": "1476518dcedc9e0137a862483c63edf52eea79a2d7608f6321f56e7160a33999",
+  "base_adapter_types": [
+    "Lek/v0$WindowWatcher;",
+    "Lek/v0;",
+    "Lrealme/camera/compat/GalleryShortcut$Cancel;",
+    "Lrealme/camera/compat/GalleryShortcut$Lookup;",
+    "Lrealme/camera/compat/GalleryShortcut;"
+  ]
+}

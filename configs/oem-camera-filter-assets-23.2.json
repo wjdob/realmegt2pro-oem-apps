@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "asset_root": "system/etc/realme-lut",
+  "files": {
+    "ByYo3If": {
+      "bytes": 14855,
+      "sha256": "cc6a530049d463d7c04d09f28798b2af41571d5f12b170d10dc8d804fd46c41c"
+    },
+    "Cold.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "e09ee4b268504889aecb10b5a96e694810a0beea82519c8e51fccdabb36798c6"
+    },
+    "DL_A_MoneyBall.bin": {
+      "bytes": 98480,
+      "sha256": "41c9cbe3180f5ad7bb234d5df5120b88bb4de1eba8b65e06cbb9069b5c0a73f1"
+    },
+    "DL_B_Inception.bin": {
+      "bytes": 98480,
+      "sha256": "0e24353277376d430fcd56990ef6e30a50d69a22acab1caa8d5d53888702bf76"
+    },
+    "DL_C_R3_80.bin": {
+      "bytes": 98480,
+      "sha256": "81d1eb0252021730bde90f45c9e39b870482da0f9fb71be6780c1f73023af76d"
+    },
+    "DL_D_G4.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "edace14b5490e32d330dc090d7bada4ec319b8ffe75e70de35ddeabe78eae6c8"
+    },
+    "DL_L_B6.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "89f2cad30f6322860eedf503ced85c1834e006505778f74d0f15758c33963ced"
+    },
+    "Delta400.3dl.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "924f95312186247e0bcbd407893dba671cb887611752480b2ce443dd5fb9dd45"
+    },
+    "Emerald.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "f2d0f6766382e6a0b40dcd63c0041fa2edc00236557712ab4db2e7d22e7b0333"
+    },
+    "Martin.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "0ceda3befec79bd615a129563ebf36846c59bf5d5718b80fe7199518bf8a513f"
+    },
+    "OPLUSR0604.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "ec64d2d02122ea86a599d2b9427403815fdb310a902a286134e21d584ba9ffb1"
+    },
+    "Radiance.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "5de3498eb27219b1a9913c039b0ef560b66c834aef596a561702ad9b4465f7b4"
+    },
+    "Serenity.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "4f750931eea283334695b40d388d07295206f2ade54f1f4f47db189ae0a55244"
+    },
+    "Texture-70.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "11146ca6bc921888c66740752024c93ac831ec3b112e7593bdf9f3c74c16226f"
+    },
+    "White.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "96a1b58f35c8d6466e15795c96577ed25599668862bc7137e489c523c0605fad"
+    },
+    "black_gold.bin": {
+      "bytes": 14855,
+      "sha256": "a1e9c04e2556bd6a101b4f2e9e3d7e36768becfee5dc5cf896c5e78ab053a095"
+    },
+    "blackandwhite.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "be078deab911d1ed4ce6d36c2192ebdf31b7a59951bc57e7d0959ca73759641f"
+    },
+    "bright_coloured.bin": {
+      "bytes": 98480,
+      "sha256": "572dff031dd0b0b4683aacaee29f2e069be2b0f3d0c93d9d55c80a5daafb9650"
+    },
+    "cola.bin": {
+      "bytes": 98480,
+      "sha256": "545a8136b33a2b08ccb6a80252ebfaa77a325f59b8f3719e12a9b2ae1a796ee0"
+    },
+    "cyberpunk-kitsch-3.1.CUBE.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "45740d41c678496a79ce565546865cc5d7dd042cef8973009dc23a715050c048"
+    },
+    "drjw1994.bin": {
+      "bytes": 98480,
+      "sha256": "d2f4043081732fbec2649b3596f29033584c15d2ca03b9e8b820ac4da8def009"
+    },
+    "drjw2010.bin": {
+      "bytes": 14855,
+      "sha256": "74b199cf1432acae2d418480ea666c809d6d5a7c9cec7b2b7346ce2b47bc5b13"
+    },
+    "fuji-cc-high.bin": {
+      "bytes": 98480,
+      "sha256": "48474ad275eafaf7e3e427f93ce8d1458699e608149a3a8a4d1703c39d418581"
+    },
+    "fuji-cc-low.bin": {
+      "bytes": 14855,
+      "sha256": "2601c2a7e72278efb99a1e496ba56c31027b0a650cf597450ea5e8cfb3634780"
+    },
+    "fuji-eterna-v2.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "89bb4ee00ff557f27dae6d2ab11a33aa2af682205bebdb7fd6679a43a0c54847"
+    },
+    "fuji-nc.bin": {
+      "bytes": 14855,
+      "sha256": "9a7e3196e38254549330732d29e4c2bd1c6ea885307d486ae66a0de019355683"
+    },
+    "fuji-proNegHi.bin": {
+      "bytes": 14855,
+      "sha256": "7c8a9f60a1022ac7d608d80a3698119d5caa34c5030967567aea1bcee5509673"
+    },
+    "fuji.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "9e62632b73cf738b4f382bd8cc8a62297f2accb10442b97a3d188b46c04c0a78"
+    },
+    "fuji_cc.bin": {
+      "bytes": 14855,
+      "sha256": "0da9d1eb332c54867b99d9979be5bb1fa8b64555baebc50c810b74e6f12ec179"
+    },
+    "gourmet.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "7e8ac5d7c8ccd8fee8e79e21c86405a1761b87e660511b3fa14fbbdf5077f88c"
+    },
+    "gt-24hour-city.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "e1a471cefc48884747a56af36258a9b62834be38de53f9323ec897e4d3770bc1"
+    },
+    "gt-3dcity.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "6b343802ce4ffa17054f97b607172b7921820f689338a14ad5288a493a24f903"
+    },
+    "gt-after-glow.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "f8cbe5f4577158facf59f84518a52ca7b1e21452834fb572b79e7d489c61286a"
+    },
+    "gt-azure-water.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "9e8dd5f7653fbd2e0c4d9bf180f839fd218f33600317ea6c91b07749153744d1"
+    },
+    "gt-beach.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "5f6f1f25c4b37d208296b17c937421fe1f9e0f7ff1dcdba6add5664ce6ea23d0"
+    },
+    "gt-blue-water.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "f14fb0dade54f68334b4b2cdcbc659f213dc728741992b0f22f2ac6339ea48b8"
+    },
+    "gt-coco-grove.cube.rgb.bin": {
+      "bytes": 786736,
+      "sha256": "ea7851a8e85fadb0249ab861740a5e2bfbe87ebad9ef34cf4f0dad941055c356"
+    },
+    "gt-crisp-fall.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "80ace5426bae40c6f1a14aa7718288eee96f88064034473f3258507387f7b7bc"
+    },
+    "gt-desert.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "22e1f0dfcaa7e2dc9667766af47e6faa86f14c4ea4ceda836d374bf8e740198b"
+    },
+    "gt-earth.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "22cf5d57099e76d0e920ee83b7556d5f5f56c33e27d2483268b1e0b8596694cb"
+    },
+    "gt-glazed-tile.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "13317c7dcab8b116c3a18435994d8a51b2edab367ce2990421524152847bbf72"
+    },
+    "gt-japan.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "7f3398a9dc3c67b2ddbce8b035b0b31f5b33b822579c428df49a13d3f397735e"
+    },
+    "gt-lake.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "7207ab4114a19c5aea1cdfe494e1de9db57967edcaa7bcd9765cff940e4b4725"
+    },
+    "gt-mountainous.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "f2103182d16435bf48222b9585c46d2f86788cfa4001dbd4262368d99261df38"
+    },
+    "gt-old-times.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "251750eb7f46420b13c3170a1d0874cb6773efb3844ec850b2e2b879125cc715"
+    },
+    "gt-quietly-ele.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "0ab9ef00c63b9bff1b95f173a9c33edb349d5fe70dda0e920a693c9f4cb62de2"
+    },
+    "gt-rosy.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "c8f9d08cd1f430bc870dd4eae5083dbccc71d487d48ebaf6beab69a8261b142d"
+    },
+    "gt-steaming.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "99f1d07bfa0fcc5e65997e9b5473ecd104f4099ca3e9a32eef73c93ad1eeb5a2"
+    },
+    "interstellar_space.bin": {
+      "bytes": 98480,
+      "sha256": "5ba45b04018c2b3d30f7500181816d789199f66768645c6b85bce4de098de127"
+    },
+    "jw_sun.CUBE.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "3b32284cc53a6557d8f86edcb81a9ea751bbe7aceac4ec4f2646f97c555c9d8a"
+    },
+    "jw_surprise.CUBE.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "a300ad84b824e069205688eb6b2b65ccae1ef5bb86e35182911fc8ef638788fa"
+    },
+    "kodak.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "b3a820706672d34149eeff6572463ba8d17ba5a7e28b8b569d716bd0a6a1e6e9"
+    },
+    "meicam.child.bin": {
+      "bytes": 14855,
+      "sha256": "e8e925efb803127ef3ebf11593287cd52421232b7619cbad11fefb4e81088e2f"
+    },
+    "mono.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "e7c5596463b8789fd8b6278f794812eb6c1aad37d30940f80990b60a61271c0e"
+    },
+    "morandi.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "6eb135bfe1e90d0509ba571ca46325acd97ca70eb5f90be4ce5b711a7144cfb5"
+    },
+    "natural.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "a2016a88d00206b6ded02d50ee5b73c275f0e910b69467880c6ef88d07f57581"
+    },
+    "neon-2020.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "5bb4aaaf127ea329fcc8fdf85a1b9d054525e4b1fb68a3c2ef0022e0ad407eb3"
+    },
+    "oplus-black-gold.cube.rgb.bin": {
+      "bytes": 12400,
+      "sha256": "497f350b2fbba71c2218168879a9b8b4bdec7f59ed20249f88555e031ec75a62"
+    },
+    "oplus-cyberpunk.cube.rgb.bin": {
+      "bytes": 12400,
+      "sha256": "c32d857a629494a7de3c97c41709c9f6f9a5f8e2d9b317081fc965eef40614d5"
+    },
+    "oplus-nightcity.cube.rgb.bin": {
+      "bytes": 12400,
+      "sha256": "81bf94616cd2669e7eb9ca16d48badd97793fefe72a094302a9899e905dc3c05"
+    },
+    "oplus-yellow-blue.cube.rgb.bin": {
+      "bytes": 12400,
+      "sha256": "3e03639766d160367305a5cf83b3c822dad18b7f627d6ac956b1804f7e2ae589"
+    },
+    "p4_1.cube.rgb.bin": {
+      "bytes": 14855,
+      "sha256": "8f4e4d8f7c47450f2045edb1b04a7ad6f886e59388b36f5d350169a14f17ef9f"
+    },
+    "p4_3.cube.rgb.bin": {
+      "bytes": 12400,
+      "sha256": "02f51e81ffa841eab6c51f16e54b19eec8ae210483761dfbfce64b7e0f8a0ee0"
+    },
+    "rJ5g5vPWG": {
+      "bytes": 14855,
+      "sha256": "8237b68d00a69ba111e1fa74703ab25c319dde375b48c91ccec1e962d5e207ef"
+    },
+    "red-red.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "8d097778624695b03ddef2de3134138e3d6672d73cd393d55f964c33ecfc2627"
+    },
+    "sky-blue.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "228f1e09b73cff2234196aa20ae83bd5c6e3b9ca0133e851bc62317b2efcfff2"
+    },
+    "tone-of-light.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "484000120aee834ee06b11dfdee05a350d1ad99f9bc837745e4287ac2f4da396"
+    },
+    "tree-green.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "834879525e05dadaa41ecbbf406d5b9acad618e0a69defb7f3e89e146210a349"
+    },
+    "vivid-cool.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "282a725fa4a765b4bb38cf01d80fcbf943b8db117e7c0e326c58a6a1f3bb3321"
+    },
+    "vivid-lut.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "9b3c4b03bd573bd85ec24897f51e75ad11eeffc78e0f7e4b116809f4d1c9be57"
+    },
+    "vivid-warm.cube.rgb.bin": {
+      "bytes": 98480,
+      "sha256": "6e8e9dcc1858eac5e4754e2101317a47ce773ada8a9969e3e8f2ebec2079126c"
+    }
+  },
+  "native_path": "vendor/realme/ferrari/proprietary/odm/lib64/libAlgoInterface.so",
+  "native_input_sha256": "92ffe181ca6658bdc893527ab8098630009ea45c8147cac60a16dfbd0d7a7937",
+  "native_output_sha256": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+  "old_hex": "2f6f646d2f6574632f63616d6572612f6d65697368655f6c75742f00",
+  "new_hex": "2f73797374656d2f6574632f7265616c6d652d6c75742f0000000000",
+  "prefix_offset": 1203851,
+  "scope": "Route the existing vendor filter implementation to separately owned optional LUT assets in system. Add-on/remover owns exact assets; no OEM assets/APK in the base OTA, no installed ODM write or linker relaxation.",
+  "limits": "A pinned non-executable string replacement is not successful rendering, LUT/effect quality, licence compatibility or HEIF acceptance. Native fix is installed through a future full ROM OTA; assets remain a separate optional bundle."
+}

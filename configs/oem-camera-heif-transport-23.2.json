@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "status": "prepared candidate; not installed or accepted for real Camera captures",
+  "adapter_input_sha256": "835daa291407302b781add895a6873fc7f367ebc76c0d46e6bb441b91ba04c70",
+  "adapter_output_sha256": "3364553daf4036afbae46e94fc9bca7733c6e7a9f08f2cebfde9c6d4e2656134",
+  "selector_va": "0x77110",
+  "selector_before": "490700b4",
+  "selector_after": "3a000014",
+  "bridge_source_sha256": "e41db96ba1bf54b778fb663d2f461d69d9ea8761b611a0cc0035746118f2263c",
+  "bridge_output_sha256": "1e8fde44057281c7e42e3de6213763132a429b8c0a4e098c3a30755f5aba9eb3",
+  "helper_sha256": {
+    "libHeifEncoderWrapper.so": "42cde873cbda2968dc1ea16fd94d426fd24928368d0a30290dc84741a7fa179a",
+    "libNativeWinBuffExchange.so": "08830734d4d8baeac59664f94db5ce2c5b78c0d008c9ea5d504db5ddbef61b11"
+  },
+  "compiler_sha256": {
+    "clang++": "af0f25ca6818aed54c1cab03dc591acd549f385b8447148326a413e3e59c22b7",
+    "ld.lld": "784146955ed87545385bf5c89b3b920ca7fe3ac83e034c3e6c53783ce544adf1"
+  },
+  "scope": "One ARM64 conditional branch selects the original Java pointer-event protocol. APS adapter load/export failures and unrelated checks remain intact; no helper is removed or capability result fabricated. Source JNI glue exports the original four native events plus its own JNI_OnLoad and forwards actual fields/pointers/return values to unchanged stock helpers. Original APK/signature, frame/format/Exif/debug/fd, normal permissions, firmware and global linker policy are retained.",
+  "limits": "Live capture proves a valid3072x4096 APS packet reaches an incompatible legacy flat-key parser as zeros. Authentic SDK map dispatch through installed framework receiver and scratch JNI encodes/decodes synthetic512x512 and3072x4096 NV21 with synthetic Exif. The isolated test explicitly selects candidate JNI in its own process; it does not validate installed boot-classloader selection, real Camera UID/packet ownership, callbacks, photo saving, colors or general metadata. Empty-Exif synthetic input fails decoding through the stock ICC helper; do not claim general empty-Exif support. Final consolidated packaging, permission/namespace checks and real captures remain required."
+}

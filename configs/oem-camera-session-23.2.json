@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "80a714f36adb26087f3616ea19d3948fd7d4171f5ace8428c1404b7dc38e5d54",
+  "stock_framework_sha256": "02b521ee95042df4a7076763db904235f05c5d0c0bd8549d5c39884f1b788517",
+  "sources_sha256": {
+    "tools/oem_camera_compat/com/oplus/ocs/camera/metadata/parameter/CaptureRequestBuilderProxy.java": "f083e79891592d6964dea5a095663198822dd970122bbf52210aaeb5701d2e74",
+    "tools/oem_camera_compat/realme/camera/compat/SessionCaller.java": "6a5a32f730b84f03a5c071e3ab3b900e64f557a2335f9ac298936f975f712b09",
+    "tools/oem_camera_compat/compile_stubs/com/oplus/ocs/camera/metadata/parameter/ICaptureRequestBuilderInternal.java": "ce5474a4336c4e2609dcee0942a5adfa85be4a3a86b3451fb62dc32a63ce4623"
+  },
+  "main_dex_sha256": "05ad1ea07272eade2a9a85ca45783171864896e8e39d074108698c3f7a9f2239",
+  "binder_dex_sha256": "79470924d81604cb6a2ebd57ffda85418e6b5918f47f9efc31630a81701e4da6",
+  "limits": "Rebuilds the SDK main DEX with a single request-proxy replacement; real package tag plus authentic Binder types, no feature/readiness/auth/consent/permission override. Offline output, live session unproven."
+}

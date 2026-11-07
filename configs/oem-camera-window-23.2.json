@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "base_sdk_sha256": "57dd08dc7ee1a9eaa8a25ac5c5bae40eba3663a5b832d67aa8f1a040341dac43",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a"
+  },
+  "adapter_dex_sha256": "4b772b4e4fa43ecff7ebb105e7f97bfc8eb5a7711e262efbf67a1f3ec66acbb6",
+  "authentic_types_dex_sha256": "a1d6e7b585e59b644cc224b686643bbe91f8cbb81bb2bd6055ecb5f9c83bdec5",
+  "adapter_classes": [
+    "Lek/v0$WindowWatcher;",
+    "Lek/v0;"
+  ],
+  "authentic_classes": [
+    "Lek/v0$b;",
+    "Lek/v0$c;"
+  ],
+  "limits": "Pinned helper public ABI only; native SDK, original APK, boot framework and permissions unchanged. Actual window/callback behavior and real child-loader linkage require separate checks."
+}

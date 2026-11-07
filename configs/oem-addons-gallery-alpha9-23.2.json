@@ -1,0 +1,467 @@
+{
+  "schema": 1,
+  "sdk": 36,
+  "lineage": "23.2",
+  "model": "RMX3301",
+  "release": "alpha9",
+  "shared_sdk": {
+    "compatible_profiles": [
+      "camera",
+      "photos"
+    ],
+    "source": "shared/camera-beta13/sdk.jar",
+    "sha256": "e5aa1abd194be1d85634a9c4dc06ce9dd771f3d74a13e6efa715d0632ea26a2e",
+    "jar_path": "product/framework/realme-camera-unit-sdk.jar",
+    "xml_path": "product/etc/permissions/realme-camera-unit-sdk.xml",
+    "library": "com.oplus.camera.unit.sdk"
+  },
+  "profiles": {
+    "photos": {
+      "title": "Realme Photos and editors",
+      "package": "com.coloros.gallery3d",
+      "version": "15.80.16_sp1",
+      "source": "Photos-Gallery-alpha9/Gallery.apk",
+      "sha256": "1ee40466a2350897c8d502b64d1ccb210684b62cae46c180f69b49bafd5c8ef8",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "directory": "RealmeStockPhotos-1ee40466a2350897c8d502b64d1ccb210684b62cae46c180f69b49bafd5c8ef8",
+      "other_directory": "RealmeStockCamera",
+      "hook": "81-realme-photos.sh",
+      "peer_history": {
+        "source": "configs/oem-runtime-peers14-23.2.json",
+        "sha256": "abd920e6807042794a3c53e349cc391cb415d8a3fd0a90ffae161dd4a81e82fb"
+      },
+      "recovery_helper": {
+        "source": "shared/recovery12c/realme-prepare-logical",
+        "sha256": "c561a35bf1d2c378b9da90775e4d7e13f3b692c1828a46645fc4218064e4b4d7",
+        "libraries": {
+          "libfs_mgr.so": "646446261e6488da8059fd1590a3b5e21cd7bd786e505665f38471670661d56e",
+          "liblp.so": "0de7043f0c8f9db6300c37a14e5d32ad540fe9d18c08eecfc5a09a0057f67e29",
+          "libbase.so": "bfa6ea139d96dacb571125140d0e57e8c78d1ea5bb793c4d5e35001d4c917a94",
+          "libc++.so": "dd327fb7c8d4abcb0fbb5bb839a946d365102af120466b956637e3559f4353e8",
+          "libc.so": "322677b18b03e3d2107c6196ca6b3fb15b4fc854086f4677dd366516c348964b",
+          "libdl.so": "4506dab6b4a197d4f38b8a7270eb15f31f6e729b345b32e07269593fb5f68195"
+        }
+      },
+      "explicit_reinstall_after_ota": true,
+      "extra_assets": [
+        {
+          "path": "system/etc/realme-lut/ByYo3If",
+          "source": "shared/camera-beta11/assets/ByYo3If",
+          "sha256": "cc6a530049d463d7c04d09f28798b2af41571d5f12b170d10dc8d804fd46c41c"
+        },
+        {
+          "path": "system/etc/realme-lut/Cold.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Cold.cube.rgb.bin",
+          "sha256": "e09ee4b268504889aecb10b5a96e694810a0beea82519c8e51fccdabb36798c6"
+        },
+        {
+          "path": "system/etc/realme-lut/DL_A_MoneyBall.bin",
+          "source": "shared/camera-beta11/assets/DL_A_MoneyBall.bin",
+          "sha256": "41c9cbe3180f5ad7bb234d5df5120b88bb4de1eba8b65e06cbb9069b5c0a73f1"
+        },
+        {
+          "path": "system/etc/realme-lut/DL_B_Inception.bin",
+          "source": "shared/camera-beta11/assets/DL_B_Inception.bin",
+          "sha256": "0e24353277376d430fcd56990ef6e30a50d69a22acab1caa8d5d53888702bf76"
+        },
+        {
+          "path": "system/etc/realme-lut/DL_C_R3_80.bin",
+          "source": "shared/camera-beta11/assets/DL_C_R3_80.bin",
+          "sha256": "81d1eb0252021730bde90f45c9e39b870482da0f9fb71be6780c1f73023af76d"
+        },
+        {
+          "path": "system/etc/realme-lut/DL_D_G4.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/DL_D_G4.cube.rgb.bin",
+          "sha256": "edace14b5490e32d330dc090d7bada4ec319b8ffe75e70de35ddeabe78eae6c8"
+        },
+        {
+          "path": "system/etc/realme-lut/DL_L_B6.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/DL_L_B6.cube.rgb.bin",
+          "sha256": "89f2cad30f6322860eedf503ced85c1834e006505778f74d0f15758c33963ced"
+        },
+        {
+          "path": "system/etc/realme-lut/Delta400.3dl.rgb.bin",
+          "source": "shared/camera-beta11/assets/Delta400.3dl.rgb.bin",
+          "sha256": "924f95312186247e0bcbd407893dba671cb887611752480b2ce443dd5fb9dd45"
+        },
+        {
+          "path": "system/etc/realme-lut/Emerald.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Emerald.cube.rgb.bin",
+          "sha256": "f2d0f6766382e6a0b40dcd63c0041fa2edc00236557712ab4db2e7d22e7b0333"
+        },
+        {
+          "path": "system/etc/realme-lut/Martin.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Martin.cube.rgb.bin",
+          "sha256": "0ceda3befec79bd615a129563ebf36846c59bf5d5718b80fe7199518bf8a513f"
+        },
+        {
+          "path": "system/etc/realme-lut/OPLUSR0604.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/OPLUSR0604.cube.rgb.bin",
+          "sha256": "ec64d2d02122ea86a599d2b9427403815fdb310a902a286134e21d584ba9ffb1"
+        },
+        {
+          "path": "system/etc/realme-lut/Radiance.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Radiance.cube.rgb.bin",
+          "sha256": "5de3498eb27219b1a9913c039b0ef560b66c834aef596a561702ad9b4465f7b4"
+        },
+        {
+          "path": "system/etc/realme-lut/Serenity.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Serenity.cube.rgb.bin",
+          "sha256": "4f750931eea283334695b40d388d07295206f2ade54f1f4f47db189ae0a55244"
+        },
+        {
+          "path": "system/etc/realme-lut/Texture-70.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/Texture-70.cube.rgb.bin",
+          "sha256": "11146ca6bc921888c66740752024c93ac831ec3b112e7593bdf9f3c74c16226f"
+        },
+        {
+          "path": "system/etc/realme-lut/White.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/White.cube.rgb.bin",
+          "sha256": "96a1b58f35c8d6466e15795c96577ed25599668862bc7137e489c523c0605fad"
+        },
+        {
+          "path": "system/etc/realme-lut/black_gold.bin",
+          "source": "shared/camera-beta11/assets/black_gold.bin",
+          "sha256": "a1e9c04e2556bd6a101b4f2e9e3d7e36768becfee5dc5cf896c5e78ab053a095"
+        },
+        {
+          "path": "system/etc/realme-lut/blackandwhite.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/blackandwhite.cube.rgb.bin",
+          "sha256": "be078deab911d1ed4ce6d36c2192ebdf31b7a59951bc57e7d0959ca73759641f"
+        },
+        {
+          "path": "system/etc/realme-lut/bright_coloured.bin",
+          "source": "shared/camera-beta11/assets/bright_coloured.bin",
+          "sha256": "572dff031dd0b0b4683aacaee29f2e069be2b0f3d0c93d9d55c80a5daafb9650"
+        },
+        {
+          "path": "system/etc/realme-lut/cola.bin",
+          "source": "shared/camera-beta11/assets/cola.bin",
+          "sha256": "545a8136b33a2b08ccb6a80252ebfaa77a325f59b8f3719e12a9b2ae1a796ee0"
+        },
+        {
+          "path": "system/etc/realme-lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin",
+          "source": "shared/camera-beta11/assets/cyberpunk-kitsch-3.1.CUBE.rgb.bin",
+          "sha256": "45740d41c678496a79ce565546865cc5d7dd042cef8973009dc23a715050c048"
+        },
+        {
+          "path": "system/etc/realme-lut/drjw1994.bin",
+          "source": "shared/camera-beta11/assets/drjw1994.bin",
+          "sha256": "d2f4043081732fbec2649b3596f29033584c15d2ca03b9e8b820ac4da8def009"
+        },
+        {
+          "path": "system/etc/realme-lut/drjw2010.bin",
+          "source": "shared/camera-beta11/assets/drjw2010.bin",
+          "sha256": "74b199cf1432acae2d418480ea666c809d6d5a7c9cec7b2b7346ce2b47bc5b13"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji-cc-high.bin",
+          "source": "shared/camera-beta11/assets/fuji-cc-high.bin",
+          "sha256": "48474ad275eafaf7e3e427f93ce8d1458699e608149a3a8a4d1703c39d418581"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji-cc-low.bin",
+          "source": "shared/camera-beta11/assets/fuji-cc-low.bin",
+          "sha256": "2601c2a7e72278efb99a1e496ba56c31027b0a650cf597450ea5e8cfb3634780"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji-eterna-v2.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/fuji-eterna-v2.cube.rgb.bin",
+          "sha256": "89bb4ee00ff557f27dae6d2ab11a33aa2af682205bebdb7fd6679a43a0c54847"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji-nc.bin",
+          "source": "shared/camera-beta11/assets/fuji-nc.bin",
+          "sha256": "9a7e3196e38254549330732d29e4c2bd1c6ea885307d486ae66a0de019355683"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji-proNegHi.bin",
+          "source": "shared/camera-beta11/assets/fuji-proNegHi.bin",
+          "sha256": "7c8a9f60a1022ac7d608d80a3698119d5caa34c5030967567aea1bcee5509673"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/fuji.cube.rgb.bin",
+          "sha256": "9e62632b73cf738b4f382bd8cc8a62297f2accb10442b97a3d188b46c04c0a78"
+        },
+        {
+          "path": "system/etc/realme-lut/fuji_cc.bin",
+          "source": "shared/camera-beta11/assets/fuji_cc.bin",
+          "sha256": "0da9d1eb332c54867b99d9979be5bb1fa8b64555baebc50c810b74e6f12ec179"
+        },
+        {
+          "path": "system/etc/realme-lut/gourmet.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gourmet.cube.rgb.bin",
+          "sha256": "7e8ac5d7c8ccd8fee8e79e21c86405a1761b87e660511b3fa14fbbdf5077f88c"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-24hour-city.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-24hour-city.cube.rgb.bin",
+          "sha256": "e1a471cefc48884747a56af36258a9b62834be38de53f9323ec897e4d3770bc1"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-3dcity.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-3dcity.cube.rgb.bin",
+          "sha256": "6b343802ce4ffa17054f97b607172b7921820f689338a14ad5288a493a24f903"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-after-glow.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-after-glow.cube.rgb.bin",
+          "sha256": "f8cbe5f4577158facf59f84518a52ca7b1e21452834fb572b79e7d489c61286a"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-azure-water.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-azure-water.cube.rgb.bin",
+          "sha256": "9e8dd5f7653fbd2e0c4d9bf180f839fd218f33600317ea6c91b07749153744d1"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-beach.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-beach.cube.rgb.bin",
+          "sha256": "5f6f1f25c4b37d208296b17c937421fe1f9e0f7ff1dcdba6add5664ce6ea23d0"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-blue-water.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-blue-water.cube.rgb.bin",
+          "sha256": "f14fb0dade54f68334b4b2cdcbc659f213dc728741992b0f22f2ac6339ea48b8"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-coco-grove.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-coco-grove.cube.rgb.bin",
+          "sha256": "ea7851a8e85fadb0249ab861740a5e2bfbe87ebad9ef34cf4f0dad941055c356"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-crisp-fall.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-crisp-fall.cube.rgb.bin",
+          "sha256": "80ace5426bae40c6f1a14aa7718288eee96f88064034473f3258507387f7b7bc"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-desert.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-desert.cube.rgb.bin",
+          "sha256": "22e1f0dfcaa7e2dc9667766af47e6faa86f14c4ea4ceda836d374bf8e740198b"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-earth.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-earth.cube.rgb.bin",
+          "sha256": "22cf5d57099e76d0e920ee83b7556d5f5f56c33e27d2483268b1e0b8596694cb"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-glazed-tile.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-glazed-tile.cube.rgb.bin",
+          "sha256": "13317c7dcab8b116c3a18435994d8a51b2edab367ce2990421524152847bbf72"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-japan.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-japan.cube.rgb.bin",
+          "sha256": "7f3398a9dc3c67b2ddbce8b035b0b31f5b33b822579c428df49a13d3f397735e"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-lake.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-lake.cube.rgb.bin",
+          "sha256": "7207ab4114a19c5aea1cdfe494e1de9db57967edcaa7bcd9765cff940e4b4725"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-mountainous.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-mountainous.cube.rgb.bin",
+          "sha256": "f2103182d16435bf48222b9585c46d2f86788cfa4001dbd4262368d99261df38"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-old-times.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-old-times.cube.rgb.bin",
+          "sha256": "251750eb7f46420b13c3170a1d0874cb6773efb3844ec850b2e2b879125cc715"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-quietly-ele.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-quietly-ele.cube.rgb.bin",
+          "sha256": "0ab9ef00c63b9bff1b95f173a9c33edb349d5fe70dda0e920a693c9f4cb62de2"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-rosy.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-rosy.cube.rgb.bin",
+          "sha256": "c8f9d08cd1f430bc870dd4eae5083dbccc71d487d48ebaf6beab69a8261b142d"
+        },
+        {
+          "path": "system/etc/realme-lut/gt-steaming.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/gt-steaming.cube.rgb.bin",
+          "sha256": "99f1d07bfa0fcc5e65997e9b5473ecd104f4099ca3e9a32eef73c93ad1eeb5a2"
+        },
+        {
+          "path": "system/etc/realme-lut/interstellar_space.bin",
+          "source": "shared/camera-beta11/assets/interstellar_space.bin",
+          "sha256": "5ba45b04018c2b3d30f7500181816d789199f66768645c6b85bce4de098de127"
+        },
+        {
+          "path": "system/etc/realme-lut/jw_sun.CUBE.rgb.bin",
+          "source": "shared/camera-beta11/assets/jw_sun.CUBE.rgb.bin",
+          "sha256": "3b32284cc53a6557d8f86edcb81a9ea751bbe7aceac4ec4f2646f97c555c9d8a"
+        },
+        {
+          "path": "system/etc/realme-lut/jw_surprise.CUBE.rgb.bin",
+          "source": "shared/camera-beta11/assets/jw_surprise.CUBE.rgb.bin",
+          "sha256": "a300ad84b824e069205688eb6b2b65ccae1ef5bb86e35182911fc8ef638788fa"
+        },
+        {
+          "path": "system/etc/realme-lut/kodak.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/kodak.cube.rgb.bin",
+          "sha256": "b3a820706672d34149eeff6572463ba8d17ba5a7e28b8b569d716bd0a6a1e6e9"
+        },
+        {
+          "path": "system/etc/realme-lut/meicam.child.bin",
+          "source": "shared/camera-beta11/assets/meicam.child.bin",
+          "sha256": "e8e925efb803127ef3ebf11593287cd52421232b7619cbad11fefb4e81088e2f"
+        },
+        {
+          "path": "system/etc/realme-lut/mono.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/mono.cube.rgb.bin",
+          "sha256": "e7c5596463b8789fd8b6278f794812eb6c1aad37d30940f80990b60a61271c0e"
+        },
+        {
+          "path": "system/etc/realme-lut/morandi.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/morandi.cube.rgb.bin",
+          "sha256": "6eb135bfe1e90d0509ba571ca46325acd97ca70eb5f90be4ce5b711a7144cfb5"
+        },
+        {
+          "path": "system/etc/realme-lut/natural.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/natural.cube.rgb.bin",
+          "sha256": "a2016a88d00206b6ded02d50ee5b73c275f0e910b69467880c6ef88d07f57581"
+        },
+        {
+          "path": "system/etc/realme-lut/neon-2020.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/neon-2020.cube.rgb.bin",
+          "sha256": "5bb4aaaf127ea329fcc8fdf85a1b9d054525e4b1fb68a3c2ef0022e0ad407eb3"
+        },
+        {
+          "path": "system/etc/realme-lut/oplus-black-gold.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/oplus-black-gold.cube.rgb.bin",
+          "sha256": "497f350b2fbba71c2218168879a9b8b4bdec7f59ed20249f88555e031ec75a62"
+        },
+        {
+          "path": "system/etc/realme-lut/oplus-cyberpunk.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/oplus-cyberpunk.cube.rgb.bin",
+          "sha256": "c32d857a629494a7de3c97c41709c9f6f9a5f8e2d9b317081fc965eef40614d5"
+        },
+        {
+          "path": "system/etc/realme-lut/oplus-nightcity.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/oplus-nightcity.cube.rgb.bin",
+          "sha256": "81bf94616cd2669e7eb9ca16d48badd97793fefe72a094302a9899e905dc3c05"
+        },
+        {
+          "path": "system/etc/realme-lut/oplus-yellow-blue.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/oplus-yellow-blue.cube.rgb.bin",
+          "sha256": "3e03639766d160367305a5cf83b3c822dad18b7f627d6ac956b1804f7e2ae589"
+        },
+        {
+          "path": "system/etc/realme-lut/p4_1.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/p4_1.cube.rgb.bin",
+          "sha256": "8f4e4d8f7c47450f2045edb1b04a7ad6f886e59388b36f5d350169a14f17ef9f"
+        },
+        {
+          "path": "system/etc/realme-lut/p4_3.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/p4_3.cube.rgb.bin",
+          "sha256": "02f51e81ffa841eab6c51f16e54b19eec8ae210483761dfbfce64b7e0f8a0ee0"
+        },
+        {
+          "path": "system/etc/realme-lut/rJ5g5vPWG",
+          "source": "shared/camera-beta11/assets/rJ5g5vPWG",
+          "sha256": "8237b68d00a69ba111e1fa74703ab25c319dde375b48c91ccec1e962d5e207ef"
+        },
+        {
+          "path": "system/etc/realme-lut/red-red.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/red-red.cube.rgb.bin",
+          "sha256": "8d097778624695b03ddef2de3134138e3d6672d73cd393d55f964c33ecfc2627"
+        },
+        {
+          "path": "system/etc/realme-lut/sky-blue.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/sky-blue.cube.rgb.bin",
+          "sha256": "228f1e09b73cff2234196aa20ae83bd5c6e3b9ca0133e851bc62317b2efcfff2"
+        },
+        {
+          "path": "system/etc/realme-lut/tone-of-light.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/tone-of-light.cube.rgb.bin",
+          "sha256": "484000120aee834ee06b11dfdee05a350d1ad99f9bc837745e4287ac2f4da396"
+        },
+        {
+          "path": "system/etc/realme-lut/tree-green.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/tree-green.cube.rgb.bin",
+          "sha256": "834879525e05dadaa41ecbbf406d5b9acad618e0a69defb7f3e89e146210a349"
+        },
+        {
+          "path": "system/etc/realme-lut/vivid-cool.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/vivid-cool.cube.rgb.bin",
+          "sha256": "282a725fa4a765b4bb38cf01d80fcbf943b8db117e7c0e326c58a6a1f3bb3321"
+        },
+        {
+          "path": "system/etc/realme-lut/vivid-lut.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/vivid-lut.cube.rgb.bin",
+          "sha256": "9b3c4b03bd573bd85ec24897f51e75ad11eeffc78e0f7e4b116809f4d1c9be57"
+        },
+        {
+          "path": "system/etc/realme-lut/vivid-warm.cube.rgb.bin",
+          "source": "shared/camera-beta11/assets/vivid-warm.cube.rgb.bin",
+          "sha256": "6e8e9dcc1858eac5e4754e2101317a47ce773ada8a9969e3e8f2ebec2079126c"
+        }
+      ],
+      "native_requirements": {
+        "system/lib64/libnativewindow.so": "e5989af1cbe1527132c28d57109f1b559b7aa48f9aea36f2bfaefe4190d00e55",
+        "odm/lib64/libAlgoInterface.so": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+        "odm/lib64/libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+        "odm/lib64/libAlgoProcess.so": "726183ac2d9073ca66497cfae074e421887d81298c0fb01532b7201d01647d30"
+      },
+      "extra_native": [
+        {
+          "name": "libMsEffectSdk.so",
+          "source": "shared/camera-beta10/libMsEffectSdk.so",
+          "sha256": "b0d2822ca40c75eedb371a8dcd291f6c5517a6d2e561b3878bd0d41226048934"
+        },
+        {
+          "name": "libOplusSecurity.so",
+          "source": "shared/camera-native-v1/libOplusSecurity.so",
+          "sha256": "24fb1c5834368757ae372699dc701ff00d0c75a7b18b2f5e802b0b2143bd4ddf"
+        },
+        {
+          "name": "libOplusStringJNI.so",
+          "source": "shared/camera-native-v1/libOplusStringJNI.so",
+          "sha256": "79316d7d22ab945013f87ec5d4984f0506699a9692963f35a60f855a27a9787a"
+        },
+        {
+          "name": "libAPSClient-jni.so",
+          "source": "shared/sdk-native-beta6/libAPSClient-jni.so",
+          "sha256": "f108594528f2c191d2ce59165d20335415d87233fd1d681625897058e7414047"
+        },
+        {
+          "name": "libAPSClient-cmd-jni.so",
+          "source": "shared/camera-beta10/libAPSClient-cmd-jni.so",
+          "sha256": "3364553daf4036afbae46e94fc9bca7733c6e7a9f08f2cebfde9c6d4e2656134"
+        },
+        {
+          "name": "libmsnativefilter.so",
+          "source": "shared/camera-beta10/libmsnativefilter.so",
+          "sha256": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56"
+        }
+      ],
+      "runtime_contract": {
+        "source": "configs/oem-gallery-runtime-alpha9-23.2.json",
+        "sha256": "8cdb4cd22b5d2d2955878a0c5656b0ba847553cacff406ec03bd6123b0c3a727"
+      },
+      "platform_framework_sha256": "cc9ddaf69aa1d9079e48b70d787252e5cc49c2356d04f9120a1c66029365dda6",
+      "upgrade_history": {
+        "source": "configs/oem-gallery-alpha9-upgrades-23.2.json",
+        "sha256": "d33ba858c718f303b938243027b2ea07b6ddcd15e172ec27c4c57daabe7f4b60"
+      },
+      "vendor_filter_contract": {
+        "source": "configs/camera-vendor-filter-23.2.json",
+        "sha256": "1b08bbe0348595644ed728a745ce238d82cc1464192084cba55e774cc5d7fc10"
+      },
+      "app_compatibility": {
+        "source": "configs/oem-gallery-app-compat-alpha9-23.2.json",
+        "sha256": "f27d7f988b58415d2fb0cd75411494dd52cc43310f71a363f5b85c4d1f365fc0"
+      },
+      "policy": {
+        "source": "shared/runtime-policy14",
+        "sha256": "a37e7bad3a4cf3e06f07cae686d74b26652b9a4fd68cecfcde6b17aba13cc6a2",
+        "kind": "shared-oem-runtime-v1"
+      },
+      "content_addressed_app": true,
+      "legacy_gallery_apk_sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "57d333334606de259048379577749843462453d7f96d5fd27b03a6949ab25cdd",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+    "tools/oem_camera_compat/realme/camera/compat/GalleryShortcut.java": "6485c23c5e72f40ed1af506bf673b4f26c3c07de9e08e7e7137b85dd42105529"
+  },
+  "adapter_dex_sha256": "43c097763899ed982f409652946dba0569ac203a097431ba9815764432431e91",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "thumbnail_id": "0x7f09062f",
+  "scope": "Optional Camera-local thumbnail handler uses Android MediaStore own-package captures and normal VIEW/read grants. Standard default viewer or resolver; no OEM package impersonation, APK resigning, global package-check change or forced Google/OEM Gallery dependency. Keyguard checked before query and before launch; no dismiss/unlock. Global layout events cover late-created/recreated thumbnail widgets; detach removes the observer.",
+  "limits": "SDK recipe and public window ABI validation are separate from actual Camera classloader/view binding, latest-capture lookup, viewer/default/chooser and lock-screen acceptance. Only Camera-owned primary MediaStore captures are considered; this is not an entire photo-library browser.",
+  "output_sdk_sha256": "e85ff06404abd2a06b8faee07a41c9e220b33a761b6d92832e28799eb6edca60"
+}

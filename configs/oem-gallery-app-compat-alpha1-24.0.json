@@ -1,0 +1,30 @@
+{
+  "package": "com.coloros.gallery3d",
+  "source_app": {
+    "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+    "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "prepared_app": {
+    "sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "flavor": "lineage",
+  "signer_role": "dedicated-optional-gallery-app",
+  "schema": 1,
+  "platform": {
+    "sdk": 37,
+    "lineage": "24.0"
+  },
+  "predecessors": {
+    "alpha1-api37": {
+      "sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    }
+  }
+}

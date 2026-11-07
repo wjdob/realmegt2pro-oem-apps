@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "status": "Offline Native22 buffer component candidate; no installer activation or runtime acceptance.",
+  "sdk": 37,
+  "target_files_sha256": "21e80602c66d0f3bb853793bc55bc45df7e88895e7bba3515f17cba9b2718de4",
+  "normalized_compile_sha256": "acc4aeaa1c5c88ee7bc1335851cc36a7c71f9f993d4cd6dd176a99d8718d8e8c",
+  "source_sha256": "c7a3eef75db61bc678b677ab0a76ecd8265a78d81f78a1e31b45d8755640ac49",
+  "compiler_sha256": {
+    "clang++": "b50deb7c48633d03c02b15b6508d79768027e80422265d7a4a7f2f13d2f01d97",
+    "clang++-real": "28774967e08984bbe8a54a07a4b40af0160881a2f777fa780fe3afa33c0775c8",
+    "ld.lld": "36eb18dc6acdd4eca1f63e9ac73708cfef84cdd1c1db47b3ca686a5d1fcdcd81"
+  },
+  "builtins_sha256": "4023fd367bc053e2cd5a7b0603220bcf5071e3aad0dacebd83b8f6ff57b7a0f6",
+  "platform_headers": {
+    "frameworks/native/libs/gui/include/gui/Surface.h": "7ddc1ab79d899b1d0cbeadd7ded59d0f082aea6853c4e4f28377a2845bccc59d",
+    "frameworks/native/libs/gui/include/gui/IGraphicBufferProducer.h": "3788e612ff47b681c324360901608016b17c89e4415cff9dc6a63670b4685749",
+    "frameworks/native/libs/gui/include/gui/IGraphicBufferConsumer.h": "e82ed448c6c923f75c000390daaf90d9a26eccf02b7f83e18c04fcb2a5fef85d",
+    "frameworks/native/libs/nativewindow/include-private/private/android/AHardwareBufferHelpers.h": "5cf66ef1446ea464543d5438e6ab1c43a7591ac2332d13c621df6046e733160c",
+    "system/core/libutils/binder/include/utils/RefBase.h": "a9b9bc9e6e3a7d071fd55bf9fe72e787786502dc271053113936a36eb2959c3d"
+  },
+  "link_libraries": [
+    "libgui.so",
+    "libui.so",
+    "libutils.so",
+    "liblog.so",
+    "libc++.so",
+    "libc.so",
+    "libm.so",
+    "libdl.so",
+    "libnativewindow.so"
+  ],
+  "old_helper_sha256": "08830734d4d8baeac59664f94db5ce2c5b78c0d008c9ea5d504db5ddbef61b11",
+  "measured_slots": {
+    "allowAllocation": {
+      "old": 152,
+      "api37": 168
+    },
+    "Surface.detachNextBuffer": {
+      "old": 352,
+      "api37": 344
+    },
+    "consumer.attachBuffer": {
+      "old": 48,
+      "api37": 64
+    },
+    "consumer.releaseBuffer": {
+      "old": 56,
+      "api37": 72
+    }
+  },
+  "release_signature": {
+    "old": "(int,uint64_t,EGLDisplay,EGLSyncKHR,const sp<Fence>&)",
+    "api37": "(int,uint64_t,const sp<Fence>&)"
+  },
+  "limits": "Stock event layout and original success/error semantics retained. Writer/encoder private ABI and event lifetime still require qualification. API36 artifacts are unchanged.",
+  "header_inventory_sha256": "5a047f03222977a58d2e263654d42545492ef6361ccc36dfd8404e16434b6db3",
+  "provider_sha256": {
+    "SYSTEM/lib64/libgui.so": "c3d569f948c1ec09f9e9f8b59aea43795b39b9752529216c72367478b195399b",
+    "SYSTEM/lib64/libui.so": "1295a22423bb6d4db4f99b2ea7998fb1de774e267ea17a6aab6d32da24977b67",
+    "SYSTEM/lib64/libutils.so": "ec794e14921a2005ee006972c27643ab8e4a597d177ce6921a6eaf21cdbb2e14",
+    "SYSTEM/lib64/liblog.so": "52f3cf1ee6bc2ddc9ef0e8eff81dd9e482c84a9c3a04943fc5729360bfcd10d4",
+    "SYSTEM/lib64/libc++.so": "b3f9261acf0dc87a012eb19a1d632dab5a78a0991aa3c0ff7af351b28eb38953",
+    "SYSTEM/lib64/libc.so": "cf582a15c14e416f9f33722c39edeadc84a236a480af1767a2305859fc03f8fb",
+    "SYSTEM/lib64/libm.so": "12786bbe15b68fd1cecf36ca6b73ed9d999508ce3c00ea31163bde12ce9e25c2",
+    "SYSTEM/lib64/libdl.so": "bd291499fed6ccee225c35e68ac2587d126ec408ed1b1af9fe71fece404289d8",
+    "SYSTEM/lib64/libnativewindow.so": "cbdce4b9b05b9a4bfbcbc050a39598f577a8f6b5cc437489278eb093ac840fc8",
+    "SYSTEM/apex/com.android.runtime.apex": "b8b0e0ba0f771cbd8a76cb868d91080e27a86479163241bf5b941b10c808dae6",
+    "runtime/lib64/bionic/libc.so": "b9b2783560db033c41f8b91f5830b028f4a08b0e34487ba5dc20d13fd191b413",
+    "runtime/lib64/bionic/libm.so": "bf746e2c5302b072e6b4c8cfd46f9b05b266bc2da59321b1b9bb2bf924f81f91",
+    "runtime/lib64/bionic/libdl.so": "c2da8013b21b19994cf5ccf5ece6e5576182b97e81cadb08fea11e36d9275002"
+  },
+  "output_sha256": "236439f21e85a9dbf4d580fc241023a228ff88b337e02ca78d4b5d676f5063ed"
+}

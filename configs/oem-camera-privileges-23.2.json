@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "package": "com.oplus.camera",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "version": "5.020.849",
+  "reviewed_utc": "2026-10-29",
+  "privileged_permissions": {
+    "grant": [
+      "android.permission.SYSTEM_CAMERA",
+      "android.permission.TURN_SCREEN_ON",
+      "android.permission.WRITE_SECURE_SETTINGS"
+    ],
+    "deny": [
+      "android.permission.INTERACT_ACROSS_USERS",
+      "android.permission.UPDATE_DEVICE_STATS",
+      "android.permission.WRITE_MEDIA_STORAGE"
+    ]
+  },
+  "rationale": {
+    "SYSTEM_CAMERA": "Camera requests access to the system-only logical rear camera. Normal privileged placement and Android permission checks must be retained. This is not proof that granting access alone fixes Portrait topology.",
+    "TURN_SCREEN_ON": "Camera wakeUpAndUnlock uses ACQUIRE_CAUSES_WAKEUP in a bounded bright wake lock. PowerManager checks permission/app-op/target compatibility. Preserve this actual quick-entry use without assuming target SDK 35 always requires the grant.",
+    "WRITE_SECURE_SETTINGS": "Camera writes Global continuation/out-camera state and conditionally Secure oplus_camera_record_dolby during video-to-gallery handoff. Preserve actual requested integration. The FlashPresenter custom System setting separately requires privileged app status; it does not establish this permission's necessity.",
+    "INTERACT_ACROSS_USERS": "No direct cross-user invoke was found in Camera or its supported SDK. Observed ContentObserver registration uses the current user. Gallery has separate user-specific integrations and does not inherit this decision.",
+    "UPDATE_DEVICE_STATS": "No direct battery-accounting update or WorkSource attribution consumer was found in Camera or its supported SDK. Referencing a battery-stat constant does not require accounting-write permission.",
+    "WRITE_MEDIA_STORAGE": "Own JPEG MediaStore insertion/save already works without this grant. Camera's six direct ContentResolver.call sites target OEM IPC, vehicle-state and MMKV providers, not the reviewed privileged media maintenance APIs. No reviewed backup/recovery protocol literal occurs in Camera/SDK/Gallery DEX."
+  },
+  "scope": "Reviewed input for the next optional Camera bundle, not an installed policy. Original APK signer, runtime consent and normal Android enforcement remain. No permission grants to Photos, other OEM apps or the base ROM.",
+  "limits": "Static DEX call graphs and disassembly, native marker review, pinned platform enforcement and read-only device queries. Computed/reflected/native/service-delegated calls may escape static coverage. Explicit denials mean no established need for this scoped version, not proof that every possible OEM branch is unused. Validate wake, flash, video, Portrait and handoffs after installation."
+}

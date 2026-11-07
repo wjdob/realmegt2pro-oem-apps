@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "platform": {"sdk": 37, "lineage": "24.0"},
+  "target_files_sha256": "21e80602c66d0f3bb853793bc55bc45df7e88895e7bba3515f17cba9b2718de4",
+  "provider": {
+    "target_files": "ODM/lib64/libmsnativefilter.so",
+    "bytes": 6218904,
+    "sha256": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "shared_libs": ["libz", "liblog", "libEGL", "libGLESv2", "libm", "libdl", "libc"]
+  },
+  "aps": {
+    "target_files": "ODM/lib64/libAlgoInterface.so",
+    "sha256": "19518f07aecbdd84024f6bddbdbcd6118c1b7b3d0e8d8803d557d0a6f0320012",
+    "provider_literal": "/odm/lib64/libmsnativefilter.so",
+    "optional_lut_literal": "/system/etc/realme-lut/"
+  },
+  "editor": {
+    "target_files": "ODM/lib64/libAlgoProcess.so",
+    "sha256": "42fa6a5e54bfd3c658fb6bc72e14f4997d099aa06a642747c000b92ee1ba6205"
+  },
+  "provenance": "Native22 actual packaged .1410 provider cohort. The original filter bytes match the accepted app-local provider; the project adapts the optional LUT directory in AlgoInterface. AlgoProcess remains the reviewed .1410 version.",
+  "scope": "Bind API37 optional Camera/Gallery to this base. Use the standard vendor namespace. Optional ZIPs carry no ODM writes.",
+  "limits": "Exact package identities leave JNI/private ABI, runtime rendering, editing and signed installer qualification open."
+}

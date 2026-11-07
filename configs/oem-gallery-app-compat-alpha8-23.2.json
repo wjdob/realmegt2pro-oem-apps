@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "package": "com.coloros.gallery3d",
+  "source_app": {
+    "sha256": "ce058185478efe7faed94ffbae42bc640741e33744963dcf1afd93f7f693c20e",
+    "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "prepared_app": {
+    "sha256": "e67025a698ce76f200328ae01fbaa252cbae5ebd1f7052cee6a8b80d5387289a",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+    "min_sdk": 31,
+    "target_sdk": 34
+  },
+  "flavor": "lineage",
+  "signer_role": "dedicated-optional-gallery-app",
+  "predecessors": {
+    "alpha7": {
+      "sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef",
+      "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada",
+      "min_sdk": 31,
+      "target_sdk": 34
+    }
+  },
+  "receiver_policy": "Only the existing ActionReceiverProperties constructor changes, API34+ when no explicit state or instant-app visibility is supplied. Unpermissioned receivers private; sender-permission receivers exported with that permission still enforced. API31-33/explicit flags unchanged.",
+  "predecode_gate": "Only OplusPreTileDecodeService uses standard signature/privileged android.permission.SYSTEM_CAMERA, already granted to current Camera13. Portable prepared APK retains OEM service gate. No new permission definition or grant.",
+  "source_recipe": {
+    "predecessor_app_compatibility": {
+      "source": "configs/oem-gallery-app-compat-alpha7-23.2.json",
+      "sha256": "81c0287fe14bfb005b7de97e417a1f0f290404489d932bb0b5bcc49ca0868218"
+    },
+    "predecessor_apk_sha256": "52979c9f1ac7a86c928281b32ca6652a0b1893d66b7a7a541a2025ddb27560ef",
+    "followup_unsigned_sha256": "8b5af64f44b0aef335c41c3a36fc207f0614f53e48f17f4964f1667d3e8fa328",
+    "sources": {
+      "tools/oem_gallery_app.py": "0b9494c539d052e261470c3b6aaee369118c6306785ad894f2d286604a67311e",
+      "tools/oem_gallery_dex.py": "529fd7519dd8a0cdee0f3fad37d5b44d81b17e46a35493155befe6cef8e4a888",
+      "tools/oem_gallery_followup.py": "785269389c6602114633df34a607d754bd81801862c8a973601bcbb76a21fcb1",
+      "tools/oem_gallery_icons.py": "943abf7a4c5fff646706a2242c070be8e9c7501225f86b298841d5f45b45be7d",
+      "tools/oem_gallery_manifest.py": "8f64ac7fb745ba96cc168ae0bf4f7c25fa6ce39cafdec54f6d5aa482a98c5b26",
+      "tools/oem_gallery_share.py": "64086707df019c2df03130b753944137c8d12e311dd452d9462f6dba4553e701",
+      "tools/bootstrap_gallery_dex.py": "9382c9e84c69d930fa612769ae77d525cd503d01f9ab1f7674a14d1f8ca5066e",
+      "tools/oem_gallery_compat/DoodleTheme.java": "d49e440db856351be986cf598534bd51f89e4963547f404694175a5308b8c10d",
+      "tools/oem_gallery_compat/GalleryDexMerge.java": "0af4e1c05259b4d0120bfe63cb940d756170086feefdb5f5b6649e3971ea6b42",
+      "tools/oem_gallery_compat/GalleryDexSemanticCheck.java": "cea77b2a44b3a90282f5f310c6a9c5b3622d3c90381f908d23754d05cf979ee0",
+      "tools/oem_gallery_compat/ResolverFallback.java": "acd863bc5ff3465da382ecc9f832b9611e33280076b027ad6f2e06286ea67b81",
+      "tools/oem_gallery_compat/ReviewActivity.java": "aed9af78862733629a39d8725f95ebd4ee1467ef228b2443bd5869dc9fbcef76",
+      "tools/oem_gallery_compat/ReviewRequest.java": "223773d68efd9b8766a05df0c540ea10b3df32c6b32f18060730f9a2311a6019",
+      "tools/oem_gallery_compat/com/oplus/aiunit/vision/ft.java": "46ea40500b9ef8be6a9ab0c88a8430b502a6fd6589d14d6672338a5f82efc59f"
+    }
+  },
+  "limits": "Galleryalpha8 candidate: guarded Markup theme, unlocked modern review, standard resolver fallback, narrow cropper/video discovery and read-only SEND grants. Existing receiver and service gates, APK version/min31/target34, SDK/JNI/LUT/policy and app signer retained. No installed acceptance or fix for AI Remover, secure vault or album consent claimed. No app-data reset or ROM/firmware change.",
+  "policyless_predecessors": [],
+  "predecessor_profiles": {
+    "alpha7": {
+      "source": "configs/oem-addons-gallery-alpha7-23.2.json",
+      "sha256": "f9588db054e3ba69e5062c7f80b09413f96d35ab7d5a11b18661c7a057e4151d"
+    }
+  }
+}

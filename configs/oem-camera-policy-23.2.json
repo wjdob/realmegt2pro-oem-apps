@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "model": "RMX3301",
+  "lineage": "23.2",
+  "sdk": 36,
+  "package": "com.oplus.camera",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "certificate_sha256": "b0a9bbfc05eee5e7d0a2c97c030586e15bb3301152078f54473bb82df6d8c818",
+  "fragment_sha256": "9b1be865b858ebe608e54c9452d4d50ac0724cc37129447cc728bc995d43d256",
+  "mapping_version": "202504",
+  "inputs": {
+    "system/etc/selinux/plat_sepolicy.cil": "abdb865ef33ed6ec924c6ceef87a31be0d905c79326679924cfb2678a1b0e589",
+    "system/etc/selinux/mapping/202504.cil": "a98f4b8479aa64e7d2b5a4146e6edc89fc50d62c80d37200258ff719dfced03b",
+    "system_ext/etc/selinux/system_ext_sepolicy.cil": "4297a905654e4ac8bb69044b9d7a02107406cbdef5ca62d26a213de3876a99e4",
+    "system_ext/etc/selinux/mapping/202504.cil": "1be72cd527d5ddb85faa9fa5fe0845509cbaf60f5bd60f411f3a90aed3fa312c",
+    "product/etc/selinux/product_sepolicy.cil": "15b7c5d8ec647cd0215288ec5babc41a6877a99db30d96cd8ea154861bc90ecd",
+    "product/etc/selinux/mapping/202504.cil": "934bb77bba43f8dfe26c7eabb1498adb5a5656992d1c35fba815b62128a0b263",
+    "vendor/etc/selinux/plat_pub_versioned.cil": "92e0b6546adac2d8a9d51a1f21a6ae180e36b9fc71aaca6e1d957655d40d2e88",
+    "vendor/etc/selinux/vendor_sepolicy.cil": "33ee7a3f8e522240209ed23ca8269db17c22ee1bb394e7042bf958a8ee83ce84",
+    "odm/etc/selinux/odm_sepolicy.cil": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "system/etc/selinux/plat_sepolicy_genfs_202504.cil": "480d503e7730236b659230d16b3946b628394d529dabfef67c679281fd98357b",
+    "product/etc/selinux/product_mac_permissions.xml": "9fc6e3bc49b67055ec3e2059f5fce7c7e5b72069697d82f963aec4dd2d61fcf0",
+    "product/etc/selinux/product_seapp_contexts": "2fd04f9d730e073a00621765150741958e02e9ba6a4aa4079d3ac68908aadbf0",
+    "product/etc/selinux/product_sepolicy_and_mapping.sha256": "009d10a4c32db36eb7d5f77ea6e6b1b10878ab1c4f2c3fe75cd754c7691112e1",
+    "odm/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256": "009d10a4c32db36eb7d5f77ea6e6b1b10878ab1c4f2c3fe75cd754c7691112e1"
+  },
+  "compiler_inputs": [
+    "system/etc/selinux/plat_sepolicy.cil",
+    "system/etc/selinux/mapping/202504.cil",
+    "system_ext/etc/selinux/system_ext_sepolicy.cil",
+    "system_ext/etc/selinux/mapping/202504.cil",
+    "product/etc/selinux/product_sepolicy.cil",
+    "product/etc/selinux/mapping/202504.cil",
+    "vendor/etc/selinux/plat_pub_versioned.cil",
+    "vendor/etc/selinux/vendor_sepolicy.cil",
+    "odm/etc/selinux/odm_sepolicy.cil",
+    "system/etc/selinux/plat_sepolicy_genfs_202504.cil"
+  ],
+  "patch_paths": [
+    "product/etc/selinux/product_mac_permissions.xml",
+    "product/etc/selinux/product_seapp_contexts",
+    "product/etc/selinux/product_sepolicy.cil",
+    "product/etc/selinux/product_sepolicy_and_mapping.sha256"
+  ],
+  "combined_policy_digest": "d1ed309aa523172f4c15f598bfa41057f68a8ceee44d8e8795d59b99b1a72bd3"
+}

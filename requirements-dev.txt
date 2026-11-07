@@ -1,0 +1,3 @@
+# Host validators; native Android builds use their separately pinned source/toolchain.
+cryptography==50.0.2
+lz4==4.4.5

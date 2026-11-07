@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "package": "com.coloros.alarmclock",
+  "version": "15.10.13",
+  "version_code": 15010013,
+  "apk_sha256": "cf7c12426d464199e15b55cd2645bcf6e90d8bde75e3c0f58bc9a1b63ec23b20",
+  "certificate_sha256": "64aafaf1d5bc9155a9e417a849e4f8eda1d0d1341667c28ed7c443c76f820b9a",
+  "source": "RMX3301_15.0.0.1410(EX01) stock extraction",
+  "requested_targets": [36, 37],
+  "min_sdk": 28,
+  "target_sdk": 35,
+  "distribution_candidate": "ordinary compatibility APK with dedicated Clock signer; separate from LineageOS Clock",
+  "status": "API37 optional data-app alpha5 passes basic Clock UAT; API36 runtime and extended alarm reliability unqualified",
+  "compatibility_candidate": {
+    "builder": "tools/port_stock_clock.py",
+    "apk_sha256": "fa19ca7fdbdcbe665610a00901a147e7b8c758ac1fdd33cbec43f4090e82dfec",
+    "certificate_sha256": "be4371e5df02a71928c4ac276a34083f91f21819db07f09559e363a72821eb04",
+    "signer": "dedicated optional Clock identity; separate from platform and Photos",
+    "install": "ordinary data app; retain com.android.deskclock",
+    "changes": [
+      "app-local OEM feature/version delegates with public Android fallbacks",
+      "default alarm sound through Android RingtoneManager when OEM helper is unavailable",
+      "optional OEM notification API fallback without notification permission grants",
+      "confine query catches LinkageError through its existing failure branch",
+      "optional OEM slider keyguard request delegate; existing Android lock-screen rules retained",
+      "activity-lifecycle navigation inset correction for Clock tab labels"
+    ],
+    "min_sdk": 28,
+    "target_sdk": 35,
+    "manifest_resources_native_unchanged": true,
+    "runtime_smoke_tested_sdk": [37],
+    "permissions_for_full_screen_alarm": ["POST_NOTIFICATIONS", "SYSTEM_ALERT_WINDOW"],
+    "extended_alarm_reliability_qualified": false
+  },
+  "pending": [
+    "Classify absent OEM calls by reachable feature and existing fallback",
+    "Qualify classpath, hidden API and native/JNI behavior on both targets",
+    "Test alarms with screen off, Doze, reboot, timezone changes and lock-screen dismissal",
+    "Test timers, stopwatch, notifications and user-selected alarm sounds"
+  ]
+}

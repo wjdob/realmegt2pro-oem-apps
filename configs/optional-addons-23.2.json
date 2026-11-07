@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "base": "Google-free LineageOS 23.2; no root provider or OEM app bundle dependency",
+  "device": "RMX3301",
+  "android_sdk": 36,
+  "architecture": "arm64",
+  "profiles": {
+    "lineage-only": {
+      "default": true,
+      "additional_packages": []
+    },
+    "mindthegapps": {
+      "default": false,
+      "status": "clean installation and Android10b-to12b same-key no-wipe Updater retention tested:36 base files/21 packages, encrypted markers, existing Google session, Play download/update/open and PIN/fingerprint pass; background notification reported, FCM transport unverified",
+      "install_before_first_android_boot": true,
+      "already_booted_without_gapps_requires_factory_reset": true,
+      "reset_is_automatically_authorized": false,
+      "release_url": "https://github.com/MindTheGapps/16.0.0-arm64/releases/tag/MindTheGapps-16.0.0-arm64-20261023_034858",
+      "filename": "MindTheGapps-16.0.0-arm64-20261023_034858.zip",
+      "bytes": 523923293,
+      "sha256": "6929593937cd85541228e4e5db9cbb5455338bf33c75eabf610de632ac155810",
+      "signer_certificate_der_sha256": "91370e897e35bd90a262b73e8296661819c13d5467fd30a10df848de14f56776",
+      "source_revision": "9336b2ae858b0a5ca05f07925220face91aadfa7",
+      "modified_os_filesystems": [
+        "system",
+        "product",
+        "system_ext"
+      ],
+      "recovery_trust_store_changes": false,
+      "base_rom_inline_integration": false,
+      "live_install_tested": true,
+      "play_store_download_install_open_tested": true,
+      "app_update_tested": true,
+      "observed_play_updated_packages": [
+        "com.google.android.gms",
+        "com.google.android.apps.restore",
+        "com.android.vending"
+      ],
+      "push_notifications_tested": false,
+      "owner_reported_background_notification_tested": true,
+      "notification_test_limits": "Owner reports arrival without opening the app while screen off; app and delivery protocol unspecified, so this does not independently verify FCM transport.",
+      "same_key_ota_retention_tested": true,
+      "ota_retention_test_limits": "One full10b-to12b update through Android Updater with the retained engineering boot and active backuptool hook; not recovery sideload or an unmodified release-boot proof. Google remains an optional add-on."
+    },
+    "oem-camera": {
+      "default": false,
+      "status": "experimental Camera14 profile: separately installed on Package18B; owner reports ordinary photo, video and newest-media thumbnail working. Earlier targeted filter, flash, Portrait and HEIC checks are version-scoped in docs/STATUS.md and docs/AUDIT.md; do not infer all modes or another ROM are supported",
+      "build_config": "configs/oem-addons-camera14-23.2.json",
+      "profile": "camera",
+      "selection": "optional; exact base dependencies and compatible Gallery peer must verify; broad mode/capture acceptance remains version-specific",
+      "base_rom_inline_integration": false,
+      "live_install_tested": true,
+      "same_key_ota_retention_tested": false
+    },
+    "oem-photos": {
+      "default": false,
+      "status": "Gallery-alpha12 installed on Package18B alongside Camera14. Owner accepts Markup drawing/colour/Undo/Save copy and original retention, Remover, default sharing, Camera newest-photo handoff and media regressions. Minor Share labels/duplicate Wallet remain; private-photo locking is parked. Standalone Photos-only runtime and every editor/mode are not established",
+      "build_config": "configs/oem-addons-gallery-alpha12-23.2.json",
+      "build_config_role": "installed engineering profile; scoped owner acceptance, not a release or universal compatibility claim",
+      "tested_predecessor_config": "configs/oem-addons-gallery-alpha11-23.2.json",
+      "tested_predecessor_limits": "Exact alpha11-to12 no-wipe update; independent file/permission checks, same UID/signer and all captured app preferences retained. Full source backups and operation-specific preflight remain required",
+      "profile": "photos",
+      "selection": "optional; exact base and Camera peer or standalone shared-runtime prerequisites must verify; Photos-only runtime remains unaccepted",
+      "base_rom_inline_integration": false,
+      "live_install_tested": true,
+      "same_key_ota_retention_tested": false
+    },
+    "sandboxed-play-research": {
+      "default": false,
+      "status": "matching Android16 source pins, config170 APK signature/source payload and upstream repository signing path reviewed; full dependency/license closure, project update policy and port review remain required before a separate OS-profile experiment",
+      "apk_only_addon_supported": false,
+      "release_reference_tag": "2026061600",
+      "manifest_reference_revision": "5d82aa9610855bc0b43b9eb7ca4470d30455cfeb",
+      "framework_reference_revision": "7d409cf5c025de0731d60aaf20aba19db1da155f",
+      "gmscompat_reference_revision": "9ec311b87fb95a42a9c8b160b2c2a94ecbc58fb6",
+      "gmscompat_config_reference_revision": "87b8bc336cc6aca7fe480cfcc98aaaeecfd7eb6a",
+      "reference_android_major": 16,
+      "reference_aosp_tag": "android-16.0.0_r4",
+      "reference_build_id": "BP4A.251205.006",
+      "reference_is_current_security_baseline": false,
+      "matching_android16_source_identified": true,
+      "config_reference_version": 170,
+      "config_reference_apk_sha256": "1cab0f533caefcbf49c7c9de1b4399b3b518a5e4c91ca98c4c7cf4fd363d986d",
+      "config_reference_signer_certificate_der_sha256": "6ebb65c5daa95641f7a774ea35d26ff251575cb32e34a8a5d655b2742b57321f",
+      "config_reference_min_sdk": 32,
+      "config_reference_target_sdk": 37,
+      "config_reference_signature_verified": true,
+      "config_payload_matches_reference_source": true,
+      "config_update_authority_review": "2026-10-30: current upstream repository metadata verifies under pinned AppStore36 source default Ed25519 key and permits the reference signer; no reproduced AppStore binary, project update policy or port/runtime claim",
+      "config_update_client_source_revision": "9bdf70a2c9a2dd757fe163c599907dcda3960c62",
+      "project_configuration_update_policy_reviewed": false,
+      "matching_android16_port_reviewed": false,
+      "base_framework_changes_authorized_by_profile": false
+    },
+    "oem-apps-research": {
+      "default": false,
+      "status": "per-app dependency/licensing/hardware assessment before optional packaging"
+    }
+  }
+}

@@ -10,6 +10,9 @@ Clock alpha5 installs as a normal APK and has basic Android 17 test coverage.
 
 These apps are optional. The base ROM and Google apps are installed separately.
 
+[Formats candidate](FORMATS.md): HEVC settings and compatible sharing of 10-bit
+HEIC photos. This update is undergoing qualification; it is not a new release.
+
 ## Developer setup
 
 Use Linux and Python 3.12:

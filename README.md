@@ -27,6 +27,7 @@ python -m unittest discover -s tools/tests -v
 `tools/oem_addons.py` creates independent install/check/remove ZIPs from reviewed
 input contracts. Read its `--help` and the selected `configs/oem-addons-*.json`.
 `tools/prepare_oem37_sources.py` stages API37 inputs; `tools/port_stock_clock.py` prepares the unsigned Clock port. Use their --help for explicit input/output paths.
+Toolchain-specific tests report skips when their Android/JDK prerequisites are unavailable.
 Android build tools, matching stock inputs and your own signing identity are needed
 for packaging. Host tests use synthetic fixtures; runtime, OTA and removal coverage
 remain separate release checks. The source split creates no newly tested app build.

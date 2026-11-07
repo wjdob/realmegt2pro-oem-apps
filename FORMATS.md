@@ -1,8 +1,11 @@
 # Camera and Photos formats candidate
 
 This app-only update targets Native25, LineageOS 24.0 / Android 17.
-Device installation and combined testing are pending. Public downloads stay at
-the previously released versions until those checks pass.
+Alpha3 passed installation, retained-settings checks and format tests on
+November 7, 2026. HEVC recording at 1080p/4K and 30/60 fps, the AVC control,
+compatible single/multiple HEIC shares, image appearance and the privacy export
+passed. The existing Lens button still fails. [Its follow-up](LENS.md) has separate
+source and package recipes. Public downloads have not changed.
 
 The owner confirms that Messenger sends an 8-bit HEIC but rejects a 10-bit HEIC.
 JPEG sends normally. For direct sending through Messenger's picker, capture with

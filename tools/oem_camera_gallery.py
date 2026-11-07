@@ -19,6 +19,8 @@ GALLERY_TYPES |= {'Lrealme/camera/compat/CaptureThumbnail' + part + ';'
                   for part in ('', '$Cancel', '$Changes', '$Load', '$Deliver')}
 FORMAT_DIRECTORY = 'tools/oem_camera_compat/formats17/realme/camera/compat'
 FORMAT_TYPE = 'Lrealme/camera/compat/EncoderMenuCompatibility;'
+LENS_DIRECTORY = 'tools/oem_camera_compat/lens18/realme/camera/compat'
+LENS_TYPE = 'Lrealme/camera/compat/LensMenuBinding;'
 
 
 def sources(contract=None):
@@ -29,12 +31,14 @@ def sources(contract=None):
     # hash-bound. Do not allow an arbitrary path from a contract into javac.
     if directory not in ('tools/oem_camera_compat/gallery13/realme/camera/compat',
                           'tools/oem_camera_compat/lens16/realme/camera/compat',
-                          FORMAT_DIRECTORY):
+                          FORMAT_DIRECTORY, LENS_DIRECTORY):
         raise ValueError('unreviewed gallery adapter source directory')
     root = ROOT / directory
     selected = [root/'GalleryShortcut.java', root/'CaptureThumbnail.java']
     if directory == FORMAT_DIRECTORY:
         selected.append(ROOT/'tools/oem_camera_compat/EncoderMenuCompatibility.java')
+    elif directory == LENS_DIRECTORY:
+        selected += [root/'EncoderMenuCompatibility.java', root/'LensMenuBinding.java']
     if any(p.is_symlink() or not p.is_file() for p in selected):
         raise ValueError('missing or symlinked gallery adapter source')
     return [*source_files(), *selected]
@@ -70,8 +74,10 @@ def compile_parts(android, work, contract=None):
                     *map(str, source_files()[1:]), *map(str, adapters)],
                    check=True, capture_output=True)
     names = ADAPTER_TYPES | GALLERY_TYPES
-    if (contract or {}).get('adapter_source_directory') == FORMAT_DIRECTORY:
+    if (contract or {}).get('adapter_source_directory') in (FORMAT_DIRECTORY, LENS_DIRECTORY):
         names = names | {FORMAT_TYPE}
+    if (contract or {}).get('adapter_source_directory') == LENS_DIRECTORY:
+        names = names | {LENS_TYPE}
     jar = work / 'adapter.jar'
     with zipfile.ZipFile(jar, 'w') as z:
         for name in sorted(names):

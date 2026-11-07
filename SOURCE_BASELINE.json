@@ -782,10 +782,10 @@
     },
     {
       "path": "tools/oem_camera_gallery.py",
-      "sha256": "6cc76d5b7c9b6c5fe9d58b552292cfd5e40ed790269d90585aec682f56d43911",
+      "sha256": "4200841b0baaff6fb45bd191fe4c37bda9e15f0c387736cb76bb1c44cbc24164",
       "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
       "imported_sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
-      "project_change": "Allow separately hash-bound Lens16 and formats17 source directories. Formats17 adds the exact-APK encoder menu helper; historical adapter recipes remain intact."
+      "project_change": "Add a separately hash-bound native keyed Lens adapter source directory. Preserve all historical adapter source paths and recipes."
     },
     {
       "path": "tools/oem_camera_heif.py",

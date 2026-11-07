@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "app": {
+    "package": "com.coloros.gallery3d",
+    "version": "15.80.16_sp1",
+    "sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e",
+    "certificate_sha256": "bd77b13eed39c33c246bd3340a2049dc35487fec6855191b74ac606fba730ada"
+  },
+  "sdk": {
+    "library": "com.oplus.camera.unit.sdk",
+    "jar_path": "product/framework/realme-camera-unit-sdk.jar",
+    "xml_path": "product/etc/permissions/realme-camera-unit-sdk.xml",
+    "sha256": "e88849bfcab32d3f6605a57e6558493520e45c3008914a088747cd1983f6e451"
+  },
+  "extra_native": {
+    "libMsEffectSdk.so": "b0d2822ca40c75eedb371a8dcd291f6c5517a6d2e561b3878bd0d41226048934",
+    "libOplusSecurity.so": "24fb1c5834368757ae372699dc701ff00d0c75a7b18b2f5e802b0b2143bd4ddf",
+    "libOplusStringJNI.so": "79316d7d22ab945013f87ec5d4984f0506699a9692963f35a60f855a27a9787a",
+    "libAPSClient-jni.so": "f108594528f2c191d2ce59165d20335415d87233fd1d681625897058e7414047",
+    "libAPSClient-cmd-jni.so": "3364553daf4036afbae46e94fc9bca7733c6e7a9f08f2cebfde9c6d4e2656134",
+    "libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "librealme_cv_inpainting_v10.so": "183618cce6537e99dfee91136a998a1f0da6c89584b8142ea6047cde4305d1dd"
+  },
+  "native_requirements": {
+    "system/lib64/libnativewindow.so": "e5989af1cbe1527132c28d57109f1b559b7aa48f9aea36f2bfaefe4190d00e55",
+    "odm/lib64/libAlgoInterface.so": "96d9b0e608958221fec259d0a1959073efc7a7b7fd185de1eda64bc0f20c8d47",
+    "odm/lib64/libmsnativefilter.so": "6309ed48a3aac2a7a94408d0e81b891e445c70bf995d60a5eed57a14ebf15a56",
+    "odm/lib64/libAlgoProcess.so": "726183ac2d9073ca66497cfae074e421887d81298c0fb01532b7201d01647d30"
+  },
+  "platform_framework_sha256": "cc9ddaf69aa1d9079e48b70d787252e5cc49c2356d04f9120a1c66029365dda6",
+  "filter_asset_contract_sha256": "02de7735f5b98cca402041cd225375df291be4406d4fce5f0c52b7f2d2d1053c",
+  "namespace": "normal product classloader LLNDK links; no namespace/export override",
+  "evidence": {
+    "predecessor_runtime": {
+      "source": "configs/oem-gallery-runtime-alpha14-23.2.json",
+      "sha256": "b2faf6b91b065848da0be7959b0e0c855720d4fcd3c37d18ed420c0fca8839b4"
+    },
+    "candidate_apk_sha256": "644e0df3f250cf6e97163664b6cf207617a817430daa237c48f2d6a185ad600e",
+    "changed_existing_apk_members": [
+      "classes5.dex",
+      "classes7.dex"
+    ],
+    "added_dex": "classes17.dex",
+    "other_payload_members_unchanged": 7390,
+    "app_compatibility": {
+      "source": "configs/oem-gallery-app-compat-alpha15-23.2.json",
+      "sha256": "26a416e221b3b4fa9848ee43add33d2b3cf6f05fc30eebef794ac67c82e0c325"
+    },
+    "signing_report_sha256": "7e7c1af1cb44dc23a38038a573e8d7de01eced490706e79e182fdb5d6711c646",
+    "limits": "Optional Gallery15 candidate adds Share fallback labels and concrete single-media MIME, including final converted-stream refresh. Existing receiver/predecode, editor, Remover, media management, signer/min31/target34 and native/SDK/policy bytes are retained. Host/archive checks do not prove installed UI, app-data retention or independent profile acceptance. Locking remains parked."
+  },
+  "limits": "Lens SDK revision only. Original Gallery APK, native dependencies and policy remain unchanged; runtime regression qualification pending.",
+  "shared_policy_manifest_sha256": "a37e7bad3a4cf3e06f07cae686d74b26652b9a4fd68cecfcde6b17aba13cc6a2"
+}

@@ -1,33 +1,60 @@
 # Optional Realme apps
 
-Camera and Photos/editor compatibility tools for RMX3301 on LineageOS 24.0.
-Clock alpha5 is an ordinary optional APK, tested on Android17.
-The ROM, Google apps and these OEM apps remain separate choices.
+Camera and Photos/editor compatibility tools and recovery-package builders for
+**RMX3301 on LineageOS 24.0 / Android 17**.
+Clock alpha5 installs as a normal APK and has basic Android 17 test coverage.
 
-[Downloads and installation](https://github.com/wjdob/lineageos-realmegt2pro/tree/lineage-24.0).
-[Report a user issue](https://github.com/wjdob/lineageos-realmegt2pro/issues/new/choose).
-Use this repository for source changes and code review.
+[Downloads and installation](https://github.com/wjdob/lineageos-realmegt2pro/tree/lineage-24.0) |
+[Known issues](https://github.com/wjdob/lineageos-realmegt2pro/blob/lineage-24.0/RELEASE_NOTES.md) |
+[Report a problem](https://github.com/wjdob/lineageos-realmegt2pro/issues/new/choose)
 
-The imported files match the published source kit. `SOURCE_BASELINE.json` binds
-each file to its original hash/revision. Original OEM APKs, libraries, model files,
-signing keys and generated binaries are separate inputs and stay outside Git.
-OEM components retain their owners' rights. pjgowtham, LineageOS/AOSP and Oplus
-provide the underlying device/platform work; project commits provide the app
-compatibility and recovery-package integration documented in the release hub.
+These apps are optional. The base ROM and Google apps are installed separately.
 
-## Development
+## Developer setup
 
-Use Linux and Python3.12. Install `requirements-dev.txt`, then run:
+Use Linux and Python 3.12:
 
 ```sh
+python -m pip install -r requirements-dev.txt
 python tools/validate_source.py
 python -m unittest discover -s tools/tests -v
 ```
 
-`tools/oem_addons.py` creates independent install/check/remove ZIPs from reviewed
-input contracts. Read its `--help` and the selected `configs/oem-addons-*.json`.
-`tools/prepare_oem37_sources.py` stages API37 inputs; `tools/port_stock_clock.py` prepares the unsigned Clock port. Use their --help for explicit input/output paths.
-Toolchain-specific tests report skips when their Android/JDK prerequisites are unavailable.
-Android build tools, matching stock inputs and your own signing identity are needed
-for packaging. Host tests use synthetic fixtures; runtime, OTA and removal coverage
-remain separate release checks. The source split creates no newly tested app build.
+Some tests require additional Android/JDK tools and report a skip when those are
+missing. Phone-test results are listed in the release notes.
+
+## Package inputs and tools
+
+Builds need matching OEM APKs, native libraries, model files, Android build tools
+and signing keys. Keep these files and generated packages outside Git.
+The configurations list expected input paths and SHA-256 hashes.
+
+| Tool | Purpose |
+| --- | --- |
+| `tools/oem_addons.py` | Build signed Camera/Photos install, check and remove ZIPs |
+| `tools/prepare_oem37_sources.py` | Prepare the Android 17 Camera/Photos input files |
+| `tools/port_stock_clock.py` | Create the unsigned Clock compatibility APK |
+| `tools/validate_source.py` | Check source-file hashes and excluded private/generated files |
+
+For the recovery-package builder, supply `--source-root`, `--android-tree`,
+`--signing-dir`, `--out`, `--scratch` and the matching `--config`.
+Choose `--profile camera` or `--profile photos` to build one app.
+Run `python tools/oem_addons.py --help` for the full argument list.
+
+Use `configs/oem-addons-alpha1-24.0.json` for the Android 17 packages.
+The Android 17 preparation tool has additional required inputs listed by its
+`--help` output.
+Input preparation and signing require manual setup with the files listed in the
+selected configuration.
+
+`SOURCE_BASELINE.json` records imported source versions and hashes.
+See the release notes for phone-test results and remaining OTA/removal limits.
+
+## Credits and contributions
+
+The original apps and algorithms belong to Realme/Oplus and their suppliers.
+Device/platform work builds on pjgowtham, LineageOS/AOSP and upstream contributors.
+Project changes provide Android compatibility and optional recovery packaging.
+Original licenses and notices remain in place; OEM files retain their owners' rights.
+
+Submit source changes here and report phone problems through the release repository.

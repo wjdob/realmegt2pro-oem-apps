@@ -780,8 +780,10 @@
     },
     {
       "path": "tools/oem_camera_gallery.py",
-      "sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
-      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+      "sha256": "173f6e097c8438ae866c5f3d52014a0587b3958a679e86162042c751af474b5b",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
+      "imported_sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
+      "project_change": "Allow the separately hash-bound Lens16 adapter source directory; historical adapter recipes remain intact."
     },
     {
       "path": "tools/oem_camera_heif.py",

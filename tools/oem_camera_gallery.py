@@ -25,7 +25,8 @@ def sources(contract=None):
         return [*source_files(), GALLERY, THUMBNAIL]
     # Retain historical adapter bytes/recipes while new fixes are independently
     # hash-bound. Do not allow an arbitrary path from a contract into javac.
-    if directory != 'tools/oem_camera_compat/gallery13/realme/camera/compat':
+    if directory not in ('tools/oem_camera_compat/gallery13/realme/camera/compat',
+                          'tools/oem_camera_compat/lens16/realme/camera/compat'):
         raise ValueError('unreviewed gallery adapter source directory')
     root = ROOT / directory
     selected = [root/'GalleryShortcut.java', root/'CaptureThumbnail.java']

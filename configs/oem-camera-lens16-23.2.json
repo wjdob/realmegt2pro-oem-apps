@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "e5aa1abd194be1d85634a9c4dc06ce9dd771f3d74a13e6efa715d0632ea26a2e",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+    "tools/oem_camera_compat/lens16/realme/camera/compat/GalleryShortcut.java": "06fbb54b7b21473a9e8b67373d6c03aa1fc293bb3c2fb1a862773ac4eac92db9",
+    "tools/oem_camera_compat/lens16/realme/camera/compat/CaptureThumbnail.java": "4d87d90a9d7ca6252e9c7fe69f83a20ed7b480f652af2da54d918f861165eb01"
+  },
+  "adapter_dex_sha256": "14fa03ee5c57954c4dfcfe56bc971416c7444467876b3df0c28960eadd75d647",
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "thumbnail_id": "0x7f09062f",
+  "scope": "Lens16 optional Camera/Photos SDK. Prefer package-scoped google://lens with legacy fallback. Bind only the pinned Camera Lens resource while unlocked and focused. Original Camera/Photos APKs, signing identities, native libraries, permissions and other six DEX members are unchanged.",
+  "limits": "Host protocol and reproducible JAR checks pass. New package installation and button UAT remain pending; the corrected Google route was separately verified live on API37. No new ROM or phone write.",
+  "output_sdk_sha256": "e88849bfcab32d3f6605a57e6558493520e45c3008914a088747cd1983f6e451",
+  "base_adapter_types": [
+    "Lek/v0$WindowWatcher;",
+    "Lek/v0;",
+    "Lrealme/camera/compat/CaptureThumbnail$Cancel;",
+    "Lrealme/camera/compat/CaptureThumbnail$Changes;",
+    "Lrealme/camera/compat/CaptureThumbnail$Deliver;",
+    "Lrealme/camera/compat/CaptureThumbnail$Load;",
+    "Lrealme/camera/compat/CaptureThumbnail;",
+    "Lrealme/camera/compat/GalleryShortcut$Cancel;",
+    "Lrealme/camera/compat/GalleryShortcut$Lookup;",
+    "Lrealme/camera/compat/GalleryShortcut;"
+  ],
+  "adapter_source_directory": "tools/oem_camera_compat/lens16/realme/camera/compat"
+}

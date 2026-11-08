@@ -1,6 +1,6 @@
 # Camera Lens button
 
-The alpha6 candidate opens the installed **Google Lens** app through its standard
+Camera alpha6 opens the installed **Google Lens** app through its standard
 Android launcher. Install Google Lens to use this button. Other Camera modes work
 without it. The Google app supplies Lens' own dependencies.
 
@@ -18,8 +18,13 @@ caller lists also participate and were not inspected.
 
 The installed Lens app prepares its own Google initialization. A temporary app
 with no permissions launched it from an ordinary app UID; a working live view was
-confirmed. The probe was removed. The candidate uses the same launcher call.
-The actual Camera button still needs its own device test.
+confirmed. The probe was removed. Camera uses the same launcher call.
+
+On 8 November 2026, the alpha6 paired upgrade passed recovery installation and
+independent readback on Native25/API37. Both Camera-button attempts opened a live
+Lens view, including after switching modes. Capture, newest-photo viewing, Markup
+Save copy and HEVC-setting persistence passed; all 35 saved preferences matched.
+Camera-only, Photos-only, removal and later OTA retention need separate tests.
 
 ## Build
 

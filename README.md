@@ -11,8 +11,8 @@ Clock alpha5 installs as a normal APK and has basic Android 17 test coverage.
 These apps are optional. The base ROM and Google apps are installed separately.
 
 [Formats candidate](FORMATS.md): HEVC settings and compatible sharing of 10-bit
-HEIC photos. Format tests pass on the development phone. The Lens follow-up remains pending.
-Public downloads are unchanged.
+HEIC photos. Camera/Photos alpha6 also fixes the Lens button. Format tests and
+the integrated Lens-button checks pass on the Android 17 development phone.
 
 ## Developer setup
 
@@ -45,7 +45,9 @@ For the recovery-package builder, supply `--source-root`, `--android-tree`,
 Choose `--profile camera` or `--profile photos` to build one app.
 Run `python tools/oem_addons.py --help` for the full argument list.
 
-Use `configs/oem-addons-alpha1-24.0.json` for the Android 17 packages.
+Use `configs/oem-addons-lens20-24.0.json` and the [Lens builder](LENS.md) for
+Camera/Photos alpha6. The original `oem-addons-alpha1-24.0.json` recipe remains
+available for reproducing the first Android 17 packages.
 The Android 17 preparation tool has additional required inputs listed by its
 `--help` output.
 Input preparation and signing require manual setup with the files listed in the
@@ -65,10 +67,11 @@ Submit source changes here and report phone problems through the release reposit
 
 ## Lens button follow-up
 
-The alpha6 candidate opens the installed Google Lens app through its standard
+Camera alpha6 opens the installed Google Lens app through its standard
 launcher. This preserves Google's own initialization and Camera's native click
 checks. Both APKs and signing identities remain unchanged from alpha5.
 
-[Diagnosis, build recipe and pending phone tests](LENS.md). Earlier source recipes
-remain available. The launcher works from a permission-free test app on the phone;
-the integrated Camera button still needs testing. Public assets are unchanged.
+[Diagnosis, build recipe and test coverage](LENS.md). The paired alpha5-to-alpha6
+upgrade passed installation, readback and retained-settings checks. Both Lens
+attempts and the brief capture/editor regression checks passed. Earlier source
+recipes remain available. API36 packages have not been updated by this revision.

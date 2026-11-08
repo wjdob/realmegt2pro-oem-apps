@@ -65,11 +65,12 @@ Submit source changes here and report phone problems through the release reposit
 
 ## Lens button follow-up
 
-The earlier resource-ID binding misses Camera's real Lens control. The Android 17
-alpha4 candidate binds its native menu key and preserves the OEM click checks.
-Both APKs and signing identities remain unchanged from alpha3.
+The keyed binding reaches Camera's real Lens control. Google then rejects the
+launch because it lacks a calling package. The Android 17 follow-up restores
+Camera's original result-launch protocol and preserves its native click checks.
+Both APKs and signing identities remain unchanged from alpha4.
 
 [Diagnosis, build recipe and pending phone tests](LENS.md). Earlier Lens16 and
 formats17 source recipes remain available for reproducing those versions.
-The modern Google Lens link works on the test phone; the corrected button
-binding still needs installation and owner testing. Public assets are unchanged.
+The modern Google Lens link works on the test phone; the corrected result
+launch still needs installation and owner testing. Public assets are unchanged.

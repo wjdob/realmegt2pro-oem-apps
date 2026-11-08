@@ -58,6 +58,9 @@ FAKES={**BASE_FAKES,
 
 @unittest.skipUnless(shutil.which('javac') and shutil.which('java'),'JDK required')
 class Lens18Tests(unittest.TestCase):
+    def integration_sources(self, fixtures):
+        return fixtures
+
     def test_real_gallery_bridge_reaches_keyed_button_and_preserves_review_protocol(self):
         # Reuse the historical public-API fixture, then replace its synthetic
         # Lens ID with the native keyed/no-ID control found in the pinned APK.
@@ -93,6 +96,7 @@ class Lens18Tests(unittest.TestCase):
         fixtures['Harness.java']=fixtures['Harness.java'].replace(
             'l.lens.performClick();require(l.launched==1',
             'require(l.lens.id==-1,"actual Lens has no resource ID");l.lens.performClick();require(l.launched==1')
+        fixtures=self.integration_sources(fixtures)
         with tempfile.TemporaryDirectory(prefix='lens-integration-') as directory:
             root=Path(directory);inputs=[]
             for name,source in fixtures.items():

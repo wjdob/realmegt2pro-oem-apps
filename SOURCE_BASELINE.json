@@ -635,10 +635,10 @@
     },
     {
       "path": "tools/oem_addons.py",
-      "sha256": "cb7243e72a6edc2eb0100ab87ce5ec3149ebf7979b6ffe895c4d648af64ba6cd",
+      "sha256": "4f9fe81ee75fab266e4201f2838211c6b311703683bbb4b19168f8a025ffa9a2",
       "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
       "imported_sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
-      "project_change": "Explicit API37 formats profiles can select the hash-bound exact-installed space extension. Shared API36 template and prior API37 recipes remain byte-identical."
+      "project_change": "Add a separately pinned Lens result-launch recipe and opt-in API37 extent staging; preserve historical adapter and default installer recipes."
     },
     {
       "path": "tools/oem_addons/map_logical.cpp",
@@ -782,10 +782,10 @@
     },
     {
       "path": "tools/oem_camera_gallery.py",
-      "sha256": "4200841b0baaff6fb45bd191fe4c37bda9e15f0c387736cb76bb1c44cbc24164",
+      "sha256": "9fa26696b9e9a9da9ba89531daa4a6297803e2edd31aed663abab226110bdacf",
       "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
       "imported_sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
-      "project_change": "Add a separately hash-bound native keyed Lens adapter source directory. Preserve all historical adapter source paths and recipes."
+      "project_change": "Add a separately pinned Lens result-launch recipe and opt-in API37 extent staging; preserve historical adapter and default installer recipes."
     },
     {
       "path": "tools/oem_camera_heif.py",

@@ -10,6 +10,10 @@ Clock alpha5 installs as a normal APK and has basic Android 17 test coverage.
 
 These apps are optional. The base ROM and Google apps are installed separately.
 
+[Formats candidate](FORMATS.md): HEVC settings and compatible sharing of 10-bit
+HEIC photos. Camera/Photos alpha6 also fixes the Lens button. Format tests and
+the integrated Lens-button checks pass on the Android 17 development phone.
+
 ## Developer setup
 
 Use Linux and Python 3.12:
@@ -41,7 +45,9 @@ For the recovery-package builder, supply `--source-root`, `--android-tree`,
 Choose `--profile camera` or `--profile photos` to build one app.
 Run `python tools/oem_addons.py --help` for the full argument list.
 
-Use `configs/oem-addons-alpha1-24.0.json` for the Android 17 packages.
+Use `configs/oem-addons-lens20-24.0.json` and the [Lens builder](LENS.md) for
+Camera/Photos alpha6. The original `oem-addons-alpha1-24.0.json` recipe remains
+available for reproducing the first Android 17 packages.
 The Android 17 preparation tool has additional required inputs listed by its
 `--help` output.
 Input preparation and signing require manual setup with the files listed in the
@@ -59,32 +65,13 @@ Original licenses and notices remain in place; OEM files retain their owners' ri
 
 Submit source changes here and report phone problems through the release repository.
 
-## Lens button update
+## Lens button follow-up
 
-The Camera compatibility JAR now prefers `google://lens`, with `googleapp://lens`
-as a fallback for older Google apps. Google remains optional. Camera and Photos
-keep their existing APKs and signing identities.
+Camera alpha6 opens the installed Google Lens app through its standard
+launcher. This preserves Google's own initialization and Camera's native click
+checks. Both APKs and signing identities remain unchanged from alpha5.
 
-The Camera install ZIP recognizes the previous released Camera/Photos files.
-It updates an existing Photos installation to the matching shared JAR, preserving
-app data. A Camera-only installation keeps Photos absent. Unknown or modified
-files stop the update. If the final Photos installation fails, keep recovery open
-and install its matching Photos ZIP before rebooting. Each child installer has
-its own rollback; the coordinated sequence is not atomic across power loss.
-
-Build the Lens revision from the pinned, signed previous release archives:
-
-```sh
-python tools/oem_camera_gallery.py --base-sdk OLD_SDK --android-tree ANDROID_TREE \
-  --output NEW_SDK --scratch SCRATCH --contract configs/oem-camera-lens16-23.2.json
-python tools/oem_lens_bundle.py --config CONFIG --camera OLD_CAMERA_INSTALL_ZIP \
-  --photos OLD_PHOTOS_INSTALL_ZIP --sdk NEW_SDK --android-tree ANDROID_TREE \
-  --signing-dir SIGNING_DIR --out OUTPUT --scratch SCRATCH
-```
-
-Use `configs/oem-addons-lens16-23.2.json` for Android16 or
-`configs/oem-addons-lens16-24.0.json` for Android17.
-
-The JAR, receipt and retention hook are the only changed payload files per app.
-Host tests and reproducible compilation pass. Installation and Lens-button tests
-of these new packages are pending. The modern Lens link was tested on Android17.
+[Diagnosis, build recipe and test coverage](LENS.md). The paired alpha5-to-alpha6
+upgrade passed installation, readback and retained-settings checks. Both Lens
+attempts and the brief capture/editor regression checks passed. Earlier source
+recipes remain available. API36 packages have not been updated by this revision.

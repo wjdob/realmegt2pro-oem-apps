@@ -17,6 +17,12 @@ GALLERY_TYPES = {'Lrealme/camera/compat/GalleryShortcut' + part + ';'
                  for part in ('', '$Cancel', '$Lookup')}
 GALLERY_TYPES |= {'Lrealme/camera/compat/CaptureThumbnail' + part + ';'
                   for part in ('', '$Cancel', '$Changes', '$Load', '$Deliver')}
+FORMAT_DIRECTORY = 'tools/oem_camera_compat/formats17/realme/camera/compat'
+FORMAT_TYPE = 'Lrealme/camera/compat/EncoderMenuCompatibility;'
+LENS_DIRECTORY = 'tools/oem_camera_compat/lens18/realme/camera/compat'
+LENS_RESULT_DIRECTORY = 'tools/oem_camera_compat/lens19/realme/camera/compat'
+LENS_LAUNCH_DIRECTORY = 'tools/oem_camera_compat/lens20/realme/camera/compat'
+LENS_TYPE = 'Lrealme/camera/compat/LensMenuBinding;'
 
 
 def sources(contract=None):
@@ -26,10 +32,15 @@ def sources(contract=None):
     # Retain historical adapter bytes/recipes while new fixes are independently
     # hash-bound. Do not allow an arbitrary path from a contract into javac.
     if directory not in ('tools/oem_camera_compat/gallery13/realme/camera/compat',
-                          'tools/oem_camera_compat/lens16/realme/camera/compat'):
+                          'tools/oem_camera_compat/lens16/realme/camera/compat',
+                          FORMAT_DIRECTORY, LENS_DIRECTORY, LENS_RESULT_DIRECTORY, LENS_LAUNCH_DIRECTORY):
         raise ValueError('unreviewed gallery adapter source directory')
     root = ROOT / directory
     selected = [root/'GalleryShortcut.java', root/'CaptureThumbnail.java']
+    if directory == FORMAT_DIRECTORY:
+        selected.append(ROOT/'tools/oem_camera_compat/EncoderMenuCompatibility.java')
+    elif directory in (LENS_DIRECTORY, LENS_RESULT_DIRECTORY, LENS_LAUNCH_DIRECTORY):
+        selected += [root/'EncoderMenuCompatibility.java', root/'LensMenuBinding.java']
     if any(p.is_symlink() or not p.is_file() for p in selected):
         raise ValueError('missing or symlinked gallery adapter source')
     return [*source_files(), *selected]
@@ -59,12 +70,16 @@ def compile_parts(android, work, contract=None):
     patched.write_text(original)
     java = android / 'prebuilts/jdk/jdk21/linux-x86/bin'
     sdk = android / 'prebuilts/sdk/36/public/android.jar'
-    gallery, thumbnail = sources(contract)[-2:]
+    adapters = sources(contract)[len(source_files()):]
     subprocess.run([str(java/'javac'), '--release', '17', '-cp', str(sdk),
                     '-d', str(work/'classes'), str(patched),
-                    *map(str, source_files()[1:]), str(gallery), str(thumbnail)],
+                    *map(str, source_files()[1:]), *map(str, adapters)],
                    check=True, capture_output=True)
     names = ADAPTER_TYPES | GALLERY_TYPES
+    if (contract or {}).get('adapter_source_directory') in (FORMAT_DIRECTORY, LENS_DIRECTORY, LENS_RESULT_DIRECTORY, LENS_LAUNCH_DIRECTORY):
+        names = names | {FORMAT_TYPE}
+    if (contract or {}).get('adapter_source_directory') in (LENS_DIRECTORY, LENS_RESULT_DIRECTORY, LENS_LAUNCH_DIRECTORY):
+        names = names | {LENS_TYPE}
     jar = work / 'adapter.jar'
     with zipfile.ZipFile(jar, 'w') as z:
         for name in sorted(names):
@@ -115,7 +130,7 @@ def build(base, android, output, scratch, contract_path=CONTRACT):
     report = dict(base_sdk_sha256=contract['base_sdk_sha256'], sources_sha256=actual,
                   adapter_dex_sha256=sha(dex), output_sha256=sha(output.read_bytes()),
                   unchanged_dex_sha256=unchanged,
-                  classes=sorted(ADAPTER_TYPES | GALLERY_TYPES), scope=contract['scope'],
+                  classes=sorted({n for n,_ in definitions(dex)}), scope=contract['scope'],
                   limits=contract['limits'])
     output.with_suffix('.provenance.json').write_text(json.dumps(report, indent=2)+'\n')
     return report

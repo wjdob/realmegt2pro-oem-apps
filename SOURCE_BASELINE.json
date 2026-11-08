@@ -635,8 +635,10 @@
     },
     {
       "path": "tools/oem_addons.py",
-      "sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
-      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c"
+      "sha256": "4f9fe81ee75fab266e4201f2838211c6b311703683bbb4b19168f8a025ffa9a2",
+      "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
+      "imported_sha256": "d83f1d80a9cd6d82020befc54d36b9a55ccf35e0adc5d7046beb9839d01c07f8",
+      "project_change": "Add a separately pinned Lens result-launch recipe and opt-in API37 extent staging; preserve historical adapter and default installer recipes."
     },
     {
       "path": "tools/oem_addons/map_logical.cpp",
@@ -780,10 +782,10 @@
     },
     {
       "path": "tools/oem_camera_gallery.py",
-      "sha256": "173f6e097c8438ae866c5f3d52014a0587b3958a679e86162042c751af474b5b",
+      "sha256": "2dc2c84b9b6079f5497a2c2f6ba3b319bf98523343b7cad56109392e559340a3",
       "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
       "imported_sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
-      "project_change": "Allow the separately hash-bound Lens16 adapter source directory; historical adapter recipes remain intact."
+      "project_change": "Add a separately pinned standard installed-Lens launcher recipe. Preserve historical adapter and installer recipe bytes."
     },
     {
       "path": "tools/oem_camera_heif.py",

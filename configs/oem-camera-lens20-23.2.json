@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "base_sdk_sha256": "e88849bfcab32d3f6605a57e6558493520e45c3008914a088747cd1983f6e451",
+  "sources_sha256": {
+    "tools/oem_camera_compat/ek/v0.java": "71a483069532af414107909b4f2f89ebca8c944e3ee6015685060721cc0fe0ee",
+    "tools/oem_camera_compat/compile_stubs/android/app/OplusActivityTaskManager.java": "1a09fa322e1dece18b67cade4b337a891e8d8f4161ad7c0f54bedb62b6825206",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$a.java": "b379246425abf5ea84e9d40418f8443adf99162e72d7e0724d43ebf9dd6fe7c7",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$b.java": "479e600331e92accbaf6f70f66cdec73c88081e1c48a4c63cd85ece290c869f8",
+    "tools/oem_camera_compat/compile_stubs/ek/v0$c.java": "19aafe600cad7eab252e97bb594ec6b39b003d16d3f80e50371f0637c3f21eb6",
+    "tools/oem_camera_compat/compile_stubs/og/d.java": "5c8d16a39de3e72d2686fa2b62bd54e33aa283d53d0fc663002b774f4c80260a",
+    "tools/oem_camera_compat/lens20/realme/camera/compat/GalleryShortcut.java": "aa4a486877df5f103e16db044f6e41f297f0199b8d88014320685e6f849c4c61",
+    "tools/oem_camera_compat/lens20/realme/camera/compat/CaptureThumbnail.java": "4d87d90a9d7ca6252e9c7fe69f83a20ed7b480f652af2da54d918f861165eb01",
+    "tools/oem_camera_compat/lens20/realme/camera/compat/EncoderMenuCompatibility.java": "adc8a2f07aa7e25176d3d98db6c8824e96fdf602db3b8ed1df9abe46fa01de41",
+    "tools/oem_camera_compat/lens20/realme/camera/compat/LensMenuBinding.java": "6c96b6566f9ef44b84fba6a988d00cab239afbe25f05395ace2c57c284bc2b5b"
+  },
+  "apk_sha256": "9193280507b65cd35b0dda690d86a9f041392ba832fe5b036900207e409f0850",
+  "thumbnail_id": "0x7f09062f",
+  "scope": "Bind the pinned Camera APK native key_show_googlelens_icon menu option, retaining the native click gate and touch listener. Use the installed Google Lens app public launcher and its own initialization contract. No OEM feature/property change. Preserve the accepted encoder-menu, thumbnail, Gallery handoff and six other SDK DEX files. No Camera APK, permission, native library, base ROM or boot change.",
+  "limits": "Offline candidate. Host tests use the audited public app-owned method/field contract, including the actual no-resource-ID control. This is not runtime acceptance. A permission-free normal-UID launcher probe opens a working live Lens view, owner confirmed. The actual integrated Camera button and capture/return regression still need UAT.",
+  "base_adapter_types": [
+    "Lek/v0$WindowWatcher;",
+    "Lek/v0;",
+    "Lrealme/camera/compat/CaptureThumbnail$Cancel;",
+    "Lrealme/camera/compat/CaptureThumbnail$Changes;",
+    "Lrealme/camera/compat/CaptureThumbnail$Deliver;",
+    "Lrealme/camera/compat/CaptureThumbnail$Load;",
+    "Lrealme/camera/compat/CaptureThumbnail;",
+    "Lrealme/camera/compat/GalleryShortcut$Cancel;",
+    "Lrealme/camera/compat/GalleryShortcut$Lookup;",
+    "Lrealme/camera/compat/GalleryShortcut;"
+  ],
+  "adapter_source_directory": "tools/oem_camera_compat/lens20/realme/camera/compat",
+  "adapter_dex_sha256": "1ef1aba450a8068f4761ce59cffd71489a071e3ff91a496eaecf5c2b5cfd262e",
+  "output_sdk_sha256": "e5e24a1820457eb13ca94273bc537988ff5f94e4b27e901634297470c59596ce"
+}

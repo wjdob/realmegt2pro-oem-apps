@@ -782,10 +782,10 @@
     },
     {
       "path": "tools/oem_camera_gallery.py",
-      "sha256": "9fa26696b9e9a9da9ba89531daa4a6297803e2edd31aed663abab226110bdacf",
+      "sha256": "2dc2c84b9b6079f5497a2c2f6ba3b319bf98523343b7cad56109392e559340a3",
       "origin_commit": "69bf1cc09e299b1c21558c86aaeb629156d5849c",
       "imported_sha256": "7900cb749bff350bf98631f6a8e67c7e9d212d42c471a1f9953646ed0937c097",
-      "project_change": "Add a separately pinned Lens result-launch recipe and opt-in API37 extent staging; preserve historical adapter and default installer recipes."
+      "project_change": "Add a separately pinned standard installed-Lens launcher recipe. Preserve historical adapter and installer recipe bytes."
     },
     {
       "path": "tools/oem_camera_heif.py",

@@ -1,69 +1,57 @@
 # Camera Lens button
 
-The installed Google Lens app works directly. Camera's native old Google link
-does nothing on the tested Android 17 installation.
+The alpha6 candidate opens the installed **Google Lens** app through its standard
+Android launcher. Install Google Lens to use this button. Other Camera modes work
+without it. The Google app supplies Lens' own dependencies.
 
-The earlier adapter looked for `google_lens_id`. That resource exists in Camera's
-APK, but the real button has no resource ID. Its native menu key is
-`key_show_googlelens_icon`. The earlier tests used the unused resource ID and
-missed this binding error.
+Camera keeps its original APK and OEM signature. The optional SDK binds the exact
+native menu key and preserves its click gate, touch handling and lifecycle checks.
+The base ROM, Google apps, permissions and system properties stay unchanged.
 
-Alpha4 binds that exact menu option in the pinned Camera APK. Live logs confirm
-the binding and modern URL request, but Google immediately returns to Camera.
-Google logs: "Caller package cannot be empty. LensExportedActivity must be started
-for result." The helper used `startActivity`, while the OEM path used
-`startActivityForResult`. The new candidate restores that result launch with the
-original request code 0, allowing Android to supply the calling package. It
-keeps the native touch listener, click-state reset and capture/pause checks. It
-prefers Google's `google://lens` link and retains the older link as a fallback.
-Google remains optional. A locked or background Camera cannot launch Lens.
+## Why the launcher is used
 
-Relative to alpha4, each app package changes only its shared SDK, receipt and OTA
-retention hook. Both APKs, signing identities, native libraries and permissions
-stay the same. The accepted HEVC, HEIC-sharing and thumbnail fixes are retained.
-The base ROM and boot images stay unchanged.
+The native OEM entry requires caller context and Google's OEM eligibility checks.
+Restoring Camera's result-launch protocol reached that eligibility check, but
+Google rejected the caller. Its code checks OEM Lens features and package
+properties, which are absent on the tested LineageOS installation. Runtime Google
+caller lists also participate and were not inspected.
+
+The installed Lens app prepares its own Google initialization. A temporary app
+with no permissions launched it from an ordinary app UID; a working live view was
+confirmed. The probe was removed. The candidate uses the same launcher call.
+The actual Camera button still needs its own device test.
 
 ## Build
 
-Use the private inputs and existing signing keys identified by the configurations.
+Use the private inputs and existing signing keys listed in the configurations.
 
 ```sh
 python tools/oem_camera_gallery.py --base-sdk LENS16_SDK \
-  --android-tree ANDROID_TREE --output LENS19_SDK --scratch SCRATCH \
-  --contract configs/oem-camera-lens19-23.2.json
-python tools/oem_lens_result_bundle.py --config configs/oem-addons-lens19-24.0.json \
-  --source-dir PREVIOUS_RELEASE_ZIPS --sdk LENS19_SDK \
-  --gallery-apk ALPHA4_PHOTOS_APK --android-tree ANDROID_TREE \
+  --android-tree ANDROID_TREE --output LENS20_SDK --scratch SCRATCH \
+  --contract configs/oem-camera-lens20-23.2.json
+python tools/oem_lens_launch_bundle.py --config configs/oem-addons-lens20-24.0.json \
+  --source-dir PREVIOUS_RELEASE_ZIPS --sdk LENS20_SDK \
+  --gallery-apk ALPHA5_PHOTOS_APK --android-tree ANDROID_TREE \
   --signing-dir RECOVERY_SIGNING_DIR --out OUTPUT --scratch SCRATCH
 ```
 
-The builder checks Camera's actual native menu ABI before packaging. It accepts
-four exact API37 predecessors: alpha1, alpha2, alpha3 and alpha4. The Camera ZIP also
-updates a recognised Photos installation. Camera-only users keep Photos absent;
-Photos-only users use the direct Photos ZIP. Unknown or mixed files stop the
-update. The existing child checks and recovery return paths remain in use.
-The coordinated sequence is not power-loss atomic. If Photos fails after Camera
-updates, keep recovery open and install matching Photos before rebooting.
+This package targets Android 17/API37. The SDK recipe's `23.2` suffix identifies
+its shared source lineage. API36 recipes remain unchanged.
 
-The SDK recipe's `23.2` suffix identifies its shared source lineage. This package
-targets Android 17/API37. Earlier API36 recipes remain unchanged.
+The coordinator supports public alpha1/alpha2 and the current private alpha5.
+It updates recognised Photos and preserves Camera-only installs. Photos-only
+users use the direct Photos ZIP. Unknown or mixed files stop the update.
+Each child retains rollback checks; the sequence is not power-loss atomic.
+If Photos fails after Camera updates, keep recovery open and install matching
+Photos before rebooting. Earlier source recipes remain available.
 
-The new API37 installer also stages small files at 4096 bytes while applying
-metadata, then trims them to their original size before atomic replacement. A
-Photos XML failed durable verification during alpha4 installation; the guarded
-repair using this sequence passed full readback. The underlying filesystem cause
-remains unproven. The new installer retains durable verification and needs its
-own installation test. Older package recipes retain their original bytes.
+Small files use the extent-sized staging that passed the alpha5 installation.
+Durable verification remains mandatory. The earlier filesystem failure's cause
+remains unproven.
 
-## Validation
+## Test
 
-Host tests cover the no-ID keyed control, native click refusal, stale views,
-pause/lock/background states, listener restoration and missing Google handlers.
-Integration tests run the actual Gallery/thumbnail bridge and Lens binding
-together. The SDK reproduces byte-for-byte; its other six DEX files are unchanged.
-These checks do not establish that tapping the real button works on the phone.
-
-After installation readback, check Lens from normal Photo mode, return to Camera,
-switch modes and tap again. Also check an ordinary capture, newest-photo handoff,
-HEVC persistence and Photos' compatible HEIC export. Keep a locked-screen check
-and app-data comparison in the same session. Installation and this UAT are pending.
+After independent readback, test Lens, return to Camera, switch modes and try
+again. Check an ordinary capture, newest-photo handoff and retained app settings.
+Keep new sign-in or upload consent prompts unanswered during diagnosis.
+Host tests and a successful probe do not establish actual Camera-button success.
